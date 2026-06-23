@@ -4,7 +4,7 @@ export const siteConfig = {
   phoneHref: "tel:+998930624149",
   telegram: "https://t.me/+998930624149",
   whatsapp: "https://wa.me/998930624149",
-  email: "info@pharmwaygroup.uz",
+  email: "info@pharmway.uz",
   address: {
     uz: "Toshkent shahri, Yunusobod tumani, O'zbekiston",
     ru: "г. Ташкент, Юнусабадский район, Узбекистан",

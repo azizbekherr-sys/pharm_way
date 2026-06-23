@@ -16,7 +16,7 @@ const PAGES = [
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = "https://pharmwaygroup.uz";
+  const siteUrl = "https://pharmway.uz";
   const slugs = services.map((s) => `/services/${s.slug}`);
   const paths = [...PAGES, ...slugs];
 
