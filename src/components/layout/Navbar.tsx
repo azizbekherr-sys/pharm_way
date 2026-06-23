@@ -229,15 +229,6 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/certificates"
-            className={`text-sm font-medium transition-colors hover:text-primary-700 ${
-              isActive("/certificates") ? "text-primary-700" : "text-slate-700"
-            }`}
-          >
-            {t("certificates")}
-          </Link>
-
-          <Link
             href="/contact"
             className={`text-sm font-medium transition-colors hover:text-primary-700 ${
               isActive("/contact") ? "text-primary-700" : "text-slate-700"
@@ -394,14 +385,6 @@ export default function Navbar() {
                 className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-800 hover:bg-primary-50"
               >
                 {t("faq")}
-              </Link>
-
-              <Link
-                href="/certificates"
-                onClick={() => setMobileOpen(false)}
-                className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-800 hover:bg-primary-50"
-              >
-                {t("certificates")}
               </Link>
 
               <Link

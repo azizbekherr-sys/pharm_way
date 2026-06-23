@@ -1,16 +1,16 @@
 {
   "meta": {
-    "title": "Pharm Way Group — Pharmaceutical Registration & Import Services",
+    "title": "Pharm Way Group — Dietary Supplement (BFQ) Registration & Import Services",
     "description": "Pharm Way Group is a leading company in Uzbekistan for BFQ (supplement) registration, certification, import and customs services.",
-    "keywords": "pharmaceutical registration uzbekistan, dietary supplement registration, drug import uzbekistan, regulatory consulting central asia",
+    "keywords": "dietary supplement registration uzbekistan, supplement import uzbekistan, BFQ registration, regulatory consulting central asia",
     "pages": {
       "home": {
-        "title": "Pharmaceutical Import & Registration — Uzbekistan",
-        "description": "Supplement (BFQ) and pharmaceutical product registration, import and regulatory services in Uzbekistan. 5+ years of experience, 50+ successful projects."
+        "title": "Dietary Supplement Import & Registration — Uzbekistan",
+        "description": "Dietary supplement (BFQ) registration, import and regulatory services in Uzbekistan. 5+ years of experience, 50+ successful projects."
       },
       "about": {
         "title": "About Us — Pharm Way Group",
-        "description": "Pharm Way Group has operated in Uzbekistan's pharmaceutical market since 2019. 20+ international partners, 50+ registered products."
+        "description": "Pharm Way Group has operated in Uzbekistan's dietary supplement market since 2019. 20+ international partners, 50+ registered products."
       },
       "services": {
         "title": "Our Services — BFQ Registration, Import, Regulatory Consulting",
@@ -21,16 +21,16 @@
         "description": "Get in touch with Pharm Way Group. Tel: +998 93 062 41 49. Tashkent, Yunusabad district. Free consultation."
       },
       "partners": {
-        "title": "Our Partners — International Pharmaceutical Companies | Pharm Way Group",
+        "title": "Our Partners — International Supplement Companies | Pharm Way Group",
         "description": "20+ international partners. Collaborating with manufacturers from Germany, China, India, Korea and other countries."
       },
       "blog": {
-        "title": "Blog — Uzbekistan Pharmaceutical News | Pharm Way Group",
-        "description": "Uzbekistan pharmaceutical market news, registration process, import rules and other useful articles."
+        "title": "Blog — Uzbekistan Supplement News | Pharm Way Group",
+        "description": "Uzbekistan supplement market news, registration process, import rules and other useful articles."
       },
       "faq": {
         "title": "FAQ — Registration & Import | Pharm Way Group",
-        "description": "Answers to frequently asked questions about pharmaceutical product registration, import, documents and pricing."
+        "description": "Answers to frequently asked questions about dietary supplement registration, import, documents and pricing."
       },
       "testimonials": {
         "title": "Client Testimonials — Pharm Way Group",
@@ -48,23 +48,23 @@
       },
       "certification": {
         "title": "Certification — GMP, ISO, Halal | Pharm Way Group",
-        "description": "Professional support obtaining GMP, ISO 9001 and other international certifications for pharmaceutical products."
+        "description": "Professional support obtaining GMP, ISO 9001 and other international certifications for dietary supplement products."
       },
       "import-logistics": {
-        "title": "Import & Logistics — Pharmaceutical Products | Pharm Way Group",
-        "description": "Importing pharmaceutical products from abroad to Uzbekistan, cold-chain logistics and delivery services."
+        "title": "Import & Logistics — Dietary Supplements | Pharm Way Group",
+        "description": "Importing dietary supplements from abroad to Uzbekistan, cold-chain logistics and delivery services."
       },
       "customs": {
-        "title": "Customs Clearance — Pharmaceuticals | Pharm Way Group",
-        "description": "Customs documentation for pharmaceutical shipments. Fast and hassle-free customs process."
+        "title": "Customs Clearance — Dietary Supplements | Pharm Way Group",
+        "description": "Customs documentation for dietary supplement shipments. Fast and hassle-free customs process."
       },
       "regulatory-consulting": {
         "title": "Regulatory Consulting Uzbekistan — Pharm Way Group",
-        "description": "Expert advice on regulatory matters in pharmaceuticals. Specialists in the Uzbekistan and Central Asia market."
+        "description": "Expert advice on regulatory matters for dietary supplements. Specialists in the Uzbekistan and Central Asia market."
       },
       "distributor-search": {
         "title": "Distributor Search — Uzbekistan & Central Asia | Pharm Way Group",
-        "description": "Finding reliable pharmaceutical distributors in the Uzbekistan and Central Asia market."
+        "description": "Finding reliable dietary supplement distributors in the Uzbekistan and Central Asia market."
       }
     }
   },
@@ -111,7 +111,7 @@
     "ourServices": "Our services"
   },
   "footer": {
-    "tagline": "Your trusted gateway to Uzbekistan's pharmaceutical market.",
+    "tagline": "Your trusted gateway to Uzbekistan's dietary supplement market.",
     "quickLinks": "Quick links",
     "ourServices": "Our services",
     "contactInfo": "Contact information",
@@ -122,7 +122,7 @@
   "home": {
     "hero": {
       "badge": "10+ years of experience",
-      "title": "Your trusted path to the pharmaceutical market",
+      "title": "Your trusted path to the dietary supplement market",
       "subtitle": "Full-service BFQ (supplement) registration, certification, import and customs clearance.",
       "ctaPrimary": "Free consultation",
       "ctaSecondary": "Our services",
@@ -149,15 +149,15 @@
         },
         {
           "title": "Import & logistics",
-          "desc": "Importing and delivering pharmaceutical products from abroad."
+          "desc": "Importing and delivering dietary supplements from abroad."
         },
         {
           "title": "Customs clearance",
-          "desc": "Customs documentation for pharmaceutical cargo."
+          "desc": "Customs documentation for dietary supplement cargo."
         },
         {
           "title": "Regulatory Consulting",
-          "desc": "Expert advice on regulatory matters in the pharmaceutical field."
+          "desc": "Expert advice on regulatory matters for dietary supplements."
         },
         {
           "title": "Distributor search",
@@ -225,12 +225,12 @@
   "about": {
     "hero": {
       "title": "About Us",
-      "subtitle": "A trusted partner in the Uzbekistan and Central Asia pharmaceutical market",
+      "subtitle": "A trusted partner in the Uzbekistan and Central Asia dietary supplement market",
       "breadcrumb": "About Us"
     },
     "intro": {
       "heading": "Pharm Way Group — Global Pharma, Local Success",
-      "text": "Pharm Way Group specializes in pharmaceutical import, registration, and regulatory support across Uzbekistan and Central Asia. We help international manufacturers gain reliable, legal, and efficient access to the local market.",
+      "text": "Pharm Way Group specializes in dietary supplement import, registration, and regulatory support across Uzbekistan and Central Asia. We help international manufacturers gain reliable, legal, and efficient access to the local market.",
       "stats": [
         {
           "value": "5+",
@@ -252,11 +252,11 @@
     },
     "mission": {
       "title": "Our Mission",
-      "text": "To enable fast, legal, and efficient entry of internationally compliant pharmaceutical products into the Uzbekistan and Central Asia markets."
+      "text": "To enable fast, legal, and efficient entry of internationally compliant dietary supplements into the Uzbekistan and Central Asia markets."
     },
     "vision": {
       "title": "Our Vision",
-      "text": "To become the leading pharmaceutical regulatory and import services company in Central Asia."
+      "text": "To become the leading dietary supplement regulatory and import services company in Central Asia."
     },
     "history": {
       "title": "Company History",
@@ -406,7 +406,7 @@
   "partnersPage": {
     "hero": {
       "title": "Our Partners",
-      "subtitle": "Trusted partnerships with leading pharmaceutical companies worldwide",
+      "subtitle": "Trusted partnerships with leading supplement companies worldwide",
       "breadcrumb": "Our Partners"
     },
     "stats": [
@@ -436,7 +436,7 @@
             "name": "PharmaCorp International",
             "flag": "🇩🇪",
             "country": "Germany",
-            "desc": "GMP-certified pharmaceutical manufacturer"
+            "desc": "GMP-certified supplement manufacturer"
           },
           {
             "name": "BioMed Solutions",
@@ -448,13 +448,13 @@
             "name": "MedTech Industries",
             "flag": "🇮🇳",
             "country": "India",
-            "desc": "Generic drugs and API manufacturer"
+            "desc": "Supplements and ingredients manufacturer"
           },
           {
             "name": "EuroPharma AG",
             "flag": "🇨🇭",
             "country": "Switzerland",
-            "desc": "Specialized pharmaceutical products"
+            "desc": "Specialized supplement products"
           },
           {
             "name": "KoreaMed Co.",
@@ -466,7 +466,7 @@
             "name": "TurkPharma",
             "flag": "🇹🇷",
             "country": "Turkey",
-            "desc": "Manufacturer of medicines and supplements"
+            "desc": "Manufacturer of dietary supplements"
           }
         ]
       },
@@ -512,7 +512,7 @@
             "name": "BioTest Central",
             "flag": "🇵🇱",
             "country": "Poland",
-            "desc": "Pharmaceutical quality control laboratory"
+            "desc": "Supplement quality control laboratory"
           },
           {
             "name": "AsiaQuality Lab",
@@ -523,7 +523,7 @@
         ]
       },
       {
-        "label": "Pharmaceutical companies",
+        "label": "Supplement companies",
         "items": [
           {
             "name": "RegPharma Consulting",
@@ -547,7 +547,7 @@
             "name": "EastMed Alliance",
             "flag": "🇯🇵",
             "country": "Japan",
-            "desc": "Representative of Japanese pharmaceutical companies"
+            "desc": "Representative of Japanese supplement companies"
           }
         ]
       }
@@ -597,7 +597,7 @@
   "servicesPage": {
     "hero": {
       "title": "Our Services",
-      "subtitle": "A full range of services for the Uzbekistan and Central Asia pharmaceutical market",
+      "subtitle": "A full range of services for the Uzbekistan and Central Asia dietary supplement market",
       "breadcrumb": "Services"
     },
     "detailLabel": "Learn more",
@@ -643,7 +643,7 @@
       "bfq-registration": {
         "overview": [
           "BFQ (dietary supplement) registration is required to legally sell vitamins, minerals, and other supplements in the Uzbekistan market.",
-          "This process is simpler than drug registration but has its own specific requirements — we help from ingredient analysis to obtaining a permit.",
+          "This process has its own specific requirements — we help from ingredient analysis to obtaining a permit.",
           "Thanks to a fast and transparent approach, your product reaches the market in minimal time."
         ],
         "benefits": [
@@ -733,7 +733,7 @@
       },
       "import-logistics": {
         "overview": [
-          "Our import and logistics service ensures the safe and timely delivery of pharmaceutical products from abroad.",
+          "Our import and logistics service ensures the safe and timely delivery of dietary supplements from abroad.",
           "For products requiring a cold chain, we arrange special transport conditions.",
           "We oversee every stage, from contract to warehouse delivery."
         ],
@@ -779,7 +779,7 @@
       },
       "customs": {
         "overview": [
-          "Our customs clearance service ensures pharmaceutical cargo crosses the border quickly and without issues.",
+          "Our customs clearance service ensures dietary supplement cargo crosses the border quickly and without issues.",
           "Any declaration error can delay the cargo — that's why we carefully review documents in advance.",
           "Our experienced customs brokers complete all clearance steps quickly and accurately."
         ],
@@ -825,7 +825,7 @@
       },
       "regulatory-consulting": {
         "overview": [
-          "Regulatory Consulting provides expert advice on complex legal and regulatory matters in the pharmaceutical industry.",
+          "Regulatory Consulting provides expert advice on complex legal and regulatory matters in the dietary supplement industry.",
           "From market entry to adapting to legislative changes, we develop a strategic roadmap.",
           "Through ongoing partnership, we reduce your company's regulatory risks."
         ],
@@ -1750,7 +1750,7 @@
         "category": "gmp",
         "date": "2023",
         "description": "International certificate confirming compliance with Good Manufacturing Practice requirements.",
-        "details": "This certificate confirms full compliance of manufacturing, storage and transportation processes for pharmaceutical products with international GMP (Good Manufacturing Practice) standards. The certificate is reviewed and renewed annually."
+        "details": "This certificate confirms full compliance of manufacturing, storage and transportation processes for dietary supplements with international GMP (Good Manufacturing Practice) standards. The certificate is reviewed and renewed annually."
       },
       {
         "title": "ISO 9001:2015",
@@ -1773,8 +1773,8 @@
         "issuer": "Ministry of Health of Uzbekistan",
         "category": "registration",
         "date": "2024",
-        "description": "Official certificate granting the right to register medicinal products in the Republic of Uzbekistan.",
-        "details": "This certificate allows our company to legally register and sell medicinal products and medical devices in the Republic of Uzbekistan. Issued by the state sanitary-epidemiological surveillance authority."
+        "description": "Official certificate granting the right to register dietary supplements in the Republic of Uzbekistan.",
+        "details": "This certificate allows our company to legally register and sell dietary supplements and medical devices in the Republic of Uzbekistan. Issued by the state sanitary-epidemiological surveillance authority."
       },
       {
         "title": "Dietary Supplement Registration Certificate",
@@ -1785,12 +1785,12 @@
         "details": "The safety and quality of dietary supplements have been confirmed by the state sanitary-epidemiological surveillance authority, allowing the legal sale of products in the Uzbekistan market."
       },
       {
-        "title": "Pharmaceutical Activity License",
+        "title": "Dietary Supplement Activity License",
         "issuer": "Licensing Chamber",
         "category": "license",
         "date": "2023",
-        "description": "State license for the import and sale of pharmaceutical products.",
-        "details": "This license grants our company the right to import, store, and sell pharmaceutical products within Uzbekistan. The license is regularly reviewed by state authorities."
+        "description": "State license for the import and sale of dietary supplements.",
+        "details": "This license grants our company the right to import, store, and sell dietary supplements within Uzbekistan. The license is regularly reviewed by state authorities."
       }
     ],
     "modal": {

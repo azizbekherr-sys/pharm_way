@@ -1,16 +1,16 @@
 {
   "meta": {
-    "title": "Pharm Way Group — Dori vositalarini ro'yxatdan o'tkazish va import xizmatlari",
+    "title": "Pharm Way Group — BFQ mahsulotlarini ro'yxatdan o'tkazish va import xizmatlari",
     "description": "Pharm Way Group — O'zbekistonda BFQ registratsiyasi, sertifikatlashtirish, import va bojxona xizmatlari bo'yicha yetakchi kompaniya.",
-    "keywords": "farmatsevtika registratsiya uzbekiston, BFQ royxatdan otkazish, dori import uzbekiston, regulatory consulting, bojxona rasmiylashtiruvi, pharm way group",
+    "keywords": "BFQ registratsiya uzbekiston, BFQ royxatdan otkazish, BFQ import uzbekiston, regulatory consulting, bojxona rasmiylashtiruvi, pharm way group",
     "pages": {
       "home": {
-        "title": "Farmatsevtika importi va registratsiyasi — O'zbekiston",
-        "description": "O'zbekistonda BFQ va farmatsevtik mahsulotlarni ro'yxatdan o'tkazish, import va regulatory xizmatlar. 5+ yil tajriba, 50+ muvaffaqiyatli loyiha."
+        "title": "BFQ importi va registratsiyasi — O'zbekiston",
+        "description": "O'zbekistonda BFQ mahsulotlarini ro'yxatdan o'tkazish, import va regulatory xizmatlar. 5+ yil tajriba, 50+ muvaffaqiyatli loyiha."
       },
       "about": {
         "title": "Biz haqimizda — Pharm Way Group",
-        "description": "Pharm Way Group 2019 yildan beri O'zbekiston farmatsevtika bozorida faoliyat yuritadi. 20+ xalqaro hamkor, 50+ ro'yxatdan o'tgan mahsulot."
+        "description": "Pharm Way Group 2019 yildan beri O'zbekiston BFQ bozorida faoliyat yuritadi. 20+ xalqaro hamkor, 50+ ro'yxatdan o'tgan mahsulot."
       },
       "services": {
         "title": "Xizmatlarimiz — BFQ registratsiyasi, Import, Regulatory Consulting",
@@ -21,16 +21,16 @@
         "description": "Pharm Way Group bilan bog'laning. Tel: +998 93 062 41 49. Toshkent, Yunusobod tumani. Bepul konsultatsiya."
       },
       "partners": {
-        "title": "Hamkorlarimiz — Xalqaro Farmatsevtik Kompaniyalar | Pharm Way Group",
+        "title": "Hamkorlarimiz — Xalqaro BFQ Kompaniyalari | Pharm Way Group",
         "description": "20+ xalqaro hamkor. Germaniya, Xitoy, Hindiston, Koreya va boshqa mamlakatlardan ishlab chiqaruvchilar bilan hamkorlik."
       },
       "blog": {
-        "title": "Blog — Farmatsevtika Yangiliklari O'zbekiston | Pharm Way Group",
-        "description": "O'zbekiston farmatsevtika bozori yangiliklari, registratsiya jarayoni, import qoidalari va boshqa foydali maqolalar."
+        "title": "Blog — BFQ Yangiliklari O'zbekiston | Pharm Way Group",
+        "description": "O'zbekiston BFQ bozori yangiliklari, registratsiya jarayoni, import qoidalari va boshqa foydali maqolalar."
       },
       "faq": {
         "title": "Savol-Javoblar — Registratsiya va Import | Pharm Way Group",
-        "description": "Farmatsevtik mahsulotlar registratsiyasi, import, hujjatlar va narxlar haqida tez-tez so'raladigan savollarga javoblar."
+        "description": "BFQ mahsulotlari registratsiyasi, import, hujjatlar va narxlar haqida tez-tez so'raladigan savollarga javoblar."
       },
       "testimonials": {
         "title": "Mijozlar Fikri — Pharm Way Group",
@@ -48,23 +48,23 @@
       },
       "certification": {
         "title": "Sertifikatlashtirish — GMP, ISO, Halol | Pharm Way Group",
-        "description": "Farmatsevtik mahsulotlar uchun GMP, ISO 9001 va boshqa xalqaro sertifikatlarni olishda professional yordam."
+        "description": "BFQ mahsulotlari uchun GMP, ISO 9001 va boshqa xalqaro sertifikatlarni olishda professional yordam."
       },
       "import-logistics": {
-        "title": "Import va Logistika — Farmatsevtik Mahsulotlar | Pharm Way Group",
-        "description": "Xorijdan farmatsevtik mahsulotlarni O'zbekistonga import qilish, sovuq zanjir logistikasi va yetkazib berish xizmatlari."
+        "title": "Import va Logistika — BFQ Mahsulotlari | Pharm Way Group",
+        "description": "Xorijdan BFQ mahsulotlarini O'zbekistonga import qilish, sovuq zanjir logistikasi va yetkazib berish xizmatlari."
       },
       "customs": {
-        "title": "Bojxona Rasmiylashtiruvi — Farmatsevtika | Pharm Way Group",
-        "description": "Farmatsevtik yuklar uchun bojxona hujjatlarini rasmiylashtirish. Tez va muammosiz bojxona jarayoni."
+        "title": "Bojxona Rasmiylashtiruvi — BFQ | Pharm Way Group",
+        "description": "BFQ yuklari uchun bojxona hujjatlarini rasmiylashtirish. Tez va muammosiz bojxona jarayoni."
       },
       "regulatory-consulting": {
         "title": "Regulatory Consulting O'zbekiston — Pharm Way Group",
-        "description": "Farmatsevtika sohasida regulatory masalalar bo'yicha ekspert maslahat. O'zbekiston va Markaziy Osiyo bozori mutaxassislari."
+        "description": "BFQ sohasida regulatory masalalar bo'yicha ekspert maslahat. O'zbekiston va Markaziy Osiyo bozori mutaxassislari."
       },
       "distributor-search": {
         "title": "Distributor Qidirish — O'zbekiston va Markaziy Osiyo | Pharm Way Group",
-        "description": "O'zbekiston va Markaziy Osiyo bozorida ishonchli farmatsevtik distributorlarni topish xizmati."
+        "description": "O'zbekiston va Markaziy Osiyo bozorida ishonchli BFQ distributorlarini topish xizmati."
       }
     }
   },
@@ -111,7 +111,7 @@
     "ourServices": "Xizmatlarimiz"
   },
   "footer": {
-    "tagline": "O'zbekistonda farmatsevtika bozoriga ishonchli kirish yo'li.",
+    "tagline": "O'zbekistonda BFQ bozoriga ishonchli kirish yo'li.",
     "quickLinks": "Tezkor havolalar",
     "ourServices": "Xizmatlarimiz",
     "contactInfo": "Aloqa ma'lumotlari",
@@ -122,7 +122,7 @@
   "home": {
     "hero": {
       "badge": "10+ yillik tajriba",
-      "title": "Farmatsevtika bozoriga ishonchli yo'l",
+      "title": "BFQ bozoriga ishonchli yo'l",
       "subtitle": "BFQ registratsiyasi, sertifikatlashtirish, import va bojxona rasmiylashtiruvi bo'yicha to'liq xizmat ko'rsatamiz.",
       "ctaPrimary": "Bepul konsultatsiya",
       "ctaSecondary": "Xizmatlarimiz",
@@ -137,7 +137,7 @@
     },
     "services": {
       "title": "Bizning xizmatlarimiz",
-      "subtitle": "Dori vositasi ishlab chiqaruvchidan O'zbekiston bozoriga yetib borguncha barcha bosqichlarda yoningizdamiz.",
+      "subtitle": "BFQ mahsuloti ishlab chiqaruvchidan O'zbekiston bozoriga yetib borguncha barcha bosqichlarda yoningizdamiz.",
       "items": [
         {
           "title": "BFQ registratsiyasi",
@@ -149,15 +149,15 @@
         },
         {
           "title": "Import va logistika",
-          "desc": "Xorijdan farmatsevtik mahsulotlarni import qilish va yetkazib berish."
+          "desc": "Xorijdan BFQ mahsulotlarini import qilish va yetkazib berish."
         },
         {
           "title": "Bojxona rasmiylashtiruvi",
-          "desc": "Farmatsevtik yuklar uchun bojxona hujjatlarini rasmiylashtirish."
+          "desc": "BFQ yuklari uchun bojxona hujjatlarini rasmiylashtirish."
         },
         {
           "title": "Regulatory Consulting",
-          "desc": "Farmatsevtika sohasida regulatory masalalar bo'yicha ekspert maslahat."
+          "desc": "BFQ sohasida regulatory masalalar bo'yicha ekspert maslahat."
         },
         {
           "title": "Distributor qidirish",
@@ -225,12 +225,12 @@
   "about": {
     "hero": {
       "title": "Biz haqimizda",
-      "subtitle": "O'zbekiston va Markaziy Osiyo farmatsevtika bozorida ishonchli hamkor",
+      "subtitle": "O'zbekiston va Markaziy Osiyo BFQ bozorida ishonchli hamkor",
       "breadcrumb": "Biz haqimizda"
     },
     "intro": {
       "heading": "Pharm Way Group — Global Pharma, Local Success",
-      "text": "Pharm Way Group — O'zbekiston va Markaziy Osiyo bozorlarida farmatsevtika mahsulotlarini import qilish, ro'yxatdan o'tkazish va normativ-huquqiy qo'llab-quvvatlash bo'yicha ixtisoslashgan kompaniya. Biz xalqaro ishlab chiqaruvchilarga mahalliy bozorga ishonchli, qonuniy va samarali kirish imkonini beramiz.",
+      "text": "Pharm Way Group — O'zbekiston va Markaziy Osiyo bozorlarida BFQ mahsulotlarini import qilish, ro'yxatdan o'tkazish va normativ-huquqiy qo'llab-quvvatlash bo'yicha ixtisoslashgan kompaniya. Biz xalqaro ishlab chiqaruvchilarga mahalliy bozorga ishonchli, qonuniy va samarali kirish imkonini beramiz.",
       "stats": [
         {
           "value": "5+",
@@ -252,11 +252,11 @@
     },
     "mission": {
       "title": "Missiyamiz",
-      "text": "Xalqaro sifat standartlariga javob beradigan farmatsevtik mahsulotlarni O'zbekiston va Markaziy Osiyo bozorlariga tez, qonuniy va samarali olib kirishga ko'maklashish."
+      "text": "Xalqaro sifat standartlariga javob beradigan BFQ mahsulotlarini O'zbekiston va Markaziy Osiyo bozorlariga tez, qonuniy va samarali olib kirishga ko'maklashish."
     },
     "vision": {
       "title": "Vizionimiz",
-      "text": "Markaziy Osiyoning yetakchi farmatsevtik regulatory va import xizmatlar kompaniyasiga aylanish."
+      "text": "Markaziy Osiyoning yetakchi BFQ regulatory va import xizmatlari kompaniyasiga aylanish."
     },
     "history": {
       "title": "Kompaniya tarixi",
@@ -406,7 +406,7 @@
   "partnersPage": {
     "hero": {
       "title": "Hamkorlarimiz",
-      "subtitle": "Dunyo bo'ylab yetakchi farmatsevtik kompaniyalar bilan ishonchli hamkorlik",
+      "subtitle": "Dunyo bo'ylab yetakchi BFQ kompaniyalari bilan ishonchli hamkorlik",
       "breadcrumb": "Hamkorlarimiz"
     },
     "stats": [
@@ -436,7 +436,7 @@
             "name": "PharmaCorp International",
             "flag": "🇩🇪",
             "country": "Germaniya",
-            "desc": "GMP sertifikatlangan dori ishlab chiqaruvchi"
+            "desc": "GMP sertifikatlangan BFQ ishlab chiqaruvchi"
           },
           {
             "name": "BioMed Solutions",
@@ -448,13 +448,13 @@
             "name": "MedTech Industries",
             "flag": "🇮🇳",
             "country": "Hindiston",
-            "desc": "Generic dorilar va API ishlab chiqaruvchi"
+            "desc": "BFQ va faol ingredientlar ishlab chiqaruvchi"
           },
           {
             "name": "EuroPharma AG",
             "flag": "🇨🇭",
             "country": "Shveytsariya",
-            "desc": "Ixtisoslashgan farmatsevtik mahsulotlar"
+            "desc": "Ixtisoslashgan BFQ mahsulotlari"
           },
           {
             "name": "KoreaMed Co.",
@@ -466,7 +466,7 @@
             "name": "TurkPharma",
             "flag": "🇹🇷",
             "country": "Turkiya",
-            "desc": "Dori vositalari va BFQ ishlab chiqaruvchi"
+            "desc": "BFQ ishlab chiqaruvchi"
           }
         ]
       },
@@ -512,7 +512,7 @@
             "name": "BioTest Central",
             "flag": "🇵🇱",
             "country": "Polsha",
-            "desc": "Farmatsevtik sifat nazorati laboratoriyasi"
+            "desc": "BFQ sifat nazorati laboratoriyasi"
           },
           {
             "name": "AsiaQuality Lab",
@@ -523,7 +523,7 @@
         ]
       },
       {
-        "label": "Farmatsevtik kompaniyalar",
+        "label": "BFQ kompaniyalari",
         "items": [
           {
             "name": "RegPharma Consulting",
@@ -547,7 +547,7 @@
             "name": "EastMed Alliance",
             "flag": "🇯🇵",
             "country": "Yaponiya",
-            "desc": "Yaponiya farmatsevtik kompaniyalari vakili"
+            "desc": "Yaponiya BFQ kompaniyalari vakili"
           }
         ]
       }
@@ -597,7 +597,7 @@
   "servicesPage": {
     "hero": {
       "title": "Xizmatlarimiz",
-      "subtitle": "O'zbekiston va Markaziy Osiyo farmatsevtika bozorida to'liq xizmat spektri",
+      "subtitle": "O'zbekiston va Markaziy Osiyo BFQ bozorida to'liq xizmat spektri",
       "breadcrumb": "Xizmatlar"
     },
     "detailLabel": "Batafsil",
@@ -643,7 +643,7 @@
       "bfq-registration": {
         "overview": [
           "BFQ (biologik faol qo'shimchalar) registratsiyasi — vitamin, mineral va boshqa qo'shimchalarni O'zbekiston bozorida qonuniy sotish uchun zarur jarayon.",
-          "Dori vositalariga nisbatan soddaroq, ammo o'ziga xos talablarga ega bo'lgan bu jarayonda tarkib tahlilidan ruxsatnoma olishgacha to'liq yordam beramiz.",
+          "O'ziga xos talablarga ega bo'lgan bu jarayonda tarkib tahlilidan ruxsatnoma olishgacha to'liq yordam beramiz.",
           "Tez va shaffof yondashuv tufayli mahsulotingiz minimal vaqt ichida bozorga chiqadi."
         ],
         "benefits": [
@@ -733,7 +733,7 @@
       },
       "import-logistics": {
         "overview": [
-          "Import va logistika xizmati xorijdan farmatsevtik mahsulotlarni xavfsiz va o'z vaqtida yetkazib berishni ta'minlaydi.",
+          "Import va logistika xizmati xorijdan BFQ mahsulotlarini xavfsiz va o'z vaqtida yetkazib berishni ta'minlaydi.",
           "Sovuq zanjir talab qiluvchi mahsulotlar uchun ham maxsus transport sharoitlarini tashkil qilamiz.",
           "Shartnomadan ombor yetkazib berishgacha bo'lgan barcha bosqichlarni nazorat qilamiz."
         ],
@@ -779,7 +779,7 @@
       },
       "customs": {
         "overview": [
-          "Bojxona rasmiylashtiruvi xizmati farmatsevtik yuklarning chegaradan tezkor va muammosiz o'tishini ta'minlaydi.",
+          "Bojxona rasmiylashtiruvi xizmati BFQ yuklarining chegaradan tezkor va muammosiz o'tishini ta'minlaydi.",
           "Har qanday deklaratsiya xatosi yukning kechikishiga olib kelishi mumkin — shuning uchun hujjatlarni oldindan diqqat bilan tekshiramiz.",
           "Tajribali bojxona brokerlarimiz barcha rasmiylashtiruv bosqichlarini tez va to'g'ri amalga oshiradi."
         ],
@@ -825,7 +825,7 @@
       },
       "regulatory-consulting": {
         "overview": [
-          "Regulatory Consulting xizmati farmatsevtika sohasidagi murakkab huquqiy va normativ masalalar bo'yicha ekspert maslahat beradi.",
+          "Regulatory Consulting xizmati BFQ sohasidagi murakkab huquqiy va normativ masalalar bo'yicha ekspert maslahat beradi.",
           "Bozorga kirishdan qonunchilik o'zgarishlariga moslashishgacha — biz strategik yo'l xaritasini ishlab chiqamiz.",
           "Doimiy hamkorlik asosida kompaniyangizning regulatory xavflarini kamaytiramiz."
         ],
@@ -1750,7 +1750,7 @@
         "category": "gmp",
         "date": "2023",
         "description": "Yaxshi ishlab chiqarish amaliyoti (GMP) talablariga muvofiqlikni tasdiqlovchi xalqaro sertifikat.",
-        "details": "Bu sertifikat farmatsevtik mahsulotlarning ishlab chiqarish, saqlash va tashish jarayonlarida xalqaro GMP (Good Manufacturing Practice) standartlariga to'liq muvofiqligini tasdiqlaydi. Sertifikat har yili qayta tekshiriladi va yangilanadi."
+        "details": "Bu sertifikat BFQ mahsulotlarining ishlab chiqarish, saqlash va tashish jarayonlarida xalqaro GMP (Good Manufacturing Practice) standartlariga to'liq muvofiqligini tasdiqlaydi. Sertifikat har yili qayta tekshiriladi va yangilanadi."
       },
       {
         "title": "ISO 9001:2015",
@@ -1773,8 +1773,8 @@
         "issuer": "O'zbekiston Sog'liqni saqlash vazirligi",
         "category": "registration",
         "date": "2024",
-        "description": "Dori vositalarini O'zbekiston Respublikasida ro'yxatdan o'tkazish huquqini beruvchi rasmiy guvohnoma.",
-        "details": "Ushbu guvohnoma kompaniyamizga dori vositalari va tibbiy buyumlarni O'zbekiston Respublikasi hududida qonuniy ravishda ro'yxatdan o'tkazish va sotishga ruxsat beradi. Davlat sanitariya-epidemiologiya nazorati tomonidan berilgan."
+        "description": "BFQ mahsulotlarini O'zbekiston Respublikasida ro'yxatdan o'tkazish huquqini beruvchi rasmiy guvohnoma.",
+        "details": "Ushbu guvohnoma kompaniyamizga BFQ mahsulotlari va tibbiy buyumlarni O'zbekiston Respublikasi hududida qonuniy ravishda ro'yxatdan o'tkazish va sotishga ruxsat beradi. Davlat sanitariya-epidemiologiya nazorati tomonidan berilgan."
       },
       {
         "title": "BFQ ro'yxatga olish guvohnomasi",
@@ -1785,12 +1785,12 @@
         "details": "Biologik faol qo'shimchalar (BFQ) xavfsizligi va sifati davlat sanitariya-epidemiologiya nazorati tomonidan tasdiqlangan bo'lib, mahsulotlarni O'zbekiston bozorida qonuniy sotishga imkon beradi."
       },
       {
-        "title": "Farmatsevtika faoliyati litsenziyasi",
+        "title": "BFQ faoliyati litsenziyasi",
         "issuer": "Litsenziyalash palatasi",
         "category": "license",
         "date": "2023",
-        "description": "Farmatsevtika mahsulotlarini import qilish va sotish bo'yicha davlat litsenziyasi.",
-        "details": "Ushbu litsenziya kompaniyamizga O'zbekiston hududida farmatsevtik mahsulotlarni import qilish, saqlash va sotish bo'yicha faoliyat yuritish huquqini beradi. Litsenziya davlat organlari tomonidan muntazam tekshiriladi."
+        "description": "BFQ mahsulotlarini import qilish va sotish bo'yicha davlat litsenziyasi.",
+        "details": "Ushbu litsenziya kompaniyamizga O'zbekiston hududida BFQ mahsulotlarini import qilish, saqlash va sotish bo'yicha faoliyat yuritish huquqini beradi. Litsenziya davlat organlari tomonidan muntazam tekshiriladi."
       }
     ],
     "modal": {
