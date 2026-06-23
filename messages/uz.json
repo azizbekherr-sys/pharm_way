@@ -1,0 +1,1825 @@
+{
+  "meta": {
+    "title": "Pharm Way Group — Dori vositalarini ro'yxatdan o'tkazish va import xizmatlari",
+    "description": "Pharm Way Group — O'zbekistonda BFQ registratsiyasi, sertifikatlashtirish, import va bojxona xizmatlari bo'yicha yetakchi kompaniya.",
+    "keywords": "farmatsevtika registratsiya uzbekiston, BFQ royxatdan otkazish, dori import uzbekiston, regulatory consulting, bojxona rasmiylashtiruvi, pharm way group",
+    "pages": {
+      "home": {
+        "title": "Farmatsevtika importi va registratsiyasi — O'zbekiston",
+        "description": "O'zbekistonda BFQ va farmatsevtik mahsulotlarni ro'yxatdan o'tkazish, import va regulatory xizmatlar. 5+ yil tajriba, 50+ muvaffaqiyatli loyiha."
+      },
+      "about": {
+        "title": "Biz haqimizda — Pharm Way Group",
+        "description": "Pharm Way Group 2019 yildan beri O'zbekiston farmatsevtika bozorida faoliyat yuritadi. 20+ xalqaro hamkor, 50+ ro'yxatdan o'tgan mahsulot."
+      },
+      "services": {
+        "title": "Xizmatlarimiz — BFQ registratsiyasi, Import, Regulatory Consulting",
+        "description": "BFQ registratsiyasi, sertifikatlashtirish, import va logistika, bojxona rasmiylashtiruvi, regulatory consulting va distributor qidirish xizmatlari."
+      },
+      "contact": {
+        "title": "Aloqa — Bepul Konsultatsiya | Pharm Way Group",
+        "description": "Pharm Way Group bilan bog'laning. Tel: +998 93 062 41 49. Toshkent, Yunusobod tumani. Bepul konsultatsiya."
+      },
+      "partners": {
+        "title": "Hamkorlarimiz — Xalqaro Farmatsevtik Kompaniyalar | Pharm Way Group",
+        "description": "20+ xalqaro hamkor. Germaniya, Xitoy, Hindiston, Koreya va boshqa mamlakatlardan ishlab chiqaruvchilar bilan hamkorlik."
+      },
+      "blog": {
+        "title": "Blog — Farmatsevtika Yangiliklari O'zbekiston | Pharm Way Group",
+        "description": "O'zbekiston farmatsevtika bozori yangiliklari, registratsiya jarayoni, import qoidalari va boshqa foydali maqolalar."
+      },
+      "faq": {
+        "title": "Savol-Javoblar — Registratsiya va Import | Pharm Way Group",
+        "description": "Farmatsevtik mahsulotlar registratsiyasi, import, hujjatlar va narxlar haqida tez-tez so'raladigan savollarga javoblar."
+      },
+      "testimonials": {
+        "title": "Mijozlar Fikri — Pharm Way Group",
+        "description": "Pharm Way Group bilan ishlagan ishlab chiqaruvchi va distributor kompaniyalarning haqiqiy fikr-mulohazalari va tajribasi."
+      },
+      "certificates": {
+        "title": "Sertifikatlar — GMP, ISO, Litsenziyalar | Pharm Way Group",
+        "description": "Pharm Way Group ega bo'lgan GMP, ISO va davlat ro'yxatidan o'tish sertifikatlari. Har bir sertifikat bo'yicha so'rov yuborish imkoni."
+      }
+    },
+    "services": {
+      "bfq-registration": {
+        "title": "BFQ Registratsiyasi O'zbekistonda — Pharm Way Group",
+        "description": "Biologik faol qo'shimchalarni O'zbekistonda tez va qonuniy ro'yxatdan o'tkazish. 3-6 oy muddat. Bepul konsultatsiya: +998 93 062 41 49"
+      },
+      "certification": {
+        "title": "Sertifikatlashtirish — GMP, ISO, Halol | Pharm Way Group",
+        "description": "Farmatsevtik mahsulotlar uchun GMP, ISO 9001 va boshqa xalqaro sertifikatlarni olishda professional yordam."
+      },
+      "import-logistics": {
+        "title": "Import va Logistika — Farmatsevtik Mahsulotlar | Pharm Way Group",
+        "description": "Xorijdan farmatsevtik mahsulotlarni O'zbekistonga import qilish, sovuq zanjir logistikasi va yetkazib berish xizmatlari."
+      },
+      "customs": {
+        "title": "Bojxona Rasmiylashtiruvi — Farmatsevtika | Pharm Way Group",
+        "description": "Farmatsevtik yuklar uchun bojxona hujjatlarini rasmiylashtirish. Tez va muammosiz bojxona jarayoni."
+      },
+      "regulatory-consulting": {
+        "title": "Regulatory Consulting O'zbekiston — Pharm Way Group",
+        "description": "Farmatsevtika sohasida regulatory masalalar bo'yicha ekspert maslahat. O'zbekiston va Markaziy Osiyo bozori mutaxassislari."
+      },
+      "distributor-search": {
+        "title": "Distributor Qidirish — O'zbekiston va Markaziy Osiyo | Pharm Way Group",
+        "description": "O'zbekiston va Markaziy Osiyo bozorida ishonchli farmatsevtik distributorlarni topish xizmati."
+      }
+    }
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "partners": "Hamkorlar",
+    "blog": "Blog",
+    "process": "Jarayon",
+    "faq": "Savol-javob",
+    "achievements": "Yutuqlar",
+    "contact": "Aloqa",
+    "getInTouch": "Bog'lanish",
+    "testimonials": "Mijozlar fikri",
+    "menu": {
+      "company": "Kompaniya",
+      "resources": "Resurslar",
+      "allServices": "Barcha xizmatlar",
+      "ctaButton": "Bepul konsultatsiya",
+      "blogItem": "Blog va yangiliklar",
+      "faqItem": "Savol-javoblar (FAQ)",
+      "serviceSubtitles": [
+        "Biologik faol qo'shimchalar",
+        "GMP, ISO sertifikatlar",
+        "Xalqaro yuk tashish",
+        "Hujjatlar rasmiylashtiruvi",
+        "Huquqiy va me'yoriy maslahat",
+        "Ishonchli hamkor topish"
+      ],
+      "viewAllServices": "Barchasini ko'rish",
+      "helpEyebrow": "Qaysi xizmat kerakligini bilmayapsizmi?",
+      "helpTitle": "Bepul konsultatsiya oling",
+      "servicesHeader": "Bizning xizmatlarimiz"
+    },
+    "certificates": "Sertifikatlar"
+  },
+  "common": {
+    "readMore": "Batafsil",
+    "learnMore": "Ko'proq bilish",
+    "contactUs": "Biz bilan bog'laning",
+    "viewAll": "Barchasini ko'rish",
+    "callUs": "Bizga qo'ng'iroq qiling",
+    "ourServices": "Xizmatlarimiz"
+  },
+  "footer": {
+    "tagline": "O'zbekistonda farmatsevtika bozoriga ishonchli kirish yo'li.",
+    "quickLinks": "Tezkor havolalar",
+    "ourServices": "Xizmatlarimiz",
+    "contactInfo": "Aloqa ma'lumotlari",
+    "address": "Toshkent shahri, O'zbekiston",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "newsletterTitle": "Yangiliklardan xabardor bo'ling"
+  },
+  "home": {
+    "hero": {
+      "badge": "10+ yillik tajriba",
+      "title": "Farmatsevtika bozoriga ishonchli yo'l",
+      "subtitle": "BFQ registratsiyasi, sertifikatlashtirish, import va bojxona rasmiylashtiruvi bo'yicha to'liq xizmat ko'rsatamiz.",
+      "ctaPrimary": "Bepul konsultatsiya",
+      "ctaSecondary": "Xizmatlarimiz",
+      "stat1Value": "50+",
+      "stat1Label": "Ro'yxatdan o'tgan mahsulot",
+      "stat2Value": "20+",
+      "stat2Label": "Xalqaro hamkor",
+      "stat3Value": "10+",
+      "stat3Label": "Mamlakat",
+      "stat4Value": "98%",
+      "stat4Label": "Muvaffaqiyatli kelishuvlar"
+    },
+    "services": {
+      "title": "Bizning xizmatlarimiz",
+      "subtitle": "Dori vositasi ishlab chiqaruvchidan O'zbekiston bozoriga yetib borguncha barcha bosqichlarda yoningizdamiz.",
+      "items": [
+        {
+          "title": "BFQ registratsiyasi",
+          "desc": "Biologik faol qo'shimchalarni tez va qonuniy ro'yxatdan o'tkazish."
+        },
+        {
+          "title": "Sertifikatlashtirish",
+          "desc": "GMP, ISO va boshqa xalqaro sertifikatlarni olish."
+        },
+        {
+          "title": "Import va logistika",
+          "desc": "Xorijdan farmatsevtik mahsulotlarni import qilish va yetkazib berish."
+        },
+        {
+          "title": "Bojxona rasmiylashtiruvi",
+          "desc": "Farmatsevtik yuklar uchun bojxona hujjatlarini rasmiylashtirish."
+        },
+        {
+          "title": "Regulatory Consulting",
+          "desc": "Farmatsevtika sohasida regulatory masalalar bo'yicha ekspert maslahat."
+        },
+        {
+          "title": "Distributor qidirish",
+          "desc": "O'zbekiston va Markaziy Osiyo bozorida ishonchli distribyutorlarni topish."
+        }
+      ]
+    },
+    "process": {
+      "title": "Ro'yxatdan o'tkazish jarayoni",
+      "subtitle": "To'rt bosqichda — soddalashtirilgan va shaffof yondashuv.",
+      "steps": [
+        {
+          "title": "Ariza va hujjatlar",
+          "desc": "Kerakli hujjatlar paketini tayyorlaymiz va arizani topshiramiz."
+        },
+        {
+          "title": "Ekspertiza",
+          "desc": "Vazirlik ekspertizasi davomida to'liq qo'llab-quvvatlaymiz."
+        },
+        {
+          "title": "Rasmiy tasdiqlash",
+          "desc": "Ro'yxatdan o'tkazish guvohnomasini qabul qilamiz."
+        },
+        {
+          "title": "Bozorga chiqish",
+          "desc": "Distribyutsiya va sotuvni yo'lga qo'yishda yordam beramiz."
+        }
+      ]
+    },
+    "whyUs": {
+      "title": "Nima uchun Pharm Way Group?",
+      "subtitle": "Tezlik, ekspertiza va xalqaro hamkorlik — bizning ustunliklarimiz.",
+      "items": [
+        {
+          "title": "Tezkorlik",
+          "desc": "Ro'yxatdan o'tkazish muddatlarini qisqartirib, vaqtingizni tejaymiz."
+        },
+        {
+          "title": "Chuqur ekspertiza",
+          "desc": "Normativ-huquqiy bazani mukammal biladigan tajribali jamoa."
+        },
+        {
+          "title": "Xalqaro hamkorlar tarmog'i",
+          "desc": "10 dan ortiq mamlakatdagi ishlab chiqaruvchilar bilan to'g'ridan-to'g'ri aloqa."
+        },
+        {
+          "title": "To'liq xizmat",
+          "desc": "Ro'yxatdan o'tkazishdan sotuvgacha — yagona oyna tamoyili."
+        }
+      ]
+    },
+    "stats": {
+      "title": "Raqamlarda Pharm Way Group"
+    },
+    "partners": {
+      "title": "Bizga ishonadiganlar",
+      "subtitle": "Ishlab chiqaruvchilar, distribyutorlar va laboratoriyalar bilan mustahkam hamkorlik."
+    },
+    "cta": {
+      "title": "Mahsulotingizni O'zbekiston bozoriga olib chiqishga tayyormisiz?",
+      "subtitle": "Mutaxassislarimiz bilan bepul konsultatsiya olish uchun bog'laning.",
+      "button": "Bog'lanish"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Biz haqimizda",
+      "subtitle": "O'zbekiston va Markaziy Osiyo farmatsevtika bozorida ishonchli hamkor",
+      "breadcrumb": "Biz haqimizda"
+    },
+    "intro": {
+      "heading": "Pharm Way Group — Global Pharma, Local Success",
+      "text": "Pharm Way Group — O'zbekiston va Markaziy Osiyo bozorlarida farmatsevtika mahsulotlarini import qilish, ro'yxatdan o'tkazish va normativ-huquqiy qo'llab-quvvatlash bo'yicha ixtisoslashgan kompaniya. Biz xalqaro ishlab chiqaruvchilarga mahalliy bozorga ishonchli, qonuniy va samarali kirish imkonini beramiz.",
+      "stats": [
+        {
+          "value": "5+",
+          "label": "yil tajriba"
+        },
+        {
+          "value": "50+",
+          "label": "ro'yxatdan o'tgan mahsulot"
+        },
+        {
+          "value": "20+",
+          "label": "xalqaro hamkor"
+        },
+        {
+          "value": "10+",
+          "label": "davlat bilan hamkorlik"
+        }
+      ]
+    },
+    "mission": {
+      "title": "Missiyamiz",
+      "text": "Xalqaro sifat standartlariga javob beradigan farmatsevtik mahsulotlarni O'zbekiston va Markaziy Osiyo bozorlariga tez, qonuniy va samarali olib kirishga ko'maklashish."
+    },
+    "vision": {
+      "title": "Vizionimiz",
+      "text": "Markaziy Osiyoning yetakchi farmatsevtik regulatory va import xizmatlar kompaniyasiga aylanish."
+    },
+    "history": {
+      "title": "Kompaniya tarixi",
+      "milestones": [
+        {
+          "year": "2019",
+          "text": "Kompaniya tashkil etildi"
+        },
+        {
+          "year": "2020",
+          "text": "Birinchi xalqaro hamkorlik shartnomasi imzolandi"
+        },
+        {
+          "year": "2021",
+          "text": "10+ mahsulot muvaffaqiyatli ro'yxatdan o'tkazildi"
+        },
+        {
+          "year": "2022",
+          "text": "Markaziy Osiyo bozorlariga kengayish boshlandi"
+        },
+        {
+          "year": "2024",
+          "text": "50+ mahsulot va 20+ xalqaro hamkor"
+        }
+      ]
+    },
+    "values": {
+      "title": "Bizning qadriyatlarimiz",
+      "items": [
+        {
+          "title": "Shaffoflik",
+          "desc": "Har bir bosqichda ochiq va tushunarli muloqot olib boramiz."
+        },
+        {
+          "title": "Professionallik",
+          "desc": "Yuqori malakali va tajribali mutaxassislar jamoasi."
+        },
+        {
+          "title": "Tezkorlik",
+          "desc": "Ro'yxatdan o'tkazish muddatlarini sezilarli qisqartiramiz."
+        },
+        {
+          "title": "Ishonchlilik",
+          "desc": "Hamkorlarimiz uchun barqaror va uzoq muddatli aloqalar."
+        }
+      ]
+    },
+    "geography": {
+      "title": "Faoliyat geografiyasi",
+      "subtitle": "Biz ishlayotgan bozorlar",
+      "mainMarket": "Asosiy bozor",
+      "countries": [
+        "O'zbekiston",
+        "Qozog'iston",
+        "Qirg'iziston",
+        "Tojikiston",
+        "Turkmaniston",
+        "Ozarbayjon"
+      ]
+    },
+    "team": {
+      "title": "Bizning jamoamiz",
+      "subtitle": "Tajribali mutaxassislar jamoasi",
+      "members": [
+        {
+          "name": "F. Karimov",
+          "role": "CEO / Bosh direktor",
+          "desc": "Kompaniya strategiyasi va umumiy boshqaruvni amalga oshiradi."
+        },
+        {
+          "name": "D. Yusupova",
+          "role": "Regulatory Affairs Director",
+          "desc": "Ro'yxatdan o'tkazish va normativ-huquqiy jarayonlarni boshqaradi."
+        },
+        {
+          "name": "A. Tashkentov",
+          "role": "Import & Logistics Manager",
+          "desc": "Import, logistika va bojxona jarayonlarini nazorat qiladi."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Aloqa",
+      "subtitle": "Biz bilan bog'laning — mutaxassislarimiz sizga yordam berishga tayyor",
+      "breadcrumb": "Aloqa"
+    },
+    "info": {
+      "heading": "Bog'lanish ma'lumotlari",
+      "address": "Manzil",
+      "addressValue": "Toshkent sh., Yunusobod tumani, Amir Temur ko'chasi 1-uy",
+      "phone": "Telefon",
+      "email": "Email",
+      "hours": "Ish vaqti",
+      "hoursValue": "Dushanba–Juma: 9:00–18:00",
+      "telegramCta": "Telegram orqali yozing",
+      "telegramHandle": "@pharmwaygroup",
+      "whatsappCta": "WhatsApp orqali yozing",
+      "whatsappHandle": "+998 93 062 41 49"
+    },
+    "form": {
+      "heading": "Xabar qoldiring",
+      "name": "Ism va familiya",
+      "phone": "Telefon raqam",
+      "email": "Email",
+      "company": "Kompaniya nomi",
+      "serviceType": "Xizmat turi",
+      "selectPlaceholder": "Tanlang",
+      "otherOption": "Boshqa",
+      "message": "Xabar",
+      "submit": "Xabar yuborish",
+      "responseTime": "Biz 24 soat ichida javob beramiz",
+      "successTitle": "Xabaringiz yuborildi",
+      "successMessage": "Tez orada siz bilan bog'lanamiz."
+    },
+    "map": {
+      "heading": "Bizning joylashuvimiz"
+    },
+    "faq": {
+      "title": "Tez-tez so'raladigan savollar",
+      "items": [
+        {
+          "q": "Konsultatsiya pullikmi?",
+          "a": "Yo'q, dastlabki konsultatsiya mutlaqo bepul."
+        },
+        {
+          "q": "Registratsiya qancha vaqt oladi?",
+          "a": "Mahsulot turiga qarab 3 oydan 12 oygacha."
+        },
+        {
+          "q": "Qanday hujjatlar kerak?",
+          "a": "Ishlab chiqaruvchi sertifikatlari, mahsulot spesifikatsiyasi va boshqa hujjatlar. Batafsil konsultatsiyada aniqlaymiz."
+        },
+        {
+          "q": "Xizmat narxi qanday hisoblanadi?",
+          "a": "Har bir loyiha individual baholanadi. Bepul konsultatsiyada narxni aniqlaymiz."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Hamkorlikni boshlashga tayyormisiz?",
+      "subtitle": "Bugun bepul konsultatsiya oling",
+      "button": "Bog'lanish"
+    }
+  },
+  "partnersPage": {
+    "hero": {
+      "title": "Hamkorlarimiz",
+      "subtitle": "Dunyo bo'ylab yetakchi farmatsevtik kompaniyalar bilan ishonchli hamkorlik",
+      "breadcrumb": "Hamkorlarimiz"
+    },
+    "stats": [
+      {
+        "value": "20+",
+        "label": "Xalqaro hamkor"
+      },
+      {
+        "value": "10+",
+        "label": "Davlat"
+      },
+      {
+        "value": "50+",
+        "label": "Ro'yxatdan o'tgan mahsulot"
+      },
+      {
+        "value": "5+",
+        "label": "Yil hamkorlik tajribasi"
+      }
+    ],
+    "detail": "Batafsil",
+    "tabs": [
+      {
+        "label": "Ishlab chiqaruvchilar",
+        "items": [
+          {
+            "name": "PharmaCorp International",
+            "flag": "🇩🇪",
+            "country": "Germaniya",
+            "desc": "GMP sertifikatlangan dori ishlab chiqaruvchi"
+          },
+          {
+            "name": "BioMed Solutions",
+            "flag": "🇨🇳",
+            "country": "Xitoy",
+            "desc": "Biologik faol qo'shimchalar ishlab chiqaruvchi"
+          },
+          {
+            "name": "MedTech Industries",
+            "flag": "🇮🇳",
+            "country": "Hindiston",
+            "desc": "Generic dorilar va API ishlab chiqaruvchi"
+          },
+          {
+            "name": "EuroPharma AG",
+            "flag": "🇨🇭",
+            "country": "Shveytsariya",
+            "desc": "Ixtisoslashgan farmatsevtik mahsulotlar"
+          },
+          {
+            "name": "KoreaMed Co.",
+            "flag": "🇰🇷",
+            "country": "Janubiy Koreya",
+            "desc": "Tibbiy buyumlar va diagnostika"
+          },
+          {
+            "name": "TurkPharma",
+            "flag": "🇹🇷",
+            "country": "Turkiya",
+            "desc": "Dori vositalari va BFQ ishlab chiqaruvchi"
+          }
+        ]
+      },
+      {
+        "label": "Distributorlar",
+        "items": [
+          {
+            "name": "CentralAsia Pharma",
+            "flag": "🇰🇿",
+            "country": "Qozog'iston",
+            "desc": "Markaziy Osiyo yetakchi distributori"
+          },
+          {
+            "name": "UzMed Distribution",
+            "flag": "🇺🇿",
+            "country": "O'zbekiston",
+            "desc": "Mahalliy distribyutsiya tarmog'i"
+          },
+          {
+            "name": "SilkRoad Medical",
+            "flag": "🇦🇿",
+            "country": "Ozarbayjon",
+            "desc": "Kavkaz va Markaziy Osiyo distributori"
+          },
+          {
+            "name": "GlobalMed Partners",
+            "flag": "🇦🇪",
+            "country": "BAA",
+            "desc": "Xalqaro distribyutsiya kompaniyasi"
+          }
+        ]
+      },
+      {
+        "label": "Laboratoriyalar",
+        "items": [
+          {
+            "name": "CertLab International",
+            "flag": "🇩🇪",
+            "country": "Germaniya",
+            "desc": "Xalqaro akkreditatsiyalangan sinov laboratoriyasi"
+          },
+          {
+            "name": "BioTest Central",
+            "flag": "🇵🇱",
+            "country": "Polsha",
+            "desc": "Farmatsevtik sifat nazorati laboratoriyasi"
+          },
+          {
+            "name": "AsiaQuality Lab",
+            "flag": "🇸🇬",
+            "country": "Singapur",
+            "desc": "GMP va ISO standartlari bo'yicha sertifikatlash"
+          }
+        ]
+      },
+      {
+        "label": "Farmatsevtik kompaniyalar",
+        "items": [
+          {
+            "name": "RegPharma Consulting",
+            "flag": "🇬🇧",
+            "country": "Buyuk Britaniya",
+            "desc": "Regulatory affairs mutaxassislari"
+          },
+          {
+            "name": "MedReg Services",
+            "flag": "🇷🇺",
+            "country": "Rossiya",
+            "desc": "MDH davlatlari uchun regulatory xizmatlar"
+          },
+          {
+            "name": "PharmaLink EU",
+            "flag": "🇳🇱",
+            "country": "Niderlandiya",
+            "desc": "Yevropa bozori bo'yicha hamkor"
+          },
+          {
+            "name": "EastMed Alliance",
+            "flag": "🇯🇵",
+            "country": "Yaponiya",
+            "desc": "Yaponiya farmatsevtik kompaniyalari vakili"
+          }
+        ]
+      }
+    ],
+    "becomePartner": {
+      "title": "Hamkor bo'lishni xohlaysizmi?",
+      "subtitle": "Xalqaro ishlab chiqaruvchilar, distributorlar va laboratoriyalar bilan hamkorlik qilamiz",
+      "benefits": [
+        "O'zbekiston va Markaziy Osiyo bozorlariga kirish",
+        "To'liq regulatory qo'llab-quvvatlash",
+        "Professional hujjatlashtirish xizmati",
+        "Tez va samarali registratsiya jarayoni",
+        "Mahalliy bozorni chuqur bilish"
+      ],
+      "form": {
+        "company": "Kompaniya nomi",
+        "contactPerson": "Aloqa shaxsi",
+        "phone": "Telefon",
+        "message": "Xabar",
+        "submit": "Ariza yuborish",
+        "successTitle": "Arizangiz qabul qilindi",
+        "successMessage": "Tez orada siz bilan bog'lanamiz."
+      }
+    },
+    "whyPartner": {
+      "title": "Nega aynan biz bilan hamkorlik?",
+      "items": [
+        {
+          "title": "Ishonchli vositachi",
+          "desc": "O'zbekiston va xalqaro bozorlar o'rtasida ko'p yillik tajribaga ega ko'prik."
+        },
+        {
+          "title": "Tezkor jarayon",
+          "desc": "Hujjatlashtirish va registratsiyaning eng qisqa muddatda bajarilishi."
+        },
+        {
+          "title": "Keng tarmoq",
+          "desc": "10+ davlat va 20+ xalqaro hamkor bilan kuchli aloqa tarmog'i."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Hamkorlikni boshlashga tayyormisiz?",
+      "button": "Bog'lanish"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "Xizmatlarimiz",
+      "subtitle": "O'zbekiston va Markaziy Osiyo farmatsevtika bozorida to'liq xizmat spektri",
+      "breadcrumb": "Xizmatlar"
+    },
+    "detailLabel": "Batafsil",
+    "process": {
+      "title": "Biz bilan ishlash qanday?",
+      "steps": [
+        {
+          "title": "Murojaat",
+          "desc": "Bepul konsultatsiya uchun bog'laning"
+        },
+        {
+          "title": "Tahlil",
+          "desc": "Mahsulot va hujjatlarni ko'rib chiqamiz"
+        },
+        {
+          "title": "Shartnoma",
+          "desc": "Xizmat shartlarini kelishib olamiz"
+        },
+        {
+          "title": "Jarayon",
+          "desc": "Barcha bosqichlarni biz amalga oshiramiz"
+        },
+        {
+          "title": "Natija",
+          "desc": "Mahsulotingiz bozorga chiqadi"
+        }
+      ]
+    }
+  },
+  "serviceDetail": {
+    "breadcrumbServices": "Xizmatlar",
+    "overviewHeading": "Xizmat haqida",
+    "benefitsHeading": "Asosiy afzalliklar",
+    "processHeading": "Jarayon bosqichlari",
+    "documentsHeading": "Kerakli hujjatlar",
+    "timelineLabel": "Muddat",
+    "priceLabel": "Narx",
+    "priceValue": "Individual, bepul konsultatsiyada aniqlanadi",
+    "faqHeading": "Tez-tez so'raladigan savollar",
+    "ctaTitle": "Xizmat haqida batafsil ma'lumot olmoqchimisiz?",
+    "ctaButton": "Bepul konsultatsiya",
+    "items": {
+      "bfq-registration": {
+        "overview": [
+          "BFQ (biologik faol qo'shimchalar) registratsiyasi — vitamin, mineral va boshqa qo'shimchalarni O'zbekiston bozorida qonuniy sotish uchun zarur jarayon.",
+          "Dori vositalariga nisbatan soddaroq, ammo o'ziga xos talablarga ega bo'lgan bu jarayonda tarkib tahlilidan ruxsatnoma olishgacha to'liq yordam beramiz.",
+          "Tez va shaffof yondashuv tufayli mahsulotingiz minimal vaqt ichida bozorga chiqadi."
+        ],
+        "benefits": [
+          "Tezkor ariza topshirish",
+          "Laboratoriya tahlili bo'yicha yordam",
+          "Tarkib mosligini oldindan tekshirish",
+          "Shaffof narxlash",
+          "Qayta-qayta maslahat xizmati"
+        ],
+        "process": [
+          "Ariza",
+          "Hujjat ekspertizasi",
+          "Laboratoriya tahlili",
+          "Ro'yxatga olish",
+          "Ruxsatnoma"
+        ],
+        "documents": [
+          "Tarkib sertifikati",
+          "Xavfsizlik ma'lumotlari",
+          "Ishlab chiqaruvchi litsenziyasi",
+          "Qadoqlash spesifikatsiyasi"
+        ],
+        "timeline": "3-6 oy",
+        "faq": [
+          {
+            "q": "BFQ va dori farqi nima?",
+            "a": "BFQ davolash uchun emas, balki ovqatlanishni to'ldirish uchun ishlatiladi va ro'yxatdan o'tkazish talablari soddaroq."
+          },
+          {
+            "q": "Qanday BFQ'lar taqiqlangan?",
+            "a": "Tarkibida ruxsat etilmagan moddalar yoki dozalar mavjud mahsulotlar ro'yxatdan o'tkazilmaydi."
+          },
+          {
+            "q": "Import uchun qo'shimcha ruxsat kerakmi?",
+            "a": "Ro'yxatdan o'tgandan so'ng qo'shimcha import sertifikati talab qilinishi mumkin, buni alohida ko'rib chiqamiz."
+          },
+          {
+            "q": "Konsultatsiya pullikmi?",
+            "a": "Yo'q, dastlabki konsultatsiya mutlaqo bepul."
+          }
+        ]
+      },
+      "certification": {
+        "overview": [
+          "Sertifikatlashtirish xizmati orqali mahsulotingiz GMP, ISO va boshqa xalqaro sifat standartlariga muvofiqligini tasdiqlaymiz.",
+          "Bu sertifikatlar nafaqat O'zbekistonda, balki Markaziy Osiyo bozorlarida ham mahsulotingizga ishonch va raqobatdosh ustunlik beradi.",
+          "Auditdan monitoringgacha bo'lgan barcha bosqichlarda mutaxassislarimiz yoningizda bo'ladi."
+        ],
+        "benefits": [
+          "Xalqaro standartlarga moslashtirish",
+          "Audit jarayonini boshqarish",
+          "Hujjatlarni professional tayyorlash",
+          "Sertifikatni saqlab qolish bo'yicha monitoring",
+          "Raqobatbardoshlikni oshirish"
+        ],
+        "process": [
+          "Audit",
+          "Hujjat tayyorlash",
+          "Ekspertiza",
+          "Sertifikat berish",
+          "Monitoring"
+        ],
+        "documents": [
+          "Ishlab chiqarish jarayoni tavsifi",
+          "Sifat nazorat tizimi",
+          "Laboratoriya natijalari"
+        ],
+        "timeline": "2-4 oy",
+        "faq": [
+          {
+            "q": "Qaysi sertifikatlar mavjud?",
+            "a": "GMP, ISO 9001 va boshqa xalqaro tan olingan sifat standartlari bo'yicha sertifikatlashni amalga oshiramiz."
+          },
+          {
+            "q": "Sertifikat necha yil amal qiladi?",
+            "a": "Odatda sertifikat 3 yil muddatga beriladi, so'ngra qayta audit talab qilinadi."
+          },
+          {
+            "q": "Audit qanday o'tkaziladi?",
+            "a": "Auditorlar ishlab chiqarish joyiga tashrif buyuradi yoki hujjatlar asosida masofadan baholaydi."
+          },
+          {
+            "q": "Konsultatsiya pullikmi?",
+            "a": "Yo'q, dastlabki konsultatsiya mutlaqo bepul."
+          }
+        ]
+      },
+      "import-logistics": {
+        "overview": [
+          "Import va logistika xizmati xorijdan farmatsevtik mahsulotlarni xavfsiz va o'z vaqtida yetkazib berishni ta'minlaydi.",
+          "Sovuq zanjir talab qiluvchi mahsulotlar uchun ham maxsus transport sharoitlarini tashkil qilamiz.",
+          "Shartnomadan ombor yetkazib berishgacha bo'lgan barcha bosqichlarni nazorat qilamiz."
+        ],
+        "benefits": [
+          "Xalqaro tashish tarmog'i",
+          "Sovuq zanjir logistikasi",
+          "Real vaqtda yuk kuzatuvi",
+          "Sug'urtalangan tashish",
+          "Tezkor bojxona integratsiyasi"
+        ],
+        "process": [
+          "Shartnoma",
+          "Yuk jo'natish",
+          "Bojxona",
+          "Karantin nazorati",
+          "Yetkazib berish"
+        ],
+        "documents": [
+          "Invoice",
+          "Packing list",
+          "Sifat sertifikati",
+          "Kelib chiqish sertifikati"
+        ],
+        "timeline": "2-6 hafta",
+        "faq": [
+          {
+            "q": "Sovuq zanjir mahsulotlari tashiladimi?",
+            "a": "Ha, harorat nazorati talab qiluvchi mahsulotlar uchun maxsus transport ta'minlanadi."
+          },
+          {
+            "q": "Yetkazib berish muddati qanday belgilanadi?",
+            "a": "Mamlakat, mahsulot hajmi va transport turiga qarab 2 dan 6 haftagacha o'zgaradi."
+          },
+          {
+            "q": "Yuk sug'urtalanadimi?",
+            "a": "Ha, barcha yuklar tashish davomida sug'urta bilan qoplanadi."
+          },
+          {
+            "q": "Konsultatsiya pullikmi?",
+            "a": "Yo'q, dastlabki konsultatsiya mutlaqo bepul."
+          }
+        ]
+      },
+      "customs": {
+        "overview": [
+          "Bojxona rasmiylashtiruvi xizmati farmatsevtik yuklarning chegaradan tezkor va muammosiz o'tishini ta'minlaydi.",
+          "Har qanday deklaratsiya xatosi yukning kechikishiga olib kelishi mumkin — shuning uchun hujjatlarni oldindan diqqat bilan tekshiramiz.",
+          "Tajribali bojxona brokerlarimiz barcha rasmiylashtiruv bosqichlarini tez va to'g'ri amalga oshiradi."
+        ],
+        "benefits": [
+          "Tajribali bojxona brokerlari",
+          "Hujjatlardagi xatolarni oldindan aniqlash",
+          "Tezkor deklaratsiya rasmiylashtiruvi",
+          "Bojxona organlari bilan to'g'ridan-to'g'ri aloqa",
+          "Kutilmagan to'xtalishlarni minimallashtirish"
+        ],
+        "process": [
+          "Hujjat tayyorlash",
+          "Bojxona deklaratsiyasi",
+          "Tekshiruv",
+          "Ruxsat",
+          "Yuk chiqarish"
+        ],
+        "documents": [
+          "Bojxona deklaratsiyasi",
+          "Invoice",
+          "Yukxat",
+          "Ruxsatnomalar"
+        ],
+        "timeline": "3-10 ish kuni",
+        "faq": [
+          {
+            "q": "Bojxonada qancha vaqt sarflanadi?",
+            "a": "Hujjatlar to'liq bo'lsa, odatda 3 dan 10 ish kunigacha vaqt talab qilinadi."
+          },
+          {
+            "q": "Qanday hujjatlar talab qilinadi?",
+            "a": "Deklaratsiya, invoice, yukxat va mahsulotga tegishli ruxsatnomalar talab qilinadi."
+          },
+          {
+            "q": "Yuk tekshiruvdan o'tmasa nima bo'ladi?",
+            "a": "Tekshiruv natijasida aniqlangan kamchiliklar bo'yicha darhol tuzatish chora-tadbirlarini ko'ramiz."
+          },
+          {
+            "q": "Konsultatsiya pullikmi?",
+            "a": "Yo'q, dastlabki konsultatsiya mutlaqo bepul."
+          }
+        ]
+      },
+      "regulatory-consulting": {
+        "overview": [
+          "Regulatory Consulting xizmati farmatsevtika sohasidagi murakkab huquqiy va normativ masalalar bo'yicha ekspert maslahat beradi.",
+          "Bozorga kirishdan qonunchilik o'zgarishlariga moslashishgacha — biz strategik yo'l xaritasini ishlab chiqamiz.",
+          "Doimiy hamkorlik asosida kompaniyangizning regulatory xavflarini kamaytiramiz."
+        ],
+        "benefits": [
+          "Chuqur huquqiy ekspertiza",
+          "Individual strategiya ishlab chiqish",
+          "Qonunchilik o'zgarishlaridan xabardor qilish",
+          "Risklarni oldindan aniqlash",
+          "Uzoq muddatli hamkorlik"
+        ],
+        "process": [
+          "Muammo tahlili",
+          "Strategiya ishlab chiqish",
+          "Amalga oshirish",
+          "Nazorat",
+          "Hisobot"
+        ],
+        "documents": [
+          "Tegishli hujjatlar (loyihaga qarab)"
+        ],
+        "timeline": "Doimiy hamkorlik",
+        "faq": [
+          {
+            "q": "Consulting xizmati qanday boshlanadi?",
+            "a": "Birinchi bosqichda kompaniyangiz ehtiyojlarini aniqlash uchun bepul konsultatsiya o'tkazamiz."
+          },
+          {
+            "q": "Bir martalik maslahat olish mumkinmi?",
+            "a": "Ha, alohida masala bo'yicha bir martalik konsultatsiya xizmati ham mavjud."
+          },
+          {
+            "q": "Qaysi sohalar qamrab olinadi?",
+            "a": "Registratsiya, sertifikatlashtirish, import va boshqa barcha regulatory yo'nalishlar bo'yicha maslahat beramiz."
+          },
+          {
+            "q": "Konsultatsiya pullikmi?",
+            "a": "Yo'q, dastlabki konsultatsiya mutlaqo bepul."
+          }
+        ]
+      },
+      "distributor-search": {
+        "overview": [
+          "Distributor qidirish xizmati orqali mahsulotingiz uchun O'zbekiston va Markaziy Osiyo bozorida ishonchli sotuv hamkorlarini topamiz.",
+          "Keng hamkorlar tarmog'imiz orqali mahsulotingiz to'g'ri kanallar orqali maqsadli auditoriyaga yetib boradi.",
+          "Muzokaralardan shartnoma imzolanishigacha jarayonni to'liq boshqaramiz."
+        ],
+        "benefits": [
+          "Keng distribyutorlar tarmog'i",
+          "Bozor tahlili asosida tanlov",
+          "Muzokaralarda professional vositachilik",
+          "Shartnoma shartlarini himoya qilish",
+          "Hamkorlik monitoringi"
+        ],
+        "process": [
+          "Bozor tahlili",
+          "Potensial hamkorlar ro'yxati",
+          "Muzokaralar",
+          "Shartnoma",
+          "Monitoring"
+        ],
+        "documents": [
+          "Kompaniya profili",
+          "Mahsulot katalogi",
+          "Narx ro'yxati"
+        ],
+        "timeline": "1-3 oy",
+        "faq": [
+          {
+            "q": "Distributor qanday tanlanadi?",
+            "a": "Bozor ulushi, obro'-e'tibor va mahsulot mosligi asosida eng mos nomzodlar tanlanadi."
+          },
+          {
+            "q": "Bir nechta distributor bilan ishlash mumkinmi?",
+            "a": "Ha, mahsulot turiga qarab bir nechta hududiy distributor bilan hamkorlik tashkil etish mumkin."
+          },
+          {
+            "q": "Shartnoma shartlarini kim belgilaydi?",
+            "a": "Shartnoma shartlari ikki tomon manfaatlarini hisobga olib birgalikda kelishiladi."
+          },
+          {
+            "q": "Konsultatsiya pullikmi?",
+            "a": "Yo'q, dastlabki konsultatsiya mutlaqo bepul."
+          }
+        ]
+      }
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "title": "Savol-javoblar",
+      "subtitle": "Eng ko'p so'raladigan savollarga javoblar",
+      "breadcrumb": "Savol-javoblar"
+    },
+    "search": {
+      "placeholder": "Savol qidiring...",
+      "resultsFound": "{count} ta savol topildi",
+      "noResults": "Hech narsa topilmadi. Biz bilan to'g'ridan-to'g'ri bog'laning."
+    },
+    "categories": {
+      "all": "Barcha savollar",
+      "registration": "Registratsiya",
+      "documents": "Hujjatlar",
+      "pricing": "Narx va muddat",
+      "logistics": "Import va logistika",
+      "general": "Umumiy"
+    },
+    "items": [
+      {
+        "category": "registration",
+        "q": "BFQ registratsiyasi qancha vaqt oladi?",
+        "a": "BFQ (biologik faol qo'shimchalar) registratsiyasi odatda 3-6 oy vaqt oladi. Jarayon davomida biz barcha bosqichlarni nazorat qilib boramiz."
+      },
+      {
+        "category": "registration",
+        "q": "Registratsiya guvohnomasi necha yilga beriladi?",
+        "a": "O'zbekistonda BFQ registratsiya guvohnomasi odatda 5 yilga beriladi. Muddati tugashidan 6 oy oldin qayta registratsiya jarayonini boshlash tavsiya etiladi."
+      },
+      {
+        "category": "registration",
+        "q": "GMP sertifikati majburiymi?",
+        "a": "Ha, importga mo'ljallangan mahsulotlar uchun GMP sertifikati talab etiladi. Biz BFQ registratsiyasi va sertifikatlashtirish jarayonida barcha talablarga mos kelishingizga yordam beramiz."
+      },
+      {
+        "category": "registration",
+        "q": "Qayta registratsiya qanday amalga oshiriladi?",
+        "a": "Qayta registratsiya dastlabki registratsiyaga o'xshash jarayon bo'lib, ammo ko'pincha tezroq kechadi. Hujjatlar to'plami yangilanadi va ekspertizadan o'tkaziladi."
+      },
+      {
+        "category": "registration",
+        "q": "Bir vaqtda bir nechta mahsulotni ro'yxatdan o'tkazish mumkinmi?",
+        "a": "Ha, bir vaqtda bir nechta mahsulot bo'yicha ariza berilishi mumkin. Bu ko'pincha vaqt va xarajatlarni tejash imkonini beradi."
+      },
+      {
+        "category": "registration",
+        "q": "Xorijiy kompaniya o'zi registratsiya qila oladimi?",
+        "a": "O'zbekistonda farmatsevtik mahsulotlarni ro'yxatdan o'tkazish uchun mahalliy vakillik yoki hamkor kompaniya orqali ariza berish talab etiladi. Pharm Way Group aynan shu vazifani bajaradi."
+      },
+      {
+        "category": "documents",
+        "q": "Registratsiya uchun qanday asosiy hujjatlar kerak?",
+        "a": "Asosiy hujjatlar: ishlab chiqaruvchi litsenziyasi, GMP sertifikati, mahsulot spesifikatsiyasi, klinik tadqiqot ma'lumotlari (agar talab qilinsa), qadoqlash va yorliq namunalari, kelib chiqish sertifikati."
+      },
+      {
+        "category": "documents",
+        "q": "Hujjatlar qaysi tilda taqdim etilishi kerak?",
+        "a": "Hujjatlar o'zbek yoki rus tilida taqdim etilishi kerak. Xorijiy tillardagi hujjatlar notarial tasdiqlangan tarjimasi bilan birga topshiriladi."
+      },
+      {
+        "category": "documents",
+        "q": "Hujjatlarni notarial tasdiqlash kerakmi?",
+        "a": "Ha, ko'pchilik hujjatlar notarial tasdiqlangan tarjimasi bilan birga taqdim etilishi talab qilinadi. Biz bu jarayonni ham to'liq amalga oshirishda yordam beramiz."
+      },
+      {
+        "category": "documents",
+        "q": "Hujjatlar amal qilish muddati bormi?",
+        "a": "Ha, ko'pchilik sertifikatlar va hujjatlarning amal qilish muddati bor. Masalan, GMP sertifikati odatda 3 yilga beriladi. Hujjatlaringiz yangiligini tekshirib chiqamiz."
+      },
+      {
+        "category": "documents",
+        "q": "Elektron hujjatlar qabul qilinadimi?",
+        "a": "Dastlabki bosqichda elektron nusxalar ko'rib chiqilishi mumkin, ammo rasmiy jarayon uchun asl nusxa yoki notarial tasdiqlangan nusxalar talab etiladi."
+      },
+      {
+        "category": "pricing",
+        "q": "Xizmatlar narxi qanday?",
+        "a": "Narxlar loyiha murakkabligi, mahsulot turi va xizmat hajmiga qarab individual belgilanadi. Bepul konsultatsiyada aniq narxni bilib olishingiz mumkin."
+      },
+      {
+        "category": "pricing",
+        "q": "To'lov qanday amalga oshiriladi?",
+        "a": "To'lov shartnoma asosida bosqichma-bosqich amalga oshiriladi. Odatda dastlabki to'lov va jarayon yakunida qolgan summa to'lanadi."
+      },
+      {
+        "category": "pricing",
+        "q": "Konsultatsiya pullikmi?",
+        "a": "Yo'q, dastlabki konsultatsiya mutlaqo bepul. Biz sizning mahsulotingiz va ehtiyojlaringizni tushunib, keyin xizmat taklifini taqdim etamiz."
+      },
+      {
+        "category": "pricing",
+        "q": "Muddatdan oldin tugatish mumkinmi?",
+        "a": "Biz har doim belgilangan muddatdan oldin ishni yakunlashga harakat qilamiz. Davlat organlarining ish tezligi ham muhim rol o'ynaydi."
+      },
+      {
+        "category": "logistics",
+        "q": "Import uchun qanday ruxsatnomalar kerak?",
+        "a": "Farmatsevtik mahsulotlarni import qilish uchun registratsiya guvohnomasi, import litsenziyasi va bojxona hujjatlari talab etiladi. Biz barcha ruxsatnomalarni olishda yordam beramiz."
+      },
+      {
+        "category": "logistics",
+        "q": "Mahsulotlar qaysi mamlakatlardan import qilinishi mumkin?",
+        "a": "O'zbekiston farmatsevtik mahsulotlarni dunyoning har qanday mamlakatidan import qilish imkoniyatiga ega. Asosiy shart — mahsulot kelib chiqqan mamlakatda ruxsat etilgan va tegishli sertifikatlarga ega bo'lishi."
+      },
+      {
+        "category": "logistics",
+        "q": "Sovuq zanjir (cold chain) mahsulotlar uchun alohida talablar bormi?",
+        "a": "Ha, biologik preparatlar va ba'zi dori vositalari uchun sovuq zanjir talablari mavjud. Biz ixtisoslashgan logistika hamkorlarimiz orqali bu talablarni to'liq bajaramiz."
+      },
+      {
+        "category": "logistics",
+        "q": "Bojxonada muammo chiqsa nima qilish kerak?",
+        "a": "Bizning tajribali mutaxassislarimiz bojxona jarayonlarini boshidan oxirigacha nazorat qiladi. Har qanday muammo yuzaga kelsa, darhol hal etamiz."
+      },
+      {
+        "category": "general",
+        "q": "Pharm Way Group qaysi davlatlar bilan ishlaydi?",
+        "a": "Biz asosan O'zbekiston bozori uchun xizmat ko'rsatamiz, shuningdek Qozog'iston, Qirg'iziston, Tojikiston, Turkmaniston va Ozarbayjon bozorlarida ham ishlaymiz."
+      },
+      {
+        "category": "general",
+        "q": "Hamkor bo'lish uchun nima qilish kerak?",
+        "a": "Biz bilan bog'laning — telefon, email yoki Telegram orqali. Bepul konsultatsiyada hamkorlik imkoniyatlarini muhokama qilamiz."
+      },
+      {
+        "category": "general",
+        "q": "Sizning kompaniyangizning tajribasi qancha?",
+        "a": "Pharm Way Group 2019 yildan beri faoliyat yuritib kelmoqda. 5+ yillik tajribamiz davomida 50+ mahsulotni muvaffaqiyatli ro'yxatdan o'tkazdik va 20+ xalqaro hamkor bilan ishlaymiz."
+      }
+    ],
+    "stillQuestions": {
+      "title": "Savolingiz javobini topmadingizmi?",
+      "subtitle": "Mutaxassislarimiz sizga yordam berishga tayyor",
+      "consultBtn": "Bepul konsultatsiya",
+      "telegramBtn": "Telegram orqali yozing"
+    },
+    "cta": {
+      "title": "Hamkorlikni boshlashga tayyormisiz?",
+      "button": "Bog'lanish"
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Yangiliklar va maqolalar",
+      "subtitle": "Farmatsevtika sohasidagi eng so'nggi yangiliklar, tahlillar va foydali ma'lumotlar",
+      "breadcrumb": "Blog"
+    },
+    "search": {
+      "placeholder": "Maqola qidiring...",
+      "noResults": "Ushbu so'rov bo'yicha maqolalar topilmadi."
+    },
+    "categories": {
+      "all": "Barcha",
+      "registration": "Registratsiya",
+      "import": "Import",
+      "baa": "BFQ",
+      "medicalDevices": "Tibbiy buyumlar",
+      "regulatory": "Regulatory",
+      "news": "Yangiliklar"
+    },
+    "readMore": "Batafsil o'qish",
+    "pagination": {
+      "prev": "Oldingi",
+      "next": "Keyingi",
+      "showing": "6 ta maqoladan 6 tasi ko'rsatilmoqda"
+    },
+    "newsletter": {
+      "title": "Yangiliklar bilan doim xabardor bo'ling",
+      "subtitle": "Farmatsevtika sohasidagi eng so'nggi yangiliklar va maqolalar to'g'ridan-to'g'ri emailingizga",
+      "placeholder": "Email manzilingiz",
+      "button": "Obuna bo'lish",
+      "disclaimer": "Spam yubortmaymiz. Istalgan vaqt obunani bekor qilish mumkin.",
+      "successMessage": "Obuna bo'ldingiz! Rahmat."
+    },
+    "cta": {
+      "title": "Maqolalarimiz haqida savollaringiz bormi?",
+      "button": "Bog'lanish"
+    },
+    "sidebar": {
+      "ctaTitle": "Bepul konsultatsiya",
+      "ctaSubtitle": "Mutaxassislarimiz savollaringizga javob berishga tayyor",
+      "ctaButton": "Bog'lanish",
+      "recentTitle": "Oxirgi maqolalar",
+      "categoriesTitle": "Kategoriyalar",
+      "tagsTitle": "Teglar"
+    },
+    "relatedTitle": "O'xshash maqolalar",
+    "backLink": "Barcha maqolalar",
+    "shareLabel": "Ulashish",
+    "copyLink": "Havolani nusxalash",
+    "copied": "Nusxalandi!",
+    "posts": [
+      {
+        "slug": "ozbekistonda-dori-vositalarini-royxatdan-otkazish",
+        "category": "registration",
+        "title": "O'zbekistonda dori vositalarini ro'yxatdan o'tkazish: 2024 yildagi yangi talablar",
+        "excerpt": "O'zbekiston Sog'liqni saqlash vazirligi farmatsevtik mahsulotlarni registratsiya qilish jarayoniga bir qator muhim o'zgartirishlar kiritdi...",
+        "date": "15 Dekabr 2024",
+        "readTime": "8 daqiqa",
+        "author": "Pharm Way Group",
+        "tags": [
+          "registratsiya",
+          "dori",
+          "uzbekiston"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Kirish"
+          },
+          {
+            "type": "paragraph",
+            "text": "O'zbekistonda farmatsevtik mahsulotlarni ro'yxatdan o'tkazish jarayoni so'nggi yillarda sezilarli darajada o'zgardi. Sog'liqni saqlash vazirligi tomonidan joriy etilgan yangi tartib-qoidalar xalqaro standartlarga yaqinlashishga qaratilgan."
+          },
+          {
+            "type": "heading",
+            "text": "Asosiy talablar"
+          },
+          {
+            "type": "paragraph",
+            "text": "2024 yildan boshlab GMP sertifikati barcha import qilinadigan dori vositalari uchun majburiy hisoblanadi. Bundan tashqari, mahsulot xavfsizligi bo'yicha qo'shimcha hisobotlar talab etiladi."
+          },
+          {
+            "type": "heading",
+            "text": "Kerakli hujjatlar"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Ishlab chiqaruvchi litsenziyasi",
+              "GMP sertifikati",
+              "Mahsulot spesifikatsiyasi",
+              "Klinik tadqiqot ma'lumotlari (agar talab qilinsa)",
+              "Qadoqlash va yorliq namunalari"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Jarayon bosqichlari"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "1-bosqich: Hujjatlarni tayyorlash va notarial tasdiqlash",
+              "2-bosqich: Vazirlikka ariza topshirish",
+              "3-bosqich: Ekspertizadan o'tish",
+              "4-bosqich: Registratsiya guvohnomasini olish"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Xulosa"
+          },
+          {
+            "type": "paragraph",
+            "text": "Muvaffaqiyatli registratsiya uchun barcha hujjatlarni oldindan tayyorlash va tajribali hamkor bilan ishlash muhim ahamiyatga ega. Pharm Way Group jarayonning barcha bosqichlarida sizga yordam beradi."
+          }
+        ]
+      },
+      {
+        "slug": "bfq-registration-guide",
+        "category": "baa",
+        "title": "BFQ registratsiyasi qancha vaqt oladi? To'liq qo'llanma",
+        "excerpt": "Biologik faol qo'shimchalarni O'zbekistonda ro'yxatdan o'tkazish jarayoni, kerakli hujjatlar va muddatlar haqida batafsil...",
+        "date": "10 Dekabr 2024",
+        "readTime": "6 daqiqa",
+        "author": "Pharm Way Group",
+        "tags": [
+          "baa",
+          "registratsiya",
+          "hujjatlar"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Kirish"
+          },
+          {
+            "type": "paragraph",
+            "text": "Biologik faol qo'shimchalarni (BFQ) O'zbekistonda ro'yxatdan o'tkazish dori vositalariga nisbatan soddaroq, ammo o'ziga xos talablarga ega jarayon hisoblanadi."
+          },
+          {
+            "type": "heading",
+            "text": "Asosiy talablar"
+          },
+          {
+            "type": "paragraph",
+            "text": "BFQ mahsulotlari uchun xavfsizlik sertifikati va tarkib tahlili natijalari taqdim etilishi shart. Mahsulot tarkibida taqiqlangan moddalar bo'lmasligi alohida tekshiriladi."
+          },
+          {
+            "type": "heading",
+            "text": "Kerakli hujjatlar"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Mahsulot tarkibi to'g'risida ma'lumot",
+              "Sifat sertifikati",
+              "Ishlab chiqaruvchi davlatidan ruxsat hujjati",
+              "Qadoqlash namunasi"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Jarayon bosqichlari"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "1-bosqich: Hujjatlarni yig'ish va tarjima qilish",
+              "2-bosqich: Laboratoriya tahlilidan o'tish",
+              "3-bosqich: Davlat ro'yxatiga kiritish"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Xulosa"
+          },
+          {
+            "type": "paragraph",
+            "text": "To'g'ri tayyorlangan hujjatlar bilan BFQ registratsiyasi odatda 3-6 oy ichida yakunlanadi."
+          }
+        ]
+      },
+      {
+        "slug": "import-documents",
+        "category": "import",
+        "title": "Farmatsevtik mahsulotlarni import qilish uchun kerakli hujjatlar",
+        "excerpt": "Xorijdan dori vositalarini O'zbekistonga import qilishda talab etiladigan hujjatlar ro'yxati va bojxona jarayoni...",
+        "date": "5 Dekabr 2024",
+        "readTime": "5 daqiqa",
+        "author": "Pharm Way Group",
+        "tags": [
+          "import",
+          "hujjatlar",
+          "bojxona"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Kirish"
+          },
+          {
+            "type": "paragraph",
+            "text": "Xorijdan dori vositalarini O'zbekistonga olib kirish bir nechta davlat organlari bilan ishlashni talab qiladi."
+          },
+          {
+            "type": "heading",
+            "text": "Asosiy talablar"
+          },
+          {
+            "type": "paragraph",
+            "text": "Import qiluvchi kompaniya import litsenziyasiga va ro'yxatdan o'tgan mahsulot guvohnomasiga ega bo'lishi shart."
+          },
+          {
+            "type": "heading",
+            "text": "Kerakli hujjatlar"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Import shartnomasi",
+              "Registratsiya guvohnomasi",
+              "Bojxona deklaratsiyasi",
+              "Kelib chiqish sertifikati",
+              "Sifat sertifikati"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Jarayon bosqichlari"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "1-bosqich: Shartnoma va hujjatlarni rasmiylashtirish",
+              "2-bosqich: Bojxona deklaratsiyasini topshirish",
+              "3-bosqich: Tekshiruvdan o'tish va yukni qabul qilish"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Xulosa"
+          },
+          {
+            "type": "paragraph",
+            "text": "Hujjatlar to'liq va to'g'ri bo'lsa, bojxona jarayoni bir necha kun ichida yakunlanadi."
+          }
+        ]
+      },
+      {
+        "slug": "central-asia-pharma-2025",
+        "category": "news",
+        "title": "Markaziy Osiyo farmatsevtika bozori: 2025 yil istiqbollari",
+        "excerpt": "Mintaqa farmatsevtika bozorining o'sish tendensiyalari, yangi imkoniyatlar va xorijiy investorlar uchun muhim ma'lumotlar...",
+        "date": "1 Dekabr 2024",
+        "readTime": "10 daqiqa",
+        "author": "Pharm Way Group",
+        "tags": [
+          "markaziy osiyo",
+          "bozor",
+          "tendensiya"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Kirish"
+          },
+          {
+            "type": "paragraph",
+            "text": "Markaziy Osiyo mintaqasi so'nggi yillarda farmatsevtika sohasida barqaror o'sish ko'rsatmoqda."
+          },
+          {
+            "type": "heading",
+            "text": "Asosiy tendensiyalar"
+          },
+          {
+            "type": "paragraph",
+            "text": "O'zbekiston, Qozog'iston va Qirg'iziston bozorlari xorijiy investorlar uchun yangi imkoniyatlar yaratmoqda. Mahalliy ishlab chiqarishni rivojlantirishga yo'naltirilgan davlat dasturlari ham muhim rol o'ynaydi."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Generik dorilar ulushining oshishi",
+              "Mahalliy ishlab chiqarishga investitsiyalar",
+              "Raqamlashtirish va elektron registratsiya"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Imkoniyatlar"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "1. Mahalliy hamkorlik o'rnatish",
+              "2. Distribyutsiya tarmoqlarini kengaytirish",
+              "3. Raqamli savdo kanallaridan foydalanish"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Xulosa"
+          },
+          {
+            "type": "paragraph",
+            "text": "2025 yilga kelib mintaqa bozori yanada ochiq va raqobatbardosh bo'lishi kutilmoqda."
+          }
+        ]
+      },
+      {
+        "slug": "gmp-certificate-guide",
+        "category": "regulatory",
+        "title": "GMP sertifikati: nima uchun u muhim va qanday olish mumkin?",
+        "excerpt": "Good Manufacturing Practice sertifikati farmatsevtik ishlab chiqaruvchilar uchun nima anglatadi va uni olish jarayoni...",
+        "date": "25 Noyabr 2024",
+        "readTime": "7 daqiqa",
+        "author": "Pharm Way Group",
+        "tags": [
+          "gmp",
+          "sertifikat",
+          "sifat"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Kirish"
+          },
+          {
+            "type": "paragraph",
+            "text": "Good Manufacturing Practice (GMP) sertifikati farmatsevtik ishlab chiqarish sifatini tasdiqlovchi xalqaro standart hisoblanadi."
+          },
+          {
+            "type": "heading",
+            "text": "Asosiy talablar"
+          },
+          {
+            "type": "paragraph",
+            "text": "Sertifikatni olish uchun ishlab chiqarish korxonasi belgilangan sanitariya va sifat nazorati talablariga javob berishi kerak."
+          },
+          {
+            "type": "heading",
+            "text": "Kerakli hujjatlar"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Ishlab chiqarish jarayoni tavsifi",
+              "Sifat nazorati tizimi hujjatlari",
+              "Xom-ashyo manbalari to'g'risida ma'lumot"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Jarayon bosqichlari"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "1-bosqich: Dastlabki audit",
+              "2-bosqich: Kamchiliklarni bartaraf etish",
+              "3-bosqich: Rasmiy sertifikatlash tekshiruvi"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Xulosa"
+          },
+          {
+            "type": "paragraph",
+            "text": "GMP sertifikati bo'lmasa, ko'pchilik bozorlarga dori vositalarini import qilish imkonsiz."
+          }
+        ]
+      },
+      {
+        "slug": "medical-devices-registration",
+        "category": "registration",
+        "title": "Tibbiy buyumlarni registratsiya qilish: bosqichma-bosqich yo'riqnoma",
+        "excerpt": "Tibbiy asbob-uskunalar va buyumlarni O'zbekistonda davlat ro'yxatidan o'tkazish jarayonining har bir bosqichi...",
+        "date": "20 Noyabr 2024",
+        "readTime": "9 daqiqa",
+        "author": "Pharm Way Group",
+        "tags": [
+          "tibbiy buyumlar",
+          "registratsiya"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Kirish"
+          },
+          {
+            "type": "paragraph",
+            "text": "Tibbiy asbob-uskunalar va buyumlarni O'zbekistonda ro'yxatdan o'tkazish dori vositalaridan farqli tartibga ega."
+          },
+          {
+            "type": "heading",
+            "text": "Asosiy talablar"
+          },
+          {
+            "type": "paragraph",
+            "text": "Mahsulot xavf darajasiga qarab turli toifalarga bo'linadi va har biri uchun alohida talablar belgilanadi."
+          },
+          {
+            "type": "heading",
+            "text": "Kerakli hujjatlar"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Texnik fayl",
+              "Sifat sertifikati (ISO 13485)",
+              "Foydalanish bo'yicha qo'llanma",
+              "Klinik baholash hisoboti (agar kerak bo'lsa)"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Jarayon bosqichlari"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "1-bosqich: Toifani aniqlash",
+              "2-bosqich: Texnik hujjatlarni topshirish",
+              "3-bosqich: Ekspertiza va ro'yxatga olish"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Xulosa"
+          },
+          {
+            "type": "paragraph",
+            "text": "To'g'ri toifalashtirish jarayonni sezilarli darajada tezlashtiradi."
+          }
+        ]
+      },
+      {
+        "slug": "customs-mistakes",
+        "category": "import",
+        "title": "Bojxona rasmiylashtiruvi: tez-tez uchraydigan xatolar va ulardan qochish yo'llari",
+        "excerpt": "Farmatsevtik mahsulotlarni import qilishda bojxonada eng ko'p uchraydigan muammolar va ularning yechimlari...",
+        "date": "15 Noyabr 2024",
+        "readTime": "6 daqiqa",
+        "author": "Pharm Way Group",
+        "tags": [
+          "bojxona",
+          "import",
+          "xatolar"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Kirish"
+          },
+          {
+            "type": "paragraph",
+            "text": "Farmatsevtik yuklarni bojxonadan o'tkazishda ko'plab kompaniyalar bir xil xatolarga yo'l qo'yadi."
+          },
+          {
+            "type": "heading",
+            "text": "Eng ko'p uchraydigan xatolar"
+          },
+          {
+            "type": "paragraph",
+            "text": "Hujjatlardagi nomuvofiqliklar va noto'g'ri tariflashlar eng ko'p uchraydigan muammolar hisoblanadi."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Hujjatlardagi ma'lumotlar nomuvofiqligi",
+              "Noto'g'ri tovar kodi (HS kod)",
+              "Sertifikatlarning amal qilish muddati tugagani",
+              "Qadoqlash talablariga rioya qilmaslik"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Ulardan qochish yo'llari"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "1. Hujjatlarni oldindan tekshirish",
+              "2. Tajribali bojxona vositachisi bilan ishlash",
+              "3. Barcha sertifikatlarning amal qilish muddatini kuzatish"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Xulosa"
+          },
+          {
+            "type": "paragraph",
+            "text": "Oldindan tayyorgarlik ko'rish bojxonada kechikishlarning oldini oladi."
+          }
+        ]
+      }
+    ],
+    "views": "{count}"
+  },
+  "testimonialsPage": {
+    "hero": {
+      "title": "Mijozlar fikri",
+      "subtitle": "Bizning xizmatlarimizdan foydalangan hamkorlarning fikr-mulohazalari",
+      "breadcrumb": "Mijozlar fikri"
+    },
+    "stats": [
+      {
+        "value": "4.9/5",
+        "label": "O'rtacha baho"
+      },
+      {
+        "value": "50+",
+        "label": "Mijozlar sharhi"
+      },
+      {
+        "value": "20+",
+        "label": "Doimiy hamkorlar"
+      },
+      {
+        "value": "98%",
+        "label": "Mijozlar mamnuniyati"
+      }
+    ],
+    "featured": {
+      "quote": "Pharm Way Group bilan hamkorlik bizning kompaniyamiz uchun O'zbekiston bozoriga kirishda hal qiluvchi qadam bo'ldi. Professional jamoa, tezkor xizmat va to'liq qo'llab-quvvatlash — biz kutgandan ham yaxshiroq natija oldik.",
+      "name": "Mikhail Kovalenko",
+      "role": "CEO, PharmaCorp International",
+      "flag": "🇩🇪",
+      "country": "Germaniya"
+    },
+    "categories": {
+      "all": "Barcha",
+      "manufacturers": "Ishlab chiqaruvchilar",
+      "distributors": "Distributorlar",
+      "international": "Xalqaro kompaniyalar",
+      "local": "Mahalliy hamkorlar"
+    },
+    "testimonials": [
+      {
+        "quote": "Registratsiya jarayoni biz kutgandan ancha tez va silliq kechdi. Barcha hujjatlar professional tarzda tayyorlandi va jarayon davomida doimiy xabardor qilishdi.",
+        "name": "Li Wei",
+        "role": "Export Director",
+        "company": "BioMed Solutions",
+        "flag": "🇨🇳",
+        "country": "Xitoy",
+        "category": "manufacturers"
+      },
+      {
+        "quote": "BFQ mahsulotlarimizni O'zbekistonda ro'yxatdan o'tkazish uchun Pharm Way Group bilan bog'landik. 4 oy ichida barcha hujjatlar tayyor bo'ldi — bu bizning eng yaxshi ko'rsatkichimiz.",
+        "name": "Priya Sharma",
+        "role": "Regulatory Affairs Manager",
+        "company": "MedTech Industries",
+        "flag": "🇮🇳",
+        "country": "Hindiston",
+        "category": "manufacturers"
+      },
+      {
+        "quote": "Import va logistika xizmatlari juda yuqori darajada. Sovuq zanjir talablariga to'liq rioya qilindi, mahsulotlar o'z vaqtida yetib keldi.",
+        "name": "Ahmed Al-Rashid",
+        "role": "Operations Director",
+        "company": "Gulf Medical Trading",
+        "flag": "🇦🇪",
+        "country": "BAA",
+        "category": "distributors"
+      },
+      {
+        "quote": "Regulatory consulting xizmati bizga juda katta vaqt va pul tejalashiga yordam berdi. Mutaxassislar har bir savolimizga to'liq javob berishdi.",
+        "name": "Hans Mueller",
+        "role": "Market Access Director",
+        "company": "EuroPharma AG",
+        "flag": "🇨🇭",
+        "country": "Shveytsariya",
+        "category": "international"
+      },
+      {
+        "quote": "Tibbiy buyumlarimizni registratsiya qilish jarayonida professional yondashuv va aniq muddatlarga rioya qilish bizni hayratda qoldirdi.",
+        "name": "Kim Ji-young",
+        "role": "CIS Regional Manager",
+        "company": "KoreaMed Co.",
+        "flag": "🇰🇷",
+        "country": "Janubiy Koreya",
+        "category": "manufacturers"
+      },
+      {
+        "quote": "Markaziy Osiyo bozorida distributor topishda Pharm Way Group ning keng tarmog'i va tajribasi bizga bebaho yordam berdi.",
+        "name": "Fatima Yilmaz",
+        "role": "Business Development",
+        "company": "TurkPharma",
+        "flag": "🇹🇷",
+        "country": "Turkiya",
+        "category": "international"
+      },
+      {
+        "quote": "Bojxona rasmiylashtiruvi va import jarayonida hech qanday muammo bo'lmadi. Barcha hujjatlar o'z vaqtida tayyorlandi.",
+        "name": "Alibek Dzhaksybekov",
+        "role": "Import Manager",
+        "company": "CentralAsia Pharma",
+        "flag": "🇰🇿",
+        "country": "Qozog'iston",
+        "category": "distributors"
+      },
+      {
+        "quote": "GMP va ISO sertifikatlarini olishda ko'rsatilgan yordam juda professional edi. Hujjatlar to'g'ri va to'liq tayyorlandi.",
+        "name": "Anna Kowalski",
+        "role": "Quality Director",
+        "company": "PharmaLink EU",
+        "flag": "🇵🇱",
+        "country": "Polsha",
+        "category": "international"
+      },
+      {
+        "quote": "O'zbekiston bozorida 3 yildan beri Pharm Way Group bilan ishlaymiz. Ular bizning ishonchli mahalliy hamkorimiz.",
+        "name": "Sardor Nazarov",
+        "role": "Direktor",
+        "company": "UzMed Distribution",
+        "flag": "🇺🇿",
+        "country": "O'zbekiston",
+        "category": "local"
+      }
+    ],
+    "video": {
+      "title": "Video sharhlar",
+      "subtitle": "Hamkorlarimiz o'z tajribalari haqida so'zlaydi",
+      "items": [
+        {
+          "title": "PharmaCorp International — O'zbekiston bozoriga kirish tajribasi",
+          "duration": "3:24"
+        },
+        {
+          "title": "BioMed Solutions — BFQ registratsiyasi jarayoni",
+          "duration": "2:48"
+        },
+        {
+          "title": "KoreaMed — Tibbiy buyumlar registratsiyasi",
+          "duration": "4:02"
+        }
+      ]
+    },
+    "trust": {
+      "title": "Sertifikatlar va a'zoliklar",
+      "badges": [
+        "ISO 9001:2015",
+        "GMP Certified",
+        "GDP Certified",
+        "WHO Partner",
+        "Halol Sertifikati"
+      ]
+    },
+    "leaveReview": {
+      "title": "Fikringizni qoldiring",
+      "subtitle": "Bizning xizmatlarimizdan foydalandingizmi? Tajribangizni ulashing",
+      "ratingLabel": "Bahoyingiz",
+      "name": "Ism va familiya",
+      "company": "Kompaniya",
+      "role": "Lavozim",
+      "country": "Mamlakat",
+      "message": "Sharh",
+      "submit": "Sharh yuborish",
+      "successTitle": "Rahmat!",
+      "successMessage": "Sharhingiz muvaffaqiyatli yuborildi."
+    },
+    "cta": {
+      "title": "Bizning muvaffaqiyatli hamkorlarimiz safiga qo'shiling",
+      "button": "Bog'lanish"
+    }
+  },
+  "certificatesPage": {
+    "hero": {
+      "title": "Sertifikatlar va litsenziyalar",
+      "subtitle": "Xalqaro sifat standartlariga muvofiqligimizni tasdiqlovchi rasmiy hujjatlar",
+      "breadcrumb": "Sertifikatlar"
+    },
+    "categories": {
+      "all": "Barchasi",
+      "registration": "Ro'yxatdan o'tish",
+      "gmp": "GMP",
+      "iso": "ISO",
+      "license": "Litsenziya"
+    },
+    "items": [
+      {
+        "title": "GMP sertifikati",
+        "issuer": "EU GMP / PIC/S",
+        "category": "gmp",
+        "date": "2023",
+        "description": "Yaxshi ishlab chiqarish amaliyoti (GMP) talablariga muvofiqlikni tasdiqlovchi xalqaro sertifikat.",
+        "details": "Bu sertifikat farmatsevtik mahsulotlarning ishlab chiqarish, saqlash va tashish jarayonlarida xalqaro GMP (Good Manufacturing Practice) standartlariga to'liq muvofiqligini tasdiqlaydi. Sertifikat har yili qayta tekshiriladi va yangilanadi."
+      },
+      {
+        "title": "ISO 9001:2015",
+        "issuer": "TÜV SÜD",
+        "category": "iso",
+        "date": "2022",
+        "description": "Sifat menejmenti tizimining xalqaro ISO 9001:2015 standartiga muvofiqligi.",
+        "details": "ISO 9001:2015 sertifikati kompaniyamizning sifat menejmenti tizimi mijozlar talablariga, qonunchilik me'yorlariga va uzluksiz takomillashtirish tamoyillariga muvofiq tashkil etilganini tasdiqlaydi."
+      },
+      {
+        "title": "ISO 13485:2016",
+        "issuer": "Bureau Veritas",
+        "category": "iso",
+        "date": "2022",
+        "description": "Tibbiy buyumlar sifat menejmenti tizimi bo'yicha xalqaro sertifikat.",
+        "details": "ISO 13485:2016 — tibbiy buyumlar ishlab chiqarish, ro'yxatdan o'tkazish va distributsiya jarayonlarida qo'llaniladigan maxsus sifat menejmenti standarti. Ushbu sertifikat tibbiy buyumlar bilan ishlash bo'yicha yuqori malakamizni tasdiqlaydi."
+      },
+      {
+        "title": "Davlat ro'yxatidan o'tish guvohnomasi",
+        "issuer": "O'zbekiston Sog'liqni saqlash vazirligi",
+        "category": "registration",
+        "date": "2024",
+        "description": "Dori vositalarini O'zbekiston Respublikasida ro'yxatdan o'tkazish huquqini beruvchi rasmiy guvohnoma.",
+        "details": "Ushbu guvohnoma kompaniyamizga dori vositalari va tibbiy buyumlarni O'zbekiston Respublikasi hududida qonuniy ravishda ro'yxatdan o'tkazish va sotishga ruxsat beradi. Davlat sanitariya-epidemiologiya nazorati tomonidan berilgan."
+      },
+      {
+        "title": "BFQ ro'yxatga olish guvohnomasi",
+        "issuer": "Sanepidnazorat",
+        "category": "registration",
+        "date": "2024",
+        "description": "Biologik faol qo'shimchalarni ro'yxatga olish bo'yicha rasmiy guvohnoma.",
+        "details": "Biologik faol qo'shimchalar (BFQ) xavfsizligi va sifati davlat sanitariya-epidemiologiya nazorati tomonidan tasdiqlangan bo'lib, mahsulotlarni O'zbekiston bozorida qonuniy sotishga imkon beradi."
+      },
+      {
+        "title": "Farmatsevtika faoliyati litsenziyasi",
+        "issuer": "Litsenziyalash palatasi",
+        "category": "license",
+        "date": "2023",
+        "description": "Farmatsevtika mahsulotlarini import qilish va sotish bo'yicha davlat litsenziyasi.",
+        "details": "Ushbu litsenziya kompaniyamizga O'zbekiston hududida farmatsevtik mahsulotlarni import qilish, saqlash va sotish bo'yicha faoliyat yuritish huquqini beradi. Litsenziya davlat organlari tomonidan muntazam tekshiriladi."
+      }
+    ],
+    "modal": {
+      "issuedBy": "Beruvchi tashkilot",
+      "categoryLabel": "Toifa",
+      "dateLabel": "Berilgan yil",
+      "close": "Yopish",
+      "requestButton": "Ushbu sertifikat bo'yicha so'rov yuborish"
+    },
+    "requestForm": {
+      "heading": "Sertifikat bo'yicha so'rov yuboring",
+      "subtitle": "Qiziqgan sertifikat haqida ko'proq ma'lumot olish uchun forma to'ldiring — mutaxassislarimiz tez orada bog'lanadi.",
+      "name": "Ismingiz",
+      "phone": "Telefon raqami",
+      "email": "Elektron pochta",
+      "company": "Kompaniya",
+      "certificateLabel": "Sertifikat",
+      "certificatePlaceholder": "Sertifikatni tanlang",
+      "message": "Qo'shimcha xabar",
+      "submit": "So'rov yuborish",
+      "submitting": "Yuborilmoqda...",
+      "successTitle": "So'rovingiz qabul qilindi!",
+      "successMessage": "Tez orada mutaxassislarimiz siz bilan bog'lanadi.",
+      "responseTime": "Odatda 24 soat ichida javob beramiz.",
+      "errorMessage": "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+    },
+    "cta": {
+      "title": "Sertifikatlarimiz haqida ko'proq bilmoqchimisiz?",
+      "button": "Bog'lanish"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Contact {
+  id          String    @id @default(cuid())
+  name        String
+  phone       String
+  email       String?
+  company     String?
+  serviceType String?   @map("service_type")
+  message     String?
+  status      String    @default("new")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  @@map("contacts")
+}
+
+model BlogPost {
+  id          String    @id @default(cuid())
+  title       String
+  titleRu     String?   @map("title_ru")
+  titleEn     String?   @map("title_en")
+  slug        String    @unique
+  excerpt     String?
+  excerptRu   String?   @map("excerpt_ru")
+  excerptEn   String?   @map("excerpt_en")
+  content     String
+  contentRu   String?   @map("content_ru")
+  contentEn   String?   @map("content_en")
+  category    String
+  readTime    Int       @default(5) @map("read_time")
+  published   Boolean   @default(false)
+  publishedAt DateTime? @map("published_at")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  @@map("blog_posts")
+}
+
+model Partner {
+  id            String   @id @default(cuid())
+  name          String
+  country       String
+  countryFlag   String?  @map("country_flag")
+  category      String
+  description   String?
+  descriptionRu String?  @map("description_ru")
+  descriptionEn String?  @map("description_en")
+  website       String?
+  logoUrl       String?  @map("logo_url")
+  active        Boolean  @default(true)
+  order         Int      @default(0) @map("order")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  @@map("partners")
+}
+
+model Service {
+  id            String   @id @default(cuid())
+  slug          String   @unique
+  title         String
+  titleRu       String?  @map("title_ru")
+  titleEn       String?  @map("title_en")
+  description   String?
+  descriptionRu String?  @map("description_ru")
+  descriptionEn String?  @map("description_en")
+  icon          String?
+  active        Boolean  @default(true)
+  order         Int      @default(0) @map("order")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  @@map("services")
+}
+
+model Faq {
+  id         String   @id @default(cuid())
+  question   String
+  questionRu String?  @map("question_ru")
+  questionEn String?  @map("question_en")
+  answer     String
+  answerRu   String?  @map("answer_ru")
+  answerEn   String?  @map("answer_en")
+  category   String   @default("general")
+  order      Int      @default(0) @map("order")
+  active     Boolean  @default(true)
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  @@map("faqs")
+}
+
+model Stat {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String
+  label     String
+  labelRu   String?  @map("label_ru")
+  labelEn   String?  @map("label_en")
+  icon      String?
+  order     Int      @default(0) @map("order")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("stats")
+}
+
+model AdminUser {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      String   @default("admin")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("admin_users")
+}

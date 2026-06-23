@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sort -t: -k3)",
+      "Bash(awk -F: '{print $3}')",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 /tmp/add_seo_meta.py)",
+      "Bash(curl -s localhost:3000/uz/services/baa-registration)",
+      "Bash(pkill -f \"node.*next\")",
+      "Bash(npx prisma *)",
+      "Bash(npm install *)",
+      "Bash(npx dotenv *)",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"console.log\\(require\\('./package.json'\\).dependencies['lucide-react']\\)\")",
+      "Bash(node /tmp/screenshot_admin.js)",
+      "Bash(xargs kill -9)",
+      "Bash(awk 'NR>=420 && NR<=620 && /\"label\":/' /Users/macbookair/Documents/Pharm_way/messages/uz.json)",
+      "Bash(node create_bucket.mjs)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/uz/partners)",
+      "Bash(curl -s \"http://localhost:3000/api/partners?active=true\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(len\\(d\\)\\); print\\(d[0]\\)\")",
+      "Bash(node check_partners.mjs)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://akqjbbrclrlblrpxlutc.supabase.co/storage/v1/object/public/partners/logos/1781958333800.jpg\")",
+      "Bash(curl -s http://localhost:3000/uz)",
+      "Bash(curl -s \"http://localhost:3000/api/partners\")",
+      "Bash(curl -s -X PUT \"http://localhost:3000/api/partners/f0e691e1-10ea-4962-98e2-4ced68d104b6\" -H \"Content-Type: application/json\" -d '{\"logo_url\":null}' -o /dev/null -w \"reset status: %{http_code}\\\\n\")",
+      "Bash(curl -s -X PUT \"http://localhost:3000/api/partners/f0e691e1-10ea-4962-98e2-4ced68d104b6\" -H \"Content-Type: application/json\" -d '{\"logo_url\":\"https://akqjbbrclrlblrpxlutc.supabase.co/storage/v1/object/public/partners/logos/1781958333800.jpg\"}' -o /dev/null -w \"PUT status: %{http_code}\\\\n\")",
+      "Bash(node -e \"require.resolve\\('playwright'\\)\")",
+      "Bash(npx --yes playwright --version)",
+      "Bash(./node_modules/.bin/tsc --noEmit)",
+      "Bash(curl -s -X PUT \"http://localhost:3000/api/partners/f0e691e1-10ea-4962-98e2-4ced68d104b6\" -H \"Content-Type: application/json\" -d '{\"website\":\"https://example.com\"}' -o /dev/null -w \"PUT status: %{http_code}\\\\n\")",
+      "Bash(curl -s http://localhost:3000/uz/partners)",
+      "Bash(curl -s -X PUT \"http://localhost:3000/api/partners/f0e691e1-10ea-4962-98e2-4ced68d104b6\" -H \"Content-Type: application/json\" -d '{\"website\":null}' -o /dev/null -w \"reset status: %{http_code}\\\\n\")"
+    ]
+  }
+}

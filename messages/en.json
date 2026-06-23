@@ -1,0 +1,1825 @@
+{
+  "meta": {
+    "title": "Pharm Way Group — Pharmaceutical Registration & Import Services",
+    "description": "Pharm Way Group is a leading company in Uzbekistan for BFQ (supplement) registration, certification, import and customs services.",
+    "keywords": "pharmaceutical registration uzbekistan, dietary supplement registration, drug import uzbekistan, regulatory consulting central asia",
+    "pages": {
+      "home": {
+        "title": "Pharmaceutical Import & Registration — Uzbekistan",
+        "description": "Supplement (BFQ) and pharmaceutical product registration, import and regulatory services in Uzbekistan. 5+ years of experience, 50+ successful projects."
+      },
+      "about": {
+        "title": "About Us — Pharm Way Group",
+        "description": "Pharm Way Group has operated in Uzbekistan's pharmaceutical market since 2019. 20+ international partners, 50+ registered products."
+      },
+      "services": {
+        "title": "Our Services — BFQ Registration, Import, Regulatory Consulting",
+        "description": "Supplement (BFQ) registration, certification, import and logistics, customs clearance, regulatory consulting and distributor search services."
+      },
+      "contact": {
+        "title": "Contact — Free Consultation | Pharm Way Group",
+        "description": "Get in touch with Pharm Way Group. Tel: +998 93 062 41 49. Tashkent, Yunusabad district. Free consultation."
+      },
+      "partners": {
+        "title": "Our Partners — International Pharmaceutical Companies | Pharm Way Group",
+        "description": "20+ international partners. Collaborating with manufacturers from Germany, China, India, Korea and other countries."
+      },
+      "blog": {
+        "title": "Blog — Uzbekistan Pharmaceutical News | Pharm Way Group",
+        "description": "Uzbekistan pharmaceutical market news, registration process, import rules and other useful articles."
+      },
+      "faq": {
+        "title": "FAQ — Registration & Import | Pharm Way Group",
+        "description": "Answers to frequently asked questions about pharmaceutical product registration, import, documents and pricing."
+      },
+      "testimonials": {
+        "title": "Client Testimonials — Pharm Way Group",
+        "description": "Real feedback from manufacturers and distributors who worked with Pharm Way Group across Uzbekistan and Central Asia."
+      },
+      "certificates": {
+        "title": "Certificates — GMP, ISO, Licenses | Pharm Way Group",
+        "description": "GMP, ISO and state registration certificates held by Pharm Way Group. Send a request about any certificate."
+      }
+    },
+    "services": {
+      "bfq-registration": {
+        "title": "Supplement (BFQ) Registration in Uzbekistan — Pharm Way Group",
+        "description": "Fast and legal dietary supplement registration in Uzbekistan. 3-6 month timeline. Free consultation: +998 93 062 41 49"
+      },
+      "certification": {
+        "title": "Certification — GMP, ISO, Halal | Pharm Way Group",
+        "description": "Professional support obtaining GMP, ISO 9001 and other international certifications for pharmaceutical products."
+      },
+      "import-logistics": {
+        "title": "Import & Logistics — Pharmaceutical Products | Pharm Way Group",
+        "description": "Importing pharmaceutical products from abroad to Uzbekistan, cold-chain logistics and delivery services."
+      },
+      "customs": {
+        "title": "Customs Clearance — Pharmaceuticals | Pharm Way Group",
+        "description": "Customs documentation for pharmaceutical shipments. Fast and hassle-free customs process."
+      },
+      "regulatory-consulting": {
+        "title": "Regulatory Consulting Uzbekistan — Pharm Way Group",
+        "description": "Expert advice on regulatory matters in pharmaceuticals. Specialists in the Uzbekistan and Central Asia market."
+      },
+      "distributor-search": {
+        "title": "Distributor Search — Uzbekistan & Central Asia | Pharm Way Group",
+        "description": "Finding reliable pharmaceutical distributors in the Uzbekistan and Central Asia market."
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "partners": "Partners",
+    "blog": "Blog",
+    "process": "Process",
+    "faq": "FAQ",
+    "achievements": "Achievements",
+    "contact": "Contact",
+    "getInTouch": "Get in touch",
+    "testimonials": "Testimonials",
+    "menu": {
+      "company": "Company",
+      "resources": "Resources",
+      "allServices": "All Services",
+      "ctaButton": "Free Consultation",
+      "blogItem": "Blog & News",
+      "faqItem": "FAQ",
+      "serviceSubtitles": [
+        "Dietary supplements",
+        "GMP, ISO certificates",
+        "International freight",
+        "Customs documentation",
+        "Legal & regulatory advice",
+        "Find a trusted partner"
+      ],
+      "viewAllServices": "View all",
+      "helpEyebrow": "Not sure which service you need?",
+      "helpTitle": "Get a free consultation",
+      "servicesHeader": "Our Services"
+    },
+    "certificates": "Certificates"
+  },
+  "common": {
+    "readMore": "Read more",
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "viewAll": "View all",
+    "callUs": "Call us",
+    "ourServices": "Our services"
+  },
+  "footer": {
+    "tagline": "Your trusted gateway to Uzbekistan's pharmaceutical market.",
+    "quickLinks": "Quick links",
+    "ourServices": "Our services",
+    "contactInfo": "Contact information",
+    "address": "Tashkent, Uzbekistan",
+    "rights": "All rights reserved.",
+    "newsletterTitle": "Stay up to date"
+  },
+  "home": {
+    "hero": {
+      "badge": "10+ years of experience",
+      "title": "Your trusted path to the pharmaceutical market",
+      "subtitle": "Full-service BFQ (supplement) registration, certification, import and customs clearance.",
+      "ctaPrimary": "Free consultation",
+      "ctaSecondary": "Our services",
+      "stat1Value": "50+",
+      "stat1Label": "Registered products",
+      "stat2Value": "20+",
+      "stat2Label": "International partners",
+      "stat3Value": "10+",
+      "stat3Label": "Countries",
+      "stat4Value": "98%",
+      "stat4Label": "Successful deals"
+    },
+    "services": {
+      "title": "Our services",
+      "subtitle": "We support your product at every step, from manufacturer to the Uzbekistan market.",
+      "items": [
+        {
+          "title": "Supplement (BFQ) registration",
+          "desc": "Fast and legally compliant registration of dietary supplements."
+        },
+        {
+          "title": "Certification",
+          "desc": "Securing GMP, ISO, and other international certificates."
+        },
+        {
+          "title": "Import & logistics",
+          "desc": "Importing and delivering pharmaceutical products from abroad."
+        },
+        {
+          "title": "Customs clearance",
+          "desc": "Customs documentation for pharmaceutical cargo."
+        },
+        {
+          "title": "Regulatory Consulting",
+          "desc": "Expert advice on regulatory matters in the pharmaceutical field."
+        },
+        {
+          "title": "Distributor search",
+          "desc": "Finding reliable distributors in Uzbekistan and Central Asia."
+        }
+      ]
+    },
+    "process": {
+      "title": "Registration process",
+      "subtitle": "Four steps — a simple, transparent approach.",
+      "steps": [
+        {
+          "title": "Application & documents",
+          "desc": "We prepare the full document package and submit the application."
+        },
+        {
+          "title": "Expert review",
+          "desc": "We fully support you through the ministry's expert review."
+        },
+        {
+          "title": "Official approval",
+          "desc": "We obtain the official registration certificate."
+        },
+        {
+          "title": "Market launch",
+          "desc": "We help set up distribution and sales channels."
+        }
+      ]
+    },
+    "whyUs": {
+      "title": "Why Pharm Way Group?",
+      "subtitle": "Speed, expertise and global partnerships are our advantages.",
+      "items": [
+        {
+          "title": "Speed",
+          "desc": "We shorten registration timelines and save you time."
+        },
+        {
+          "title": "Deep expertise",
+          "desc": "A team that knows the regulatory framework inside out."
+        },
+        {
+          "title": "Global partner network",
+          "desc": "Direct contacts with manufacturers from 10+ countries."
+        },
+        {
+          "title": "Full-service support",
+          "desc": "From registration to sales — a true single-window approach."
+        }
+      ]
+    },
+    "stats": {
+      "title": "Pharm Way Group in numbers"
+    },
+    "partners": {
+      "title": "Trusted by",
+      "subtitle": "Strong partnerships with manufacturers, distributors and laboratories."
+    },
+    "cta": {
+      "title": "Ready to bring your product to the Uzbekistan market?",
+      "subtitle": "Contact our specialists for a free consultation.",
+      "button": "Get in touch"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "A trusted partner in the Uzbekistan and Central Asia pharmaceutical market",
+      "breadcrumb": "About Us"
+    },
+    "intro": {
+      "heading": "Pharm Way Group — Global Pharma, Local Success",
+      "text": "Pharm Way Group specializes in pharmaceutical import, registration, and regulatory support across Uzbekistan and Central Asia. We help international manufacturers gain reliable, legal, and efficient access to the local market.",
+      "stats": [
+        {
+          "value": "5+",
+          "label": "years of experience"
+        },
+        {
+          "value": "50+",
+          "label": "registered products"
+        },
+        {
+          "value": "20+",
+          "label": "international partners"
+        },
+        {
+          "value": "10+",
+          "label": "countries served"
+        }
+      ]
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To enable fast, legal, and efficient entry of internationally compliant pharmaceutical products into the Uzbekistan and Central Asia markets."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To become the leading pharmaceutical regulatory and import services company in Central Asia."
+    },
+    "history": {
+      "title": "Company History",
+      "milestones": [
+        {
+          "year": "2019",
+          "text": "The company was founded"
+        },
+        {
+          "year": "2020",
+          "text": "First international partnership agreement signed"
+        },
+        {
+          "year": "2021",
+          "text": "10+ products successfully registered"
+        },
+        {
+          "year": "2022",
+          "text": "Expansion into Central Asian markets began"
+        },
+        {
+          "year": "2024",
+          "text": "50+ products and 20+ international partners"
+        }
+      ]
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Transparency",
+          "desc": "Open and clear communication at every stage."
+        },
+        {
+          "title": "Professionalism",
+          "desc": "A team of highly skilled, experienced specialists."
+        },
+        {
+          "title": "Speed",
+          "desc": "We significantly shorten registration timelines."
+        },
+        {
+          "title": "Reliability",
+          "desc": "Stable, long-term relationships with our partners."
+        }
+      ]
+    },
+    "geography": {
+      "title": "Geographic Reach",
+      "subtitle": "Markets we operate in",
+      "mainMarket": "Main market",
+      "countries": [
+        "Uzbekistan",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Tajikistan",
+        "Turkmenistan",
+        "Azerbaijan"
+      ]
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "A team of experienced specialists",
+      "members": [
+        {
+          "name": "F. Karimov",
+          "role": "CEO",
+          "desc": "Leads company strategy and overall management."
+        },
+        {
+          "name": "D. Yusupova",
+          "role": "Regulatory Affairs Director",
+          "desc": "Oversees registration and regulatory processes."
+        },
+        {
+          "name": "A. Tashkentov",
+          "role": "Import & Logistics Manager",
+          "desc": "Manages import, logistics, and customs processes."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Get in touch — our specialists are ready to help",
+      "breadcrumb": "Contact"
+    },
+    "info": {
+      "heading": "Contact information",
+      "address": "Address",
+      "addressValue": "1 Amir Temur St, Yunusabad district, Tashkent",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Working hours",
+      "hoursValue": "Monday–Friday: 9:00 AM–6:00 PM",
+      "telegramCta": "Message us on Telegram",
+      "telegramHandle": "@pharmwaygroup",
+      "whatsappCta": "Message us on WhatsApp",
+      "whatsappHandle": "+998 93 062 41 49"
+    },
+    "form": {
+      "heading": "Send us a message",
+      "name": "Full name",
+      "phone": "Phone number",
+      "email": "Email",
+      "company": "Company name",
+      "serviceType": "Service type",
+      "selectPlaceholder": "Select",
+      "otherOption": "Other",
+      "message": "Message",
+      "submit": "Send message",
+      "responseTime": "We respond within 24 hours",
+      "successTitle": "Your message has been sent",
+      "successMessage": "We'll get back to you shortly."
+    },
+    "map": {
+      "heading": "Our location"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Is the consultation paid?",
+          "a": "No, the initial consultation is completely free."
+        },
+        {
+          "q": "How long does registration take?",
+          "a": "From 3 to 12 months, depending on the product type."
+        },
+        {
+          "q": "What documents are required?",
+          "a": "Manufacturer certificates, product specifications, and other documents. We'll clarify details during the consultation."
+        },
+        {
+          "q": "How is the service cost calculated?",
+          "a": "Each project is assessed individually. We'll determine the cost during a free consultation."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to start a partnership?",
+      "subtitle": "Get a free consultation today",
+      "button": "Get in touch"
+    }
+  },
+  "partnersPage": {
+    "hero": {
+      "title": "Our Partners",
+      "subtitle": "Trusted partnerships with leading pharmaceutical companies worldwide",
+      "breadcrumb": "Our Partners"
+    },
+    "stats": [
+      {
+        "value": "20+",
+        "label": "International partners"
+      },
+      {
+        "value": "10+",
+        "label": "Countries"
+      },
+      {
+        "value": "50+",
+        "label": "Registered products"
+      },
+      {
+        "value": "5+",
+        "label": "Years of partnership experience"
+      }
+    ],
+    "detail": "Learn more",
+    "tabs": [
+      {
+        "label": "Manufacturers",
+        "items": [
+          {
+            "name": "PharmaCorp International",
+            "flag": "🇩🇪",
+            "country": "Germany",
+            "desc": "GMP-certified pharmaceutical manufacturer"
+          },
+          {
+            "name": "BioMed Solutions",
+            "flag": "🇨🇳",
+            "country": "China",
+            "desc": "Manufacturer of biologically active supplements"
+          },
+          {
+            "name": "MedTech Industries",
+            "flag": "🇮🇳",
+            "country": "India",
+            "desc": "Generic drugs and API manufacturer"
+          },
+          {
+            "name": "EuroPharma AG",
+            "flag": "🇨🇭",
+            "country": "Switzerland",
+            "desc": "Specialized pharmaceutical products"
+          },
+          {
+            "name": "KoreaMed Co.",
+            "flag": "🇰🇷",
+            "country": "South Korea",
+            "desc": "Medical devices and diagnostics"
+          },
+          {
+            "name": "TurkPharma",
+            "flag": "🇹🇷",
+            "country": "Turkey",
+            "desc": "Manufacturer of medicines and supplements"
+          }
+        ]
+      },
+      {
+        "label": "Distributors",
+        "items": [
+          {
+            "name": "CentralAsia Pharma",
+            "flag": "🇰🇿",
+            "country": "Kazakhstan",
+            "desc": "Leading distributor in Central Asia"
+          },
+          {
+            "name": "UzMed Distribution",
+            "flag": "🇺🇿",
+            "country": "Uzbekistan",
+            "desc": "Local distribution network"
+          },
+          {
+            "name": "SilkRoad Medical",
+            "flag": "🇦🇿",
+            "country": "Azerbaijan",
+            "desc": "Distributor across the Caucasus and Central Asia"
+          },
+          {
+            "name": "GlobalMed Partners",
+            "flag": "🇦🇪",
+            "country": "UAE",
+            "desc": "International distribution company"
+          }
+        ]
+      },
+      {
+        "label": "Laboratories",
+        "items": [
+          {
+            "name": "CertLab International",
+            "flag": "🇩🇪",
+            "country": "Germany",
+            "desc": "Internationally accredited testing laboratory"
+          },
+          {
+            "name": "BioTest Central",
+            "flag": "🇵🇱",
+            "country": "Poland",
+            "desc": "Pharmaceutical quality control laboratory"
+          },
+          {
+            "name": "AsiaQuality Lab",
+            "flag": "🇸🇬",
+            "country": "Singapore",
+            "desc": "GMP and ISO standards certification"
+          }
+        ]
+      },
+      {
+        "label": "Pharmaceutical companies",
+        "items": [
+          {
+            "name": "RegPharma Consulting",
+            "flag": "🇬🇧",
+            "country": "United Kingdom",
+            "desc": "Regulatory affairs specialists"
+          },
+          {
+            "name": "MedReg Services",
+            "flag": "🇷🇺",
+            "country": "Russia",
+            "desc": "Regulatory services for CIS countries"
+          },
+          {
+            "name": "PharmaLink EU",
+            "flag": "🇳🇱",
+            "country": "Netherlands",
+            "desc": "Partner for the European market"
+          },
+          {
+            "name": "EastMed Alliance",
+            "flag": "🇯🇵",
+            "country": "Japan",
+            "desc": "Representative of Japanese pharmaceutical companies"
+          }
+        ]
+      }
+    ],
+    "becomePartner": {
+      "title": "Want to become a partner?",
+      "subtitle": "We partner with international manufacturers, distributors, and laboratories",
+      "benefits": [
+        "Access to Uzbekistan and Central Asia markets",
+        "Full regulatory support",
+        "Professional documentation services",
+        "Fast and efficient registration process",
+        "Deep knowledge of the local market"
+      ],
+      "form": {
+        "company": "Company name",
+        "contactPerson": "Contact person",
+        "phone": "Phone",
+        "message": "Message",
+        "submit": "Submit application",
+        "successTitle": "Your application has been received",
+        "successMessage": "We'll get back to you shortly."
+      }
+    },
+    "whyPartner": {
+      "title": "Why partner with us?",
+      "items": [
+        {
+          "title": "Trusted intermediary",
+          "desc": "Years of experience bridging Uzbekistan and international markets."
+        },
+        {
+          "title": "Fast process",
+          "desc": "Documentation and registration completed in the shortest timeframe."
+        },
+        {
+          "title": "Wide network",
+          "desc": "A strong network across 10+ countries and 20+ international partners."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to start a partnership?",
+      "button": "Get in touch"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "A full range of services for the Uzbekistan and Central Asia pharmaceutical market",
+      "breadcrumb": "Services"
+    },
+    "detailLabel": "Learn more",
+    "process": {
+      "title": "How do we work?",
+      "steps": [
+        {
+          "title": "Inquiry",
+          "desc": "Contact us for a free consultation"
+        },
+        {
+          "title": "Analysis",
+          "desc": "We review your product and documents"
+        },
+        {
+          "title": "Agreement",
+          "desc": "We agree on the terms of service"
+        },
+        {
+          "title": "Process",
+          "desc": "We handle every stage for you"
+        },
+        {
+          "title": "Result",
+          "desc": "Your product reaches the market"
+        }
+      ]
+    }
+  },
+  "serviceDetail": {
+    "breadcrumbServices": "Services",
+    "overviewHeading": "About the service",
+    "benefitsHeading": "Key benefits",
+    "processHeading": "Process steps",
+    "documentsHeading": "Required documents",
+    "timelineLabel": "Timeline",
+    "priceLabel": "Price",
+    "priceValue": "Individual, determined during a free consultation",
+    "faqHeading": "Frequently asked questions",
+    "ctaTitle": "Want more detailed information about this service?",
+    "ctaButton": "Free consultation",
+    "items": {
+      "bfq-registration": {
+        "overview": [
+          "BFQ (dietary supplement) registration is required to legally sell vitamins, minerals, and other supplements in the Uzbekistan market.",
+          "This process is simpler than drug registration but has its own specific requirements — we help from ingredient analysis to obtaining a permit.",
+          "Thanks to a fast and transparent approach, your product reaches the market in minimal time."
+        ],
+        "benefits": [
+          "Fast application submission",
+          "Support with laboratory analysis",
+          "Pre-checking ingredient compliance",
+          "Transparent pricing",
+          "Ongoing advisory support"
+        ],
+        "process": [
+          "Application",
+          "Document review",
+          "Laboratory analysis",
+          "Registration",
+          "Permit"
+        ],
+        "documents": [
+          "Composition certificate",
+          "Safety data",
+          "Manufacturer's license",
+          "Packaging specification"
+        ],
+        "timeline": "3-6 months",
+        "faq": [
+          {
+            "q": "What's the difference between a supplement and a medicine?",
+            "a": "A supplement is used to complement nutrition rather than to treat, and registration requirements are simpler."
+          },
+          {
+            "q": "Which supplements are prohibited?",
+            "a": "Products containing unauthorized substances or dosages are not registered."
+          },
+          {
+            "q": "Is an additional import permit needed?",
+            "a": "An additional import certificate may be required after registration — we review this on a case-by-case basis."
+          },
+          {
+            "q": "Is the consultation paid?",
+            "a": "No, the initial consultation is completely free."
+          }
+        ]
+      },
+      "certification": {
+        "overview": [
+          "Our certification service confirms that your product complies with GMP, ISO, and other international quality standards.",
+          "These certificates build trust and competitive advantage not only in Uzbekistan but across Central Asian markets.",
+          "From audit to ongoing monitoring, our specialists support you at every stage."
+        ],
+        "benefits": [
+          "Alignment with international standards",
+          "Managing the audit process",
+          "Professional documentation preparation",
+          "Monitoring to maintain certification",
+          "Increased competitiveness"
+        ],
+        "process": [
+          "Audit",
+          "Document preparation",
+          "Review",
+          "Certificate issuance",
+          "Monitoring"
+        ],
+        "documents": [
+          "Production process description",
+          "Quality control system",
+          "Laboratory results"
+        ],
+        "timeline": "2-4 months",
+        "faq": [
+          {
+            "q": "Which certificates are available?",
+            "a": "We provide certification under GMP, ISO 9001, and other internationally recognized quality standards."
+          },
+          {
+            "q": "How long is a certificate valid?",
+            "a": "Certificates are typically valid for 3 years, after which a re-audit is required."
+          },
+          {
+            "q": "How is the audit conducted?",
+            "a": "Auditors either visit the production site or assess remotely based on documents."
+          },
+          {
+            "q": "Is the consultation paid?",
+            "a": "No, the initial consultation is completely free."
+          }
+        ]
+      },
+      "import-logistics": {
+        "overview": [
+          "Our import and logistics service ensures the safe and timely delivery of pharmaceutical products from abroad.",
+          "For products requiring a cold chain, we arrange special transport conditions.",
+          "We oversee every stage, from contract to warehouse delivery."
+        ],
+        "benefits": [
+          "International shipping network",
+          "Cold chain logistics",
+          "Real-time cargo tracking",
+          "Insured shipping",
+          "Fast customs integration"
+        ],
+        "process": [
+          "Contract",
+          "Cargo shipment",
+          "Customs",
+          "Quarantine control",
+          "Delivery"
+        ],
+        "documents": [
+          "Invoice",
+          "Packing list",
+          "Quality certificate",
+          "Certificate of origin"
+        ],
+        "timeline": "2-6 weeks",
+        "faq": [
+          {
+            "q": "Is cold chain cargo transported?",
+            "a": "Yes, special transport is provided for products requiring temperature control."
+          },
+          {
+            "q": "How is the delivery time determined?",
+            "a": "It ranges from 2 to 6 weeks depending on country, volume, and transport type."
+          },
+          {
+            "q": "Is the cargo insured?",
+            "a": "Yes, all cargo is covered by insurance during transport."
+          },
+          {
+            "q": "Is the consultation paid?",
+            "a": "No, the initial consultation is completely free."
+          }
+        ]
+      },
+      "customs": {
+        "overview": [
+          "Our customs clearance service ensures pharmaceutical cargo crosses the border quickly and without issues.",
+          "Any declaration error can delay the cargo — that's why we carefully review documents in advance.",
+          "Our experienced customs brokers complete all clearance steps quickly and accurately."
+        ],
+        "benefits": [
+          "Experienced customs brokers",
+          "Early detection of document errors",
+          "Fast declaration processing",
+          "Direct liaison with customs authorities",
+          "Minimizing unexpected delays"
+        ],
+        "process": [
+          "Document preparation",
+          "Customs declaration",
+          "Inspection",
+          "Clearance",
+          "Cargo release"
+        ],
+        "documents": [
+          "Customs declaration",
+          "Invoice",
+          "Waybill",
+          "Permits"
+        ],
+        "timeline": "3-10 business days",
+        "faq": [
+          {
+            "q": "How long does customs clearance take?",
+            "a": "With a complete document set, it typically takes 3 to 10 business days."
+          },
+          {
+            "q": "What documents are required?",
+            "a": "A declaration, invoice, waybill, and product-specific permits are required."
+          },
+          {
+            "q": "What happens if the cargo fails inspection?",
+            "a": "We immediately take corrective action on any issues identified during inspection."
+          },
+          {
+            "q": "Is the consultation paid?",
+            "a": "No, the initial consultation is completely free."
+          }
+        ]
+      },
+      "regulatory-consulting": {
+        "overview": [
+          "Regulatory Consulting provides expert advice on complex legal and regulatory matters in the pharmaceutical industry.",
+          "From market entry to adapting to legislative changes, we develop a strategic roadmap.",
+          "Through ongoing partnership, we reduce your company's regulatory risks."
+        ],
+        "benefits": [
+          "In-depth legal expertise",
+          "Development of an individual strategy",
+          "Notification of legislative changes",
+          "Early risk identification",
+          "Long-term partnership"
+        ],
+        "process": [
+          "Problem analysis",
+          "Strategy development",
+          "Implementation",
+          "Monitoring",
+          "Reporting"
+        ],
+        "documents": [
+          "Relevant documents (project-specific)"
+        ],
+        "timeline": "Ongoing partnership",
+        "faq": [
+          {
+            "q": "How does the consulting service begin?",
+            "a": "We start with a free consultation to identify your company's needs."
+          },
+          {
+            "q": "Can I get a one-time consultation?",
+            "a": "Yes, a one-time consultation on a specific issue is also available."
+          },
+          {
+            "q": "Which areas are covered?",
+            "a": "We advise on registration, certification, import, and other regulatory areas."
+          },
+          {
+            "q": "Is the consultation paid?",
+            "a": "No, the initial consultation is completely free."
+          }
+        ]
+      },
+      "distributor-search": {
+        "overview": [
+          "Our distributor search service helps find reliable sales partners for your product in Uzbekistan and Central Asia.",
+          "Through our extensive partner network, your product reaches the right audience via the right channels.",
+          "We manage the entire process, from negotiations to contract signing."
+        ],
+        "benefits": [
+          "Extensive distributor network",
+          "Selection based on market analysis",
+          "Professional negotiation support",
+          "Protecting contract terms",
+          "Partnership monitoring"
+        ],
+        "process": [
+          "Market analysis",
+          "List of potential partners",
+          "Negotiations",
+          "Contract",
+          "Monitoring"
+        ],
+        "documents": [
+          "Company profile",
+          "Product catalog",
+          "Price list"
+        ],
+        "timeline": "1-3 months",
+        "faq": [
+          {
+            "q": "How is a distributor selected?",
+            "a": "The most suitable candidates are selected based on market share, reputation, and product fit."
+          },
+          {
+            "q": "Can we work with multiple distributors?",
+            "a": "Yes, depending on the product type, partnerships can be set up with several regional distributors."
+          },
+          {
+            "q": "Who determines the contract terms?",
+            "a": "Contract terms are negotiated jointly, taking both parties' interests into account."
+          },
+          {
+            "q": "Is the consultation paid?",
+            "a": "No, the initial consultation is completely free."
+          }
+        ]
+      }
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "title": "FAQ",
+      "subtitle": "Answers to the most frequently asked questions",
+      "breadcrumb": "FAQ"
+    },
+    "search": {
+      "placeholder": "Search for a question...",
+      "resultsFound": "{count} questions found",
+      "noResults": "Nothing found. Please contact us directly."
+    },
+    "categories": {
+      "all": "All questions",
+      "registration": "Registration",
+      "documents": "Documents",
+      "pricing": "Pricing & timeline",
+      "logistics": "Import & logistics",
+      "general": "General"
+    },
+    "items": [
+      {
+        "category": "registration",
+        "q": "How long does BFQ (supplement) registration take?",
+        "a": "BFQ (dietary supplement) registration usually takes 3-6 months. We monitor every stage of the process."
+      },
+      {
+        "category": "registration",
+        "q": "How many years is the registration certificate valid for?",
+        "a": "In Uzbekistan, the BFQ registration certificate is usually valid for 5 years. We recommend starting re-registration 6 months before expiration."
+      },
+      {
+        "category": "registration",
+        "q": "Is a GMP certificate mandatory?",
+        "a": "Yes, a GMP certificate is required for products intended for import. We help you meet all requirements during BFQ registration and certification."
+      },
+      {
+        "category": "registration",
+        "q": "How is re-registration carried out?",
+        "a": "Re-registration is a process similar to initial registration, but it's often faster. The document package is updated and goes through review again."
+      },
+      {
+        "category": "registration",
+        "q": "Can multiple products be registered at the same time?",
+        "a": "Yes, applications for several products can be submitted at once. This often saves time and costs."
+      },
+      {
+        "category": "registration",
+        "q": "Can a foreign company register on its own?",
+        "a": "Registering pharmaceutical products in Uzbekistan requires applying through a local representative or partner company. This is exactly the role Pharm Way Group plays."
+      },
+      {
+        "category": "documents",
+        "q": "What are the main documents required for registration?",
+        "a": "Key documents include: manufacturer's license, GMP certificate, product specification, clinical trial data (if required), packaging and label samples, and certificate of origin."
+      },
+      {
+        "category": "documents",
+        "q": "What language should the documents be in?",
+        "a": "Documents must be submitted in Uzbek or Russian. Documents in other languages must be accompanied by a notarized translation."
+      },
+      {
+        "category": "documents",
+        "q": "Do documents need to be notarized?",
+        "a": "Yes, most documents must be submitted with a notarized translation. We fully assist with this process as well."
+      },
+      {
+        "category": "documents",
+        "q": "Do documents have an expiration date?",
+        "a": "Yes, most certificates and documents have a validity period. For example, a GMP certificate is usually valid for 3 years. We check that your documents are up to date."
+      },
+      {
+        "category": "documents",
+        "q": "Are electronic documents accepted?",
+        "a": "Electronic copies may be reviewed at the initial stage, but the official process requires originals or notarized copies."
+      },
+      {
+        "category": "pricing",
+        "q": "What is the cost of your services?",
+        "a": "Pricing is determined individually, based on project complexity, product type, and service scope. You can get an exact price during a free consultation."
+      },
+      {
+        "category": "pricing",
+        "q": "How is payment made?",
+        "a": "Payment is made in stages based on the contract. Typically there's an initial payment, with the remaining amount due upon completion."
+      },
+      {
+        "category": "pricing",
+        "q": "Is the consultation paid?",
+        "a": "No, the initial consultation is completely free. We learn about your product and needs, then present a service proposal."
+      },
+      {
+        "category": "pricing",
+        "q": "Can the process be completed ahead of schedule?",
+        "a": "We always strive to finish ahead of the set deadline. The speed of government agencies also plays an important role."
+      },
+      {
+        "category": "logistics",
+        "q": "What permits are needed for import?",
+        "a": "Importing pharmaceutical products requires a registration certificate, import license, and customs documents. We help obtain all necessary permits."
+      },
+      {
+        "category": "logistics",
+        "q": "Which countries can products be imported from?",
+        "a": "Uzbekistan can import pharmaceutical products from any country in the world. The main requirement is that the product is approved and certified in its country of origin."
+      },
+      {
+        "category": "logistics",
+        "q": "Are there special requirements for cold chain products?",
+        "a": "Yes, cold chain requirements apply to biological products and certain medicines. We fully meet these requirements through specialized logistics partners."
+      },
+      {
+        "category": "logistics",
+        "q": "What should be done if there's a problem at customs?",
+        "a": "Our experienced specialists oversee customs processes from start to finish. We resolve any issues immediately as they arise."
+      },
+      {
+        "category": "general",
+        "q": "Which countries does Pharm Way Group work with?",
+        "a": "We primarily serve the Uzbekistan market, and also operate in Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Azerbaijan."
+      },
+      {
+        "category": "general",
+        "q": "What do I need to do to become a partner?",
+        "a": "Contact us — by phone, email, or Telegram. We'll discuss partnership opportunities during a free consultation."
+      },
+      {
+        "category": "general",
+        "q": "How much experience does your company have?",
+        "a": "Pharm Way Group has been operating since 2019. Over 5+ years of experience, we have successfully registered 50+ products and work with 20+ international partners."
+      }
+    ],
+    "stillQuestions": {
+      "title": "Didn't find the answer to your question?",
+      "subtitle": "Our specialists are ready to help you",
+      "consultBtn": "Free consultation",
+      "telegramBtn": "Message us on Telegram"
+    },
+    "cta": {
+      "title": "Ready to start a partnership?",
+      "button": "Get in touch"
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "News & articles",
+      "subtitle": "The latest news, analysis, and useful information from the pharmaceutical industry",
+      "breadcrumb": "Blog"
+    },
+    "search": {
+      "placeholder": "Search articles...",
+      "noResults": "No articles found for this search."
+    },
+    "categories": {
+      "all": "All",
+      "registration": "Registration",
+      "import": "Import",
+      "baa": "Supplements",
+      "medicalDevices": "Medical devices",
+      "regulatory": "Regulatory",
+      "news": "News"
+    },
+    "readMore": "Read more",
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next",
+      "showing": "Showing 6 of 6 articles"
+    },
+    "newsletter": {
+      "title": "Stay up to date with the news",
+      "subtitle": "The latest pharmaceutical industry news and articles straight to your inbox",
+      "placeholder": "Your email",
+      "button": "Subscribe",
+      "disclaimer": "We don't send spam. Unsubscribe at any time.",
+      "successMessage": "You're subscribed! Thank you."
+    },
+    "cta": {
+      "title": "Have questions about our articles?",
+      "button": "Get in touch"
+    },
+    "sidebar": {
+      "ctaTitle": "Free consultation",
+      "ctaSubtitle": "Our specialists are ready to answer your questions",
+      "ctaButton": "Get in touch",
+      "recentTitle": "Recent articles",
+      "categoriesTitle": "Categories",
+      "tagsTitle": "Tags"
+    },
+    "relatedTitle": "Related articles",
+    "backLink": "All articles",
+    "shareLabel": "Share",
+    "copyLink": "Copy link",
+    "copied": "Copied!",
+    "posts": [
+      {
+        "slug": "ozbekistonda-dori-vositalarini-royxatdan-otkazish",
+        "category": "registration",
+        "title": "Registering medicines in Uzbekistan: new requirements for 2024",
+        "excerpt": "The Ministry of Health of Uzbekistan has introduced a number of important changes to the pharmaceutical product registration process...",
+        "date": "December 15, 2024",
+        "readTime": "8 min",
+        "author": "Pharm Way Group",
+        "tags": [
+          "registration",
+          "medicines",
+          "uzbekistan"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Introduction"
+          },
+          {
+            "type": "paragraph",
+            "text": "The process of registering pharmaceutical products in Uzbekistan has changed significantly in recent years. The new rules introduced by the Ministry of Health are aimed at bringing the process closer to international standards."
+          },
+          {
+            "type": "heading",
+            "text": "Key requirements"
+          },
+          {
+            "type": "paragraph",
+            "text": "Starting in 2024, a GMP certificate is mandatory for all imported medicines. Additional product safety reports are also required."
+          },
+          {
+            "type": "heading",
+            "text": "Required documents"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Manufacturer's license",
+              "GMP certificate",
+              "Product specification",
+              "Clinical trial data (if required)",
+              "Packaging and label samples"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Process steps"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "Step 1: Prepare and notarize documents",
+              "Step 2: Submit the application to the ministry",
+              "Step 3: Undergo the review",
+              "Step 4: Receive the registration certificate"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Conclusion"
+          },
+          {
+            "type": "paragraph",
+            "text": "Preparing all documents in advance and working with an experienced partner is key to a successful registration. Pharm Way Group supports you at every stage of the process."
+          }
+        ]
+      },
+      {
+        "slug": "bfq-registration-guide",
+        "category": "baa",
+        "title": "How long does supplement registration take? A complete guide",
+        "excerpt": "Details on the process of registering dietary supplements in Uzbekistan, required documents, and timelines...",
+        "date": "December 10, 2024",
+        "readTime": "6 min",
+        "author": "Pharm Way Group",
+        "tags": [
+          "supplements",
+          "registration",
+          "documents"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Introduction"
+          },
+          {
+            "type": "paragraph",
+            "text": "Registering dietary supplements in Uzbekistan is simpler than for medicines, but it has its own specific requirements."
+          },
+          {
+            "type": "heading",
+            "text": "Key requirements"
+          },
+          {
+            "type": "paragraph",
+            "text": "Supplement products must include a safety certificate and composition analysis results. The absence of prohibited substances in the composition is checked separately."
+          },
+          {
+            "type": "heading",
+            "text": "Required documents"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Product composition information",
+              "Quality certificate",
+              "Permit document from the manufacturing country",
+              "Packaging sample"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Process steps"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "Step 1: Collect and translate documents",
+              "Step 2: Undergo laboratory analysis",
+              "Step 3: Entry into the state registry"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Conclusion"
+          },
+          {
+            "type": "paragraph",
+            "text": "With properly prepared documents, supplement registration is usually completed within 3-6 months."
+          }
+        ]
+      },
+      {
+        "slug": "import-documents",
+        "category": "import",
+        "title": "Documents required to import pharmaceutical products",
+        "excerpt": "The list of documents required when importing medicines from abroad into Uzbekistan, and the customs process...",
+        "date": "December 5, 2024",
+        "readTime": "5 min",
+        "author": "Pharm Way Group",
+        "tags": [
+          "import",
+          "documents",
+          "customs"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Introduction"
+          },
+          {
+            "type": "paragraph",
+            "text": "Importing medicines into Uzbekistan from abroad requires working with several government agencies."
+          },
+          {
+            "type": "heading",
+            "text": "Key requirements"
+          },
+          {
+            "type": "paragraph",
+            "text": "The importing company must hold an import license and a registration certificate for the product."
+          },
+          {
+            "type": "heading",
+            "text": "Required documents"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Import contract",
+              "Registration certificate",
+              "Customs declaration",
+              "Certificate of origin",
+              "Quality certificate"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Process steps"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "Step 1: Formalize the contract and documents",
+              "Step 2: Submit the customs declaration",
+              "Step 3: Pass inspection and receive the cargo"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Conclusion"
+          },
+          {
+            "type": "paragraph",
+            "text": "With a complete and accurate set of documents, the customs process is completed within a few days."
+          }
+        ]
+      },
+      {
+        "slug": "central-asia-pharma-2025",
+        "category": "news",
+        "title": "Central Asia's pharmaceutical market: outlook for 2025",
+        "excerpt": "Growth trends in the region's pharmaceutical market, new opportunities, and key information for foreign investors...",
+        "date": "December 1, 2024",
+        "readTime": "10 min",
+        "author": "Pharm Way Group",
+        "tags": [
+          "central asia",
+          "market",
+          "trends"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Introduction"
+          },
+          {
+            "type": "paragraph",
+            "text": "The Central Asian region has shown steady growth in the pharmaceutical sector in recent years."
+          },
+          {
+            "type": "heading",
+            "text": "Key trends"
+          },
+          {
+            "type": "paragraph",
+            "text": "The markets of Uzbekistan, Kazakhstan, and Kyrgyzstan are creating new opportunities for foreign investors. Government programs aimed at developing local manufacturing also play an important role."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Rising share of generic medicines",
+              "Investment in local manufacturing",
+              "Digitalization and electronic registration"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Opportunities"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "1. Establishing local partnerships",
+              "2. Expanding distribution networks",
+              "3. Leveraging digital sales channels"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Conclusion"
+          },
+          {
+            "type": "paragraph",
+            "text": "By 2025, the region's market is expected to become even more open and competitive."
+          }
+        ]
+      },
+      {
+        "slug": "gmp-certificate-guide",
+        "category": "regulatory",
+        "title": "GMP certificate: why it matters and how to get one",
+        "excerpt": "What a Good Manufacturing Practice certificate means for pharmaceutical manufacturers, and the process of obtaining it...",
+        "date": "November 25, 2024",
+        "readTime": "7 min",
+        "author": "Pharm Way Group",
+        "tags": [
+          "gmp",
+          "certificate",
+          "quality"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Introduction"
+          },
+          {
+            "type": "paragraph",
+            "text": "A Good Manufacturing Practice (GMP) certificate is an international standard confirming the quality of pharmaceutical manufacturing."
+          },
+          {
+            "type": "heading",
+            "text": "Key requirements"
+          },
+          {
+            "type": "paragraph",
+            "text": "To obtain the certificate, a manufacturing facility must meet established sanitary and quality control requirements."
+          },
+          {
+            "type": "heading",
+            "text": "Required documents"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Description of the manufacturing process",
+              "Quality control system documentation",
+              "Information on raw material sources"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Process steps"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "Step 1: Preliminary audit",
+              "Step 2: Addressing identified gaps",
+              "Step 3: Official certification inspection"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Conclusion"
+          },
+          {
+            "type": "paragraph",
+            "text": "Without a GMP certificate, importing medicines into most markets is not possible."
+          }
+        ]
+      },
+      {
+        "slug": "medical-devices-registration",
+        "category": "registration",
+        "title": "Registering medical devices: a step-by-step guide",
+        "excerpt": "Every stage of the state registration process for medical equipment and devices in Uzbekistan...",
+        "date": "November 20, 2024",
+        "readTime": "9 min",
+        "author": "Pharm Way Group",
+        "tags": [
+          "medical devices",
+          "registration"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Introduction"
+          },
+          {
+            "type": "paragraph",
+            "text": "Registering medical equipment and devices in Uzbekistan follows a different procedure than medicines."
+          },
+          {
+            "type": "heading",
+            "text": "Key requirements"
+          },
+          {
+            "type": "paragraph",
+            "text": "Products are divided into categories based on risk level, with separate requirements set for each."
+          },
+          {
+            "type": "heading",
+            "text": "Required documents"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Technical file",
+              "Quality certificate (ISO 13485)",
+              "User manual",
+              "Clinical evaluation report (if required)"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Process steps"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "Step 1: Determine the category",
+              "Step 2: Submit technical documentation",
+              "Step 3: Review and registration"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Conclusion"
+          },
+          {
+            "type": "paragraph",
+            "text": "Correct classification significantly speeds up the process."
+          }
+        ]
+      },
+      {
+        "slug": "customs-mistakes",
+        "category": "import",
+        "title": "Customs clearance: common mistakes and how to avoid them",
+        "excerpt": "The most common problems with customs clearance when importing pharmaceutical products, and their solutions...",
+        "date": "November 15, 2024",
+        "readTime": "6 min",
+        "author": "Pharm Way Group",
+        "tags": [
+          "customs",
+          "import",
+          "mistakes"
+        ],
+        "content": [
+          {
+            "type": "heading",
+            "text": "Introduction"
+          },
+          {
+            "type": "paragraph",
+            "text": "Many companies make the same mistakes when clearing pharmaceutical cargo through customs."
+          },
+          {
+            "type": "heading",
+            "text": "Most common mistakes"
+          },
+          {
+            "type": "paragraph",
+            "text": "Inconsistencies in documents and incorrect classification are the most common issues."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Inconsistent data across documents",
+              "Incorrect commodity code (HS code)",
+              "Expired certificates",
+              "Failure to meet packaging requirements"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "How to avoid them"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "1. Check documents in advance",
+              "2. Work with an experienced customs broker",
+              "3. Track the validity of all certificates"
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Conclusion"
+          },
+          {
+            "type": "paragraph",
+            "text": "Advance preparation prevents delays at customs."
+          }
+        ]
+      }
+    ],
+    "views": "{count}"
+  },
+  "testimonialsPage": {
+    "hero": {
+      "title": "Client Testimonials",
+      "subtitle": "Feedback from partners who have used our services",
+      "breadcrumb": "Client Testimonials"
+    },
+    "stats": [
+      {
+        "value": "4.9/5",
+        "label": "Average rating"
+      },
+      {
+        "value": "50+",
+        "label": "Client reviews"
+      },
+      {
+        "value": "20+",
+        "label": "Regular partners"
+      },
+      {
+        "value": "98%",
+        "label": "Client satisfaction"
+      }
+    ],
+    "featured": {
+      "quote": "Partnering with Pharm Way Group was a decisive step for our company's entry into the Uzbekistan market. A professional team, fast service, and full support — we got an even better result than we expected.",
+      "name": "Mikhail Kovalenko",
+      "role": "CEO, PharmaCorp International",
+      "flag": "🇩🇪",
+      "country": "Germany"
+    },
+    "categories": {
+      "all": "All",
+      "manufacturers": "Manufacturers",
+      "distributors": "Distributors",
+      "international": "International Companies",
+      "local": "Local Partners"
+    },
+    "testimonials": [
+      {
+        "quote": "The registration process went much faster and smoother than we expected. All documents were prepared professionally, and we were kept informed throughout the process.",
+        "name": "Li Wei",
+        "role": "Export Director",
+        "company": "BioMed Solutions",
+        "flag": "🇨🇳",
+        "country": "China",
+        "category": "manufacturers"
+      },
+      {
+        "quote": "We contacted Pharm Way Group to register our dietary supplements in Uzbekistan. All documents were ready within 4 months — our best result yet.",
+        "name": "Priya Sharma",
+        "role": "Regulatory Affairs Manager",
+        "company": "MedTech Industries",
+        "flag": "🇮🇳",
+        "country": "India",
+        "category": "manufacturers"
+      },
+      {
+        "quote": "The import and logistics services were of a very high standard. Cold chain requirements were fully observed, and products arrived on time.",
+        "name": "Ahmed Al-Rashid",
+        "role": "Operations Director",
+        "company": "Gulf Medical Trading",
+        "flag": "🇦🇪",
+        "country": "UAE",
+        "category": "distributors"
+      },
+      {
+        "quote": "The regulatory consulting service helped us save significant time and money. The specialists gave complete answers to every question we had.",
+        "name": "Hans Mueller",
+        "role": "Market Access Director",
+        "company": "EuroPharma AG",
+        "flag": "🇨🇭",
+        "country": "Switzerland",
+        "category": "international"
+      },
+      {
+        "quote": "The professional approach and strict adherence to deadlines during the registration of our medical devices pleasantly surprised us.",
+        "name": "Kim Ji-young",
+        "role": "CIS Regional Manager",
+        "company": "KoreaMed Co.",
+        "flag": "🇰🇷",
+        "country": "South Korea",
+        "category": "manufacturers"
+      },
+      {
+        "quote": "Pharm Way Group's extensive network and experience provided invaluable help in finding a distributor in the Central Asian market.",
+        "name": "Fatima Yilmaz",
+        "role": "Business Development",
+        "company": "TurkPharma",
+        "flag": "🇹🇷",
+        "country": "Turkey",
+        "category": "international"
+      },
+      {
+        "quote": "There were no issues whatsoever during customs clearance and the import process. All documents were prepared on time.",
+        "name": "Alibek Dzhaksybekov",
+        "role": "Import Manager",
+        "company": "CentralAsia Pharma",
+        "flag": "🇰🇿",
+        "country": "Kazakhstan",
+        "category": "distributors"
+      },
+      {
+        "quote": "The assistance with obtaining GMP and ISO certificates was very professional. The documents were prepared correctly and in full.",
+        "name": "Anna Kowalski",
+        "role": "Quality Director",
+        "company": "PharmaLink EU",
+        "flag": "🇵🇱",
+        "country": "Poland",
+        "category": "international"
+      },
+      {
+        "quote": "We have been working with Pharm Way Group for 3 years in the Uzbekistan market. They are our trusted local partner.",
+        "name": "Sardor Nazarov",
+        "role": "Director",
+        "company": "UzMed Distribution",
+        "flag": "🇺🇿",
+        "country": "Uzbekistan",
+        "category": "local"
+      }
+    ],
+    "video": {
+      "title": "Video Testimonials",
+      "subtitle": "Our partners talk about their experience",
+      "items": [
+        {
+          "title": "PharmaCorp International — experience entering the Uzbekistan market",
+          "duration": "3:24"
+        },
+        {
+          "title": "BioMed Solutions — dietary supplement registration process",
+          "duration": "2:48"
+        },
+        {
+          "title": "KoreaMed — medical device registration",
+          "duration": "4:02"
+        }
+      ]
+    },
+    "trust": {
+      "title": "Certificates & Memberships",
+      "badges": [
+        "ISO 9001:2015",
+        "GMP Certified",
+        "GDP Certified",
+        "WHO Partner",
+        "Halal Certificate"
+      ]
+    },
+    "leaveReview": {
+      "title": "Leave Your Review",
+      "subtitle": "Have you used our services? Share your experience",
+      "ratingLabel": "Your rating",
+      "name": "Full name",
+      "company": "Company",
+      "role": "Position",
+      "country": "Country",
+      "message": "Review",
+      "submit": "Submit review",
+      "successTitle": "Thank you!",
+      "successMessage": "Your review has been submitted successfully."
+    },
+    "cta": {
+      "title": "Join our successful partners",
+      "button": "Contact us"
+    }
+  },
+  "certificatesPage": {
+    "hero": {
+      "title": "Certificates & Licenses",
+      "subtitle": "Official documents confirming our compliance with international quality standards",
+      "breadcrumb": "Certificates"
+    },
+    "categories": {
+      "all": "All",
+      "registration": "Registration",
+      "gmp": "GMP",
+      "iso": "ISO",
+      "license": "License"
+    },
+    "items": [
+      {
+        "title": "GMP Certificate",
+        "issuer": "EU GMP / PIC/S",
+        "category": "gmp",
+        "date": "2023",
+        "description": "International certificate confirming compliance with Good Manufacturing Practice requirements.",
+        "details": "This certificate confirms full compliance of manufacturing, storage and transportation processes for pharmaceutical products with international GMP (Good Manufacturing Practice) standards. The certificate is reviewed and renewed annually."
+      },
+      {
+        "title": "ISO 9001:2015",
+        "issuer": "TÜV SÜD",
+        "category": "iso",
+        "date": "2022",
+        "description": "Compliance of the quality management system with the international ISO 9001:2015 standard.",
+        "details": "The ISO 9001:2015 certificate confirms that our company's quality management system is organized in accordance with customer requirements, legal regulations, and continuous improvement principles."
+      },
+      {
+        "title": "ISO 13485:2016",
+        "issuer": "Bureau Veritas",
+        "category": "iso",
+        "date": "2022",
+        "description": "International quality management system certificate for medical devices.",
+        "details": "ISO 13485:2016 is a specialized quality management standard applied to the manufacturing, registration, and distribution of medical devices. This certificate confirms our high level of expertise in handling medical devices."
+      },
+      {
+        "title": "State Registration Certificate",
+        "issuer": "Ministry of Health of Uzbekistan",
+        "category": "registration",
+        "date": "2024",
+        "description": "Official certificate granting the right to register medicinal products in the Republic of Uzbekistan.",
+        "details": "This certificate allows our company to legally register and sell medicinal products and medical devices in the Republic of Uzbekistan. Issued by the state sanitary-epidemiological surveillance authority."
+      },
+      {
+        "title": "Dietary Supplement Registration Certificate",
+        "issuer": "Sanitary-Epidemiological Surveillance",
+        "category": "registration",
+        "date": "2024",
+        "description": "Official certificate for registration of dietary supplements.",
+        "details": "The safety and quality of dietary supplements have been confirmed by the state sanitary-epidemiological surveillance authority, allowing the legal sale of products in the Uzbekistan market."
+      },
+      {
+        "title": "Pharmaceutical Activity License",
+        "issuer": "Licensing Chamber",
+        "category": "license",
+        "date": "2023",
+        "description": "State license for the import and sale of pharmaceutical products.",
+        "details": "This license grants our company the right to import, store, and sell pharmaceutical products within Uzbekistan. The license is regularly reviewed by state authorities."
+      }
+    ],
+    "modal": {
+      "issuedBy": "Issuing Organization",
+      "categoryLabel": "Category",
+      "dateLabel": "Issued",
+      "close": "Close",
+      "requestButton": "Send a request about this certificate"
+    },
+    "requestForm": {
+      "heading": "Send a Certificate Request",
+      "subtitle": "Fill in the form to learn more about the certificate you're interested in — our specialists will contact you shortly.",
+      "name": "Your name",
+      "phone": "Phone number",
+      "email": "Email",
+      "company": "Company",
+      "certificateLabel": "Certificate",
+      "certificatePlaceholder": "Select a certificate",
+      "message": "Additional message",
+      "submit": "Send request",
+      "submitting": "Sending...",
+      "successTitle": "Your request has been received!",
+      "successMessage": "Our specialists will contact you shortly.",
+      "responseTime": "We usually respond within 24 hours.",
+      "errorMessage": "An error occurred. Please try again."
+    },
+    "cta": {
+      "title": "Want to learn more about our certificates?",
+      "button": "Get in touch"
+    }
+  }
+}
