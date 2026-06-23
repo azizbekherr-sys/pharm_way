@@ -12,7 +12,6 @@ const PAGES = [
   "/blog",
   "/faq",
   "/testimonials",
-  "/certificates",
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
