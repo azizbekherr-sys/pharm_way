@@ -44,7 +44,7 @@ export async function generateMetadata({
     authors: [{ name: "Pharm Way Group" }],
     creator: "Pharm Way Group",
     metadataBase: new URL(siteUrl),
-    alternates: buildAlternates(""),
+    alternates: buildAlternates(locale, ""),
     openGraph: {
       type: "website",
       locale: ogLocale[locale] ?? "uz_UZ",

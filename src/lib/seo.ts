@@ -9,13 +9,14 @@ export const ogLocale: Record<string, string> = {
   en: "en_US",
 };
 
-export function buildAlternates(path: string) {
+export function buildAlternates(locale: string, path: string) {
   return {
-    canonical: `${siteUrl}/uz${path}`,
+    canonical: `${siteUrl}/${locale}${path}`,
     languages: {
       uz: `${siteUrl}/uz${path}`,
       ru: `${siteUrl}/ru${path}`,
       en: `${siteUrl}/en${path}`,
+      "x-default": `${siteUrl}/uz${path}`,
     },
   };
 }
@@ -34,7 +35,7 @@ export function buildPageMetadata({
   return {
     title: { absolute: title },
     description,
-    alternates: buildAlternates(path),
+    alternates: buildAlternates(locale, path),
     openGraph: {
       type: "website",
       locale: ogLocale[locale] ?? "uz_UZ",
@@ -61,7 +62,7 @@ export function buildOrganizationJsonLd(locale: string) {
     name: siteConfig.name,
     url: siteUrl,
     logo: `${siteUrl}/images/logo.png`,
-    description: "O'zbekistonda farmatsevtik mahsulotlar importi va registratsiyasi",
+    description: "O'zbekistonda biologik faol qo'shimchalar (BFQ) importi va registratsiyasi",
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address[locale as "uz" | "ru" | "en"] ?? siteConfig.address.uz,
