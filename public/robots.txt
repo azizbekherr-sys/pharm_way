@@ -7,6 +7,6 @@ User-agent: Yandex
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Host: pharmway.uz
+Host: www.pharmway.uz
 
-Sitemap: https://pharmway.uz/sitemap.xml
+Sitemap: https://www.pharmway.uz/sitemap.xml

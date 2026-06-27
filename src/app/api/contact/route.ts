@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
         `🕐 <b>Vaqt:</b> ${dateStr}`,
         `🆔 <b>ID:</b> #${data.id.slice(0, 8)}`,
         "",
-        `<a href="https://pharmway.uz/admin/contacts">Admin panelda ko'rish →</a>`,
+        `<a href="https://www.pharmway.uz/admin/contacts">Admin panelda ko'rish →</a>`,
       ].join("\n");
 
       await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {

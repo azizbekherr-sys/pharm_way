@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 
-export const siteUrl = "https://pharmway.uz";
+export const siteUrl = "https://www.pharmway.uz";
 
 export const ogLocale: Record<string, string> = {
   uz: "uz_UZ",
