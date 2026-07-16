@@ -98,7 +98,7 @@ export default function ContactInfo() {
           <Send size={18} />
         </a>
         <a
-          href="https://instagram.com/pharmwaygroup"
+          href="https://www.instagram.com/pharmway.uz"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
