@@ -7,6 +7,7 @@ import {
   Smartphone,
   Tablet,
   Monitor,
+  TrendingUp,
   CalendarDays,
   MapPin,
   Chrome,
@@ -21,6 +22,8 @@ type ArticleSlice = { key: string; title: string; count: number };
 type DayPoint = { day: string; count: number };
 
 type Stats = {
+  historyTotal: number;
+  historyByArticle: ArticleSlice[];
   allTime: number;
   total: number;
   today: number;
@@ -202,14 +205,13 @@ export default function AdminAnalyticsPage() {
   }, [range]);
 
   const deviceTotal = stats ? stats.byDevice.reduce((s, d) => s + d.count, 0) : 0;
-  const mobileCount = stats?.byDevice.find((d) => d.key === "mobile")?.count ?? 0;
 
   const SUMMARY = stats
     ? [
-        { label: "Ko'rishlar (tanlangan davr)", value: stats.total, icon: Eye, color: "bg-blue-500" },
+        { label: "Jami ko'rishlar (boshidan)", value: stats.historyTotal.toLocaleString("uz-UZ"), icon: Eye, color: "bg-rose-500" },
+        { label: "Kuzatilgan (tanlangan davr)", value: stats.total, icon: TrendingUp, color: "bg-blue-500" },
         { label: "Bugun", value: stats.today, icon: CalendarDays, color: "bg-amber-500" },
         { label: "Davlatlar", value: stats.byCountry.length, icon: Globe2, color: "bg-emerald-500" },
-        { label: "Mobil ulush", value: `${pct(mobileCount, deviceTotal)}%`, icon: Smartphone, color: "bg-violet-500" },
       ]
     : [];
 
@@ -354,11 +356,16 @@ export default function AdminAnalyticsPage() {
             </Card>
           </div>
 
-          {/* Eng ko'p o'qilgan maqolalar */}
+          {/* Eng ko'p o'qilgan maqolalar (boshidan, umumiy hisoblagich) */}
           <div className="rounded-xl border border-slate-200 bg-white">
-            <div className="flex items-center gap-2 border-b border-slate-100 px-6 py-4">
-              <FileText size={17} className="text-slate-400" />
-              <h2 className="text-[15px] font-bold text-slate-900">Eng ko&apos;p o&apos;qilgan maqolalar</h2>
+            <div className="flex items-center justify-between gap-2 border-b border-slate-100 px-6 py-4">
+              <div className="flex items-center gap-2">
+                <FileText size={17} className="text-slate-400" />
+                <h2 className="text-[15px] font-bold text-slate-900">Eng ko&apos;p o&apos;qilgan maqolalar</h2>
+              </div>
+              <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-medium text-slate-500">
+                Boshidan, umumiy
+              </span>
             </div>
             <table className="w-full text-left text-sm">
               <thead className="text-slate-500">
@@ -368,21 +375,21 @@ export default function AdminAnalyticsPage() {
                 </tr>
               </thead>
               <tbody>
-                {stats.byArticle.map((a, i) => (
+                {stats.historyByArticle.map((a, i) => (
                   <tr key={a.key} className={`h-[52px] transition-colors hover:bg-slate-50 ${i % 2 === 1 ? "bg-slate-50/50" : ""}`}>
                     <td className="max-w-md truncate px-6 font-medium text-slate-900">{a.title}</td>
                     <td className="px-6 text-right">
                       <span className="inline-flex items-center gap-1.5 font-semibold text-slate-900">
                         <Eye size={14} className="text-slate-400" />
-                        {a.count}
+                        {a.count.toLocaleString("uz-UZ")}
                       </span>
                     </td>
                   </tr>
                 ))}
-                {stats.byArticle.length === 0 && (
+                {stats.historyByArticle.length === 0 && (
                   <tr>
                     <td colSpan={2} className="px-6 py-8 text-center text-slate-400">
-                      Hozircha tashriflar yo&apos;q
+                      Hozircha ko&apos;rishlar yo&apos;q
                     </td>
                   </tr>
                 )}
@@ -391,8 +398,9 @@ export default function AdminAnalyticsPage() {
           </div>
 
           <p className="text-center text-xs text-slate-400">
-            Jami tashriflar (butun davr): {stats.allTime.toLocaleString("uz-UZ")} · Geo ma&apos;lumot production
-            (pharmway.uz)&apos;da yig&apos;iladi
+            &laquo;Boshidan&raquo; ko&apos;rsatkichlar barcha ko&apos;rishlarni o&apos;z ichiga oladi. Davlat, shahar va
+            qurilma ma&apos;lumoti faqat yangi kuzatuvdan (production, pharmway.uz) yig&apos;iladi — eski ko&apos;rishlar
+            uchun bu ma&apos;lumot mavjud emas.
           </p>
         </>
       ) : null}

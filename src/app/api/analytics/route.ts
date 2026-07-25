@@ -23,12 +23,25 @@ export async function GET(req: NextRequest) {
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
 
+  // Eski (kuzatuvdan oldingi) ko'rishlar faqat blog_posts.views hisoblagichida bor —
+  // ular uchun davlat/qurilma yo'q, lekin sonini "boshidan" ko'rsatkich sifatida beramiz.
+  const { data: posts } = await supabaseAdmin
+    .from("blog_posts")
+    .select("slug, title, views")
+    .order("views", { ascending: false });
+  const historyByArticle = (posts ?? [])
+    .map((p) => ({ key: p.slug as string, title: (p.title as string) ?? p.slug, count: (p.views as number) ?? 0 }))
+    .filter((a) => a.count > 0);
+  const historyTotal = historyByArticle.reduce((s, a) => s + a.count, 0);
+
   // RPC eski/to'liqmas bo'lsa ham sahifa buzilmasligi uchun to'liq shaklga keltiramiz.
   const raw = (data ?? {}) as Record<string, unknown>;
   const num = (k: string) => (typeof raw[k] === "number" ? (raw[k] as number) : 0);
   const arr = (k: string) => (Array.isArray(raw[k]) ? raw[k] : []);
 
   return NextResponse.json({
+    historyTotal,
+    historyByArticle,
     allTime: num("allTime"),
     total: num("total"),
     today: num("today"),
