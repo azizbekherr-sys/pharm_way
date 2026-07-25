@@ -113,6 +113,25 @@ model Stat {
   @@map("stats")
 }
 
+model BlogView {
+  id        BigInt   @id @default(autoincrement())
+  slug      String
+  country   String?
+  city      String?
+  region    String?
+  device    String   @default("desktop")
+  os        String?
+  browser   String?
+  locale    String?
+  referrer  String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([slug])
+  @@index([country])
+  @@index([createdAt])
+  @@map("blog_views")
+}
+
 model AdminUser {
   id        String   @id @default(cuid())
   email     String   @unique

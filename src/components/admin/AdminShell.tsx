@@ -11,6 +11,7 @@ import {
   Settings,
   HelpCircle,
   BarChart3,
+  TrendingUp,
   LogOut,
   Bell,
 } from "lucide-react";
@@ -24,6 +25,7 @@ const NAV_ITEMS = [
   { href: "/admin/services", label: "Xizmatlar", icon: Settings },
   { href: "/admin/faq", label: "FAQ", icon: HelpCircle },
   { href: "/admin/stats", label: "Statistika", icon: BarChart3 },
+  { href: "/admin/analytics", label: "Analitika", icon: TrendingUp },
 ];
 
 const WEEKDAYS = ["Yakshanba", "Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba"];

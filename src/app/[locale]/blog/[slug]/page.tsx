@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { getBlogPostBySlug, getPublishedBlogPosts, incrementBlogPostViews } from "@/lib/blog";
+import { recordBlogView } from "@/lib/analytics";
 import BlogDetailHeader from "@/components/blog-detail/BlogDetailHeader";
 import BlogDetailContent from "@/components/blog-detail/BlogDetailContent";
 import BlogDetailSidebar from "@/components/blog-detail/BlogDetailSidebar";
@@ -46,6 +47,7 @@ export default async function BlogDetailPage({
   const post = await getBlogPostBySlug(locale, slug);
   if (!post) notFound();
   await incrementBlogPostViews(slug);
+  await recordBlogView(slug, locale);
   post.views += 1;
   const allPosts = await getPublishedBlogPosts(locale);
   const relatedPosts = allPosts
