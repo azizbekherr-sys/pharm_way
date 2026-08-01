@@ -21,6 +21,23 @@ export function buildAlternates(locale: string, path: string) {
   };
 }
 
+/**
+ * Search-engine ownership verification, driven entirely by env vars.
+ * Returns `undefined` (no tags rendered) unless a real value is present.
+ */
+export function buildVerification(): Metadata["verification"] | undefined {
+  const google = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
+  const yandex = process.env.NEXT_PUBLIC_YANDEX_VERIFICATION?.trim();
+  const bing = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION?.trim();
+
+  const verification: NonNullable<Metadata["verification"]> = {};
+  if (google) verification.google = google;
+  if (yandex) verification.yandex = yandex;
+  if (bing) verification.other = { "msvalidate.01": bing };
+
+  return Object.keys(verification).length > 0 ? verification : undefined;
+}
+
 export function buildPageMetadata({
   locale,
   path,
@@ -54,6 +71,12 @@ export function buildPageMetadata({
   };
 }
 
+const ORG_DESCRIPTION: Record<string, string> = {
+  uz: "O'zbekistonda biologik faol qo'shimchalar (BFQ), dori vositalari va tibbiy buyumlarni import qilish va ro'yxatdan o'tkazish bo'yicha regulatory xizmatlar.",
+  ru: "Регуляторные услуги по импорту и регистрации биологически активных добавок (БАД), лекарственных средств и медицинских изделий в Узбекистане.",
+  en: "Regulatory services for importing and registering dietary supplements (BFQ), medicines and medical devices in Uzbekistan.",
+};
+
 export function buildOrganizationJsonLd(locale: string) {
   return {
     "@context": "https://schema.org",
@@ -62,7 +85,7 @@ export function buildOrganizationJsonLd(locale: string) {
     name: siteConfig.name,
     url: siteUrl,
     logo: `${siteUrl}/images/logo.png`,
-    description: "O'zbekistonda biologik faol qo'shimchalar (BFQ) importi va registratsiyasi",
+    description: ORG_DESCRIPTION[locale] ?? ORG_DESCRIPTION.uz,
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address[locale as "uz" | "ru" | "en"] ?? siteConfig.address.uz,
@@ -110,6 +133,64 @@ export function buildLocalBusinessJsonLd(locale: string) {
       },
     ],
     priceRange: "$$",
+  };
+}
+
+export function buildWebSiteJsonLd(locale: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
+    url: siteUrl,
+    name: siteConfig.name,
+    inLanguage: locale,
+    publisher: { "@id": `${siteUrl}/#organization` },
+  };
+}
+
+export function buildBreadcrumbJsonLd(
+  locale: string,
+  items: { name: string; path: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: `${siteUrl}/${locale}${item.path}`,
+    })),
+  };
+}
+
+export function buildServiceJsonLd({
+  locale,
+  slug,
+  name,
+  description,
+}: {
+  locale: string;
+  slug: string;
+  name: string;
+  description: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${siteUrl}/${locale}/services/${slug}#service`,
+    name,
+    description,
+    serviceType: name,
+    url: `${siteUrl}/${locale}/services/${slug}`,
+    provider: { "@id": `${siteUrl}/#organization` },
+    areaServed: [
+      { "@type": "Country", name: "Uzbekistan" },
+      { "@type": "Country", name: "Kazakhstan" },
+      { "@type": "Country", name: "Kyrgyzstan" },
+      { "@type": "Country", name: "Tajikistan" },
+    ],
+    availableLanguage: ["uz", "ru", "en"],
   };
 }
 

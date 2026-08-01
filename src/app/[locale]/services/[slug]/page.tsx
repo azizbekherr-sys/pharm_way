@@ -9,7 +9,13 @@ import ServiceDocuments from "@/components/service-detail/ServiceDocuments";
 import ServiceTimelinePricing from "@/components/service-detail/ServiceTimelinePricing";
 import ServiceFAQAccordion from "@/components/service-detail/ServiceFAQAccordion";
 import CTA from "@/components/home/CTA";
-import { buildPageMetadata } from "@/lib/seo";
+import JsonLd from "@/components/seo/JsonLd";
+import {
+  buildPageMetadata,
+  buildServiceJsonLd,
+  buildBreadcrumbJsonLd,
+  buildFaqJsonLd,
+} from "@/lib/seo";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -47,9 +53,23 @@ export default async function ServiceDetailPage({
   const title = items[index]?.title ?? "";
 
   const tDetail = await getTranslations({ locale, namespace: "serviceDetail" });
+  const tMeta = await getTranslations({ locale, namespace: `meta.services.${slug}` });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  const faqItems = (tDetail.raw(`items.${slug}.faq`) as { q: string; a: string }[]) ?? [];
+
+  const jsonLd = [
+    buildServiceJsonLd({ locale, slug, name: title, description: tMeta("description") }),
+    buildBreadcrumbJsonLd(locale, [
+      { name: tNav("home"), path: "" },
+      { name: tNav("services"), path: "/services" },
+      { name: title, path: `/services/${slug}` },
+    ]),
+    ...(faqItems.length > 0 ? [buildFaqJsonLd(faqItems)] : []),
+  ];
 
   return (
     <>
+      <JsonLd data={jsonLd} />
       <ServiceDetailHero title={title} />
       <ServiceOverview slug={slug} />
       <ServiceProcessSteps slug={slug} />

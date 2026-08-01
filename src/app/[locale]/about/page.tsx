@@ -8,7 +8,9 @@ import OurValues from "@/components/about/OurValues";
 import Geography from "@/components/about/Geography";
 import Team from "@/components/about/Team";
 import CTA from "@/components/home/CTA";
+import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata } from "@/lib/seo";
+import { sectionBreadcrumb } from "@/lib/breadcrumb";
 
 export async function generateMetadata({
   params,
@@ -27,9 +29,11 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const breadcrumb = await sectionBreadcrumb(locale, "about", "/about");
 
   return (
     <>
+      <JsonLd data={breadcrumb} />
       <AboutHero />
       <CompanyIntro />
       <MissionVision />

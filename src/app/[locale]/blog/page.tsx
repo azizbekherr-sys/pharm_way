@@ -5,7 +5,9 @@ import FeaturedPost from "@/components/blog-page/FeaturedPost";
 import BlogExplorer from "@/components/blog-page/BlogExplorer";
 import Newsletter from "@/components/blog-page/Newsletter";
 import CTA from "@/components/home/CTA";
+import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata } from "@/lib/seo";
+import { sectionBreadcrumb } from "@/lib/breadcrumb";
 import { getPublishedBlogPosts } from "@/lib/blog";
 
 export const revalidate = 60;
@@ -30,9 +32,11 @@ export default async function BlogPage({
   const t = await getTranslations({ locale, namespace: "blog.cta" });
   const posts = await getPublishedBlogPosts(locale);
   const [featured, ...rest] = posts;
+  const breadcrumb = await sectionBreadcrumb(locale, "blog", "/blog");
 
   return (
     <>
+      <JsonLd data={breadcrumb} />
       <BlogHero />
       {featured && <FeaturedPost post={featured} />}
       <BlogExplorer posts={rest} />

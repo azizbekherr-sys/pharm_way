@@ -4,7 +4,9 @@ import ServicesHero from "@/components/services-page/ServicesHero";
 import ServicesGrid from "@/components/services-page/ServicesGrid";
 import ServicesProcess from "@/components/services-page/ServicesProcess";
 import CTA from "@/components/home/CTA";
+import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata } from "@/lib/seo";
+import { sectionBreadcrumb } from "@/lib/breadcrumb";
 
 export async function generateMetadata({
   params,
@@ -23,9 +25,11 @@ export default async function ServicesPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const breadcrumb = await sectionBreadcrumb(locale, "services", "/services");
 
   return (
     <>
+      <JsonLd data={breadcrumb} />
       <ServicesHero />
       <ServicesGrid />
       <ServicesProcess />

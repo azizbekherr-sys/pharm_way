@@ -5,7 +5,9 @@ import ContactSection from "@/components/contact/ContactSection";
 import MapSection from "@/components/contact/MapSection";
 import ContactFAQ from "@/components/contact/ContactFAQ";
 import CTA from "@/components/home/CTA";
+import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata } from "@/lib/seo";
+import { sectionBreadcrumb } from "@/lib/breadcrumb";
 
 export async function generateMetadata({
   params,
@@ -25,9 +27,11 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "contact.cta" });
+  const breadcrumb = await sectionBreadcrumb(locale, "contact", "/contact");
 
   return (
     <>
+      <JsonLd data={breadcrumb} />
       <ContactHero />
       <ContactSection />
       <MapSection />

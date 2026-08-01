@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getBlogPostBySlug, getPublishedBlogPosts, incrementBlogPostViews } from "@/lib/blog";
 import { recordBlogView } from "@/lib/analytics";
 import BlogDetailHeader from "@/components/blog-detail/BlogDetailHeader";
@@ -8,7 +8,8 @@ import BlogDetailContent from "@/components/blog-detail/BlogDetailContent";
 import BlogDetailSidebar from "@/components/blog-detail/BlogDetailSidebar";
 import RelatedPosts from "@/components/blog-detail/RelatedPosts";
 import CTA from "@/components/home/CTA";
-import { buildPageMetadata, buildBlogPostingJsonLd } from "@/lib/seo";
+import JsonLd from "@/components/seo/JsonLd";
+import { buildPageMetadata, buildBlogPostingJsonLd, buildBreadcrumbJsonLd } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
 
@@ -57,18 +58,26 @@ export default async function BlogDetailPage({
   const fallbackRelated =
     relatedPosts.length > 0 ? relatedPosts : allPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
-  const jsonLd = buildBlogPostingJsonLd({
-    locale,
-    slug: post.slug,
-    title: post.title,
-    description: post.excerpt || post.title,
-    image: post.image,
-    datePublished: post.publishedAt,
-  });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  const jsonLd = [
+    buildBlogPostingJsonLd({
+      locale,
+      slug: post.slug,
+      title: post.title,
+      description: post.excerpt || post.title,
+      image: post.image,
+      datePublished: post.publishedAt,
+    }),
+    buildBreadcrumbJsonLd(locale, [
+      { name: tNav("home"), path: "" },
+      { name: tNav("blog"), path: "/blog" },
+      { name: post.title, path: `/blog/${post.slug}` },
+    ]),
+  ];
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={jsonLd} />
 
       <BlogDetailHeader post={post} />
 

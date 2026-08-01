@@ -4,7 +4,9 @@ import FaqHero from "@/components/faq-page/FaqHero";
 import FaqExplorer from "@/components/faq-page/FaqExplorer";
 import StillQuestions from "@/components/faq-page/StillQuestions";
 import CTA from "@/components/home/CTA";
+import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata, buildFaqJsonLd } from "@/lib/seo";
+import { sectionBreadcrumb } from "@/lib/breadcrumb";
 
 export async function generateMetadata({
   params,
@@ -26,11 +28,12 @@ export default async function FaqPage({
   const t = await getTranslations({ locale, namespace: "faqPage.cta" });
   const tFaq = await getTranslations({ locale, namespace: "faqPage" });
   const items = tFaq.raw("items") as { category: string; q: string; a: string }[];
-  const jsonLd = buildFaqJsonLd(items);
+  const breadcrumb = await sectionBreadcrumb(locale, "faq", "/faq");
+  const jsonLd = [buildFaqJsonLd(items), breadcrumb];
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={jsonLd} />
       <FaqHero />
       <FaqExplorer />
       <StillQuestions />

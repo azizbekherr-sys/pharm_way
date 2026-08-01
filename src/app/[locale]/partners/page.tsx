@@ -6,7 +6,9 @@ import PartnersTabs from "@/components/partners-page/PartnersTabs";
 import BecomePartner from "@/components/partners-page/BecomePartner";
 import WhyPartner from "@/components/partners-page/WhyPartner";
 import CTA from "@/components/home/CTA";
+import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata } from "@/lib/seo";
+import { sectionBreadcrumb } from "@/lib/breadcrumb";
 
 export async function generateMetadata({
   params,
@@ -26,9 +28,11 @@ export default async function PartnersPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "partnersPage.cta" });
+  const breadcrumb = await sectionBreadcrumb(locale, "partners", "/partners");
 
   return (
     <>
+      <JsonLd data={breadcrumb} />
       <PartnersHero />
       <PartnerStats />
       <PartnersTabs />

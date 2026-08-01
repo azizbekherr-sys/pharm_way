@@ -7,6 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "type-check": "tsc --noEmit",
+    "validate:jsonld": "node scripts/validate-jsonld.mjs",
+    "validate:sitemap": "node scripts/validate-sitemap.mjs",
+    "validate:seo": "node scripts/validate-jsonld.mjs && node scripts/validate-sitemap.mjs",
     "postinstall": "prisma generate"
   },
   "dependencies": {

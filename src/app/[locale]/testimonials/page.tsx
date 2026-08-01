@@ -8,7 +8,9 @@ import VideoTestimonials from "@/components/testimonials-page/VideoTestimonials"
 import TrustBadges from "@/components/testimonials-page/TrustBadges";
 import LeaveReview from "@/components/testimonials-page/LeaveReview";
 import CTA from "@/components/home/CTA";
+import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata } from "@/lib/seo";
+import { sectionBreadcrumb } from "@/lib/breadcrumb";
 
 export async function generateMetadata({
   params,
@@ -28,9 +30,11 @@ export default async function TestimonialsPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "testimonialsPage.cta" });
+  const breadcrumb = await sectionBreadcrumb(locale, "testimonials", "/testimonials");
 
   return (
     <>
+      <JsonLd data={breadcrumb} />
       <TestimonialsHero />
       <TestimonialsStats />
       <FeaturedTestimonial />
