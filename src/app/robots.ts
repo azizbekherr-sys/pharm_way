@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/seo";
 
 export default function robots(): MetadataRoute.Robots {
-  // Discourage indexing of non-production (preview) Vercel deployments so that
-  // preview URLs never compete with www.pharmway.uz in search results.
-  const vercelEnv = process.env.VERCEL_ENV;
-  if (vercelEnv && vercelEnv !== "production") {
+  // Discourage indexing of non-production copies (e.g. a staging server with
+  // SITE_ENV=staging) so they never compete with www.pharmway.uz in search.
+  const siteEnv = process.env.SITE_ENV;
+  if (siteEnv && siteEnv !== "production") {
     return { rules: [{ userAgent: "*", disallow: "/" }] };
   }
 

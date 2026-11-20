@@ -2,18 +2,11 @@ import "server-only";
 import { headers } from "next/headers";
 import { userAgent } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { lookupGeo } from "@/lib/geoip";
 
 // Qidiruv robotlari / preview botlarini analitikadan chiqarib tashlaymiz.
 const BOT_RE =
-  /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|whatsapp|telegram|preview|monitor|lighthouse|headless|pingdom|gtmetrix|uptimerobot|google-inspectiontool|vercel-screenshot/i;
-
-function safeDecode(value: string): string {
-  try {
-    return decodeURIComponent(value);
-  } catch {
-    return value;
-  }
-}
+  /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|whatsapp|telegram|preview|monitor|lighthouse|headless|pingdom|gtmetrix|uptimerobot|google-inspectiontool/i;
 
 // Tashqi manba hostini ajratamiz; ichki (o'z sayti) navigatsiyani "direct" deb qoldiramiz.
 function parseReferrer(referer: string | null, host: string | null): string | null {
@@ -29,8 +22,8 @@ function parseReferrer(referer: string | null, host: string | null): string | nu
 
 /**
  * Blog maqolasi ko'rilganda bitta tashrif yozuvini saqlaydi.
- * Geo (davlat/shahar) Vercel'ning `x-vercel-ip-*` sarlavhalaridan olinadi
- * (faqat production'da mavjud), qurilma/OS/brauzer esa User-Agent'dan.
+ * Geo (davlat/shahar) `lookupGeo` orqali (Cloudflare sarlavhalari yoki lokal
+ * GeoIP baza) aniqlanadi, qurilma/OS/brauzer esa User-Agent'dan.
  * Xatolar hech qachon sahifa renderini buzmaydi.
  */
 export async function recordBlogView(slug: string, locale: string): Promise<void> {
@@ -43,13 +36,13 @@ export async function recordBlogView(slug: string, locale: string): Promise<void
     const deviceType =
       device.type === "mobile" ? "mobile" : device.type === "tablet" ? "tablet" : "desktop";
 
-    const cityRaw = h.get("x-vercel-ip-city");
+    const geo = await lookupGeo(h as unknown as Headers);
 
     await supabaseAdmin.from("blog_views").insert({
       slug,
-      country: h.get("x-vercel-ip-country") || null,
-      region: h.get("x-vercel-ip-country-region") || null,
-      city: cityRaw ? safeDecode(cityRaw) : null,
+      country: geo.country,
+      region: geo.region,
+      city: geo.city,
       device: deviceType,
       os: os.name ?? null,
       browser: browser.name ?? null,

@@ -1,0 +1,19 @@
+# HTTPS sertifikatlari Let's Encrypt'dan avtomatik olinadi va yangilanadi.
+# Shart: pharmway.uz va www.pharmway.uz DNS A-yozuvlari shu server IP'siga
+# qaragan bo'lishi va 80/443 portlar ochiq bo'lishi kerak.
+
+# Kanonik manzil — www (src/lib/seo.ts dagi siteUrl bilan bir xil).
+pharmway.uz {
+	redir https://www.pharmway.uz{uri} permanent
+}
+
+www.pharmway.uz {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=63072000"
+		-Server
+	}
+
+	reverse_proxy web:3000
+}

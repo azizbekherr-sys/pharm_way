@@ -1,0 +1,14 @@
+.git
+.github
+.claude
+.next
+node_modules
+geoip
+.env*
+!.env.example
+*.md
+Dockerfile
+docker-compose.yml
+deploy
+npm-debug.log*
+.DS_Store

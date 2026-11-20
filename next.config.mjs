@@ -4,6 +4,8 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // O'z serverimizda (Docker) ishga tushirish uchun minimal mustaqil build.
+  output: "standalone",
   images: {
     remotePatterns: [{ protocol: "https", hostname: "**" }],
     formats: ["image/avif", "image/webp"],

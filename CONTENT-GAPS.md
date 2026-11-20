@@ -61,7 +61,7 @@ are not used for rendering (real blog lives in Supabase). Recommend deleting the
 array (keep only what `BlogSlug` type genuinely needs) to avoid confusion.
 
 ## 11. Verification & analytics IDs (owner action)
-Add the optional env vars from `.env.example` in Vercel when ready (see
+Add the optional env vars from `.env.example` to the server `.env` when ready (see
 `SEO-SETUP.md`). Until then, no verification/analytics tags render — by design.
 
 ## 12. Sitemap static `lastModified`

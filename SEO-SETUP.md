@@ -5,9 +5,10 @@ until you add the matching environment variable. No real IDs are stored in the
 repo.
 
 ## Where to put the values
-1. Vercel → your project → **Settings → Environment Variables**.
-2. Add the variable (Production, and Preview if you want), paste the value.
-3. **Redeploy** (env changes require a new deployment).
+1. On the server: edit `/opt/pharmway/.env` (see [DEPLOY.md](DEPLOY.md)).
+2. Add the variable, paste the value.
+3. **Redeploy** with `./deploy/deploy.sh` — `NEXT_PUBLIC_*` values are baked in
+   at build time, so a plain restart is not enough.
 4. Locally: copy `.env.example` → `.env.local` and fill in.
 
 `NEXT_PUBLIC_*` values are exposed to the browser — that is expected for
@@ -19,7 +20,7 @@ verification codes and analytics container IDs (they are public by design).
 1. https://search.google.com/search-console → add property **`https://www.pharmway.uz`** (URL prefix).
 2. Choose **HTML tag** verification. Copy only the `content` value of
    `<meta name="google-site-verification" content="XXddd...">`.
-3. Set `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=XXddd...` in Vercel → redeploy.
+3. Set `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=XXddd...` in the server `.env` → redeploy.
 4. Back in Search Console, click **Verify**.
 5. Submit the sitemap: **Sitemaps → `sitemap.xml`**.
 
@@ -73,5 +74,5 @@ also add a second direct GA4 tag — that double-counts).
 
 ## Notes on privacy
 - Do not send form contents, health information, or personal data to analytics.
-- Preview (non-production) deployments return `Disallow: /` in robots.txt so they
-  are not indexed.
+- Non-production copies (set `SITE_ENV=staging` in their `.env`) return
+  `Disallow: /` in robots.txt so they are not indexed.

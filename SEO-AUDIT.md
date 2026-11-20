@@ -11,7 +11,7 @@
 | React | 18.3.1 |
 | i18n | `next-intl` 3.26, locales `uz` (default) / `ru` / `en`, `localePrefix: "always"` |
 | Content/DB | Supabase (Postgres) via `supabase-js`; Prisma schema present but **not** the runtime source of truth |
-| Hosting | Vercel |
+| Hosting | Self-hosted: Docker + Caddy (was Vercel at audit time; see DEPLOY.md) |
 | Routing | `src/app/[locale]/…` public, `src/app/admin/…` panel, `src/app/api/…` |
 | Existing SEO | `src/lib/seo.ts`, `src/app/sitemap.ts`, `public/robots.txt`, OG route `src/app/og-image/route.tsx` |
 

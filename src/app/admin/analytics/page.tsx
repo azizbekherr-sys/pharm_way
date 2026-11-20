@@ -401,6 +401,10 @@ export default function AdminAnalyticsPage() {
             &laquo;Boshidan&raquo; ko&apos;rsatkichlar barcha ko&apos;rishlarni o&apos;z ichiga oladi. Davlat, shahar va
             qurilma ma&apos;lumoti faqat yangi kuzatuvdan (production, pharmway.uz) yig&apos;iladi — eski ko&apos;rishlar
             uchun bu ma&apos;lumot mavjud emas.
+            <br />
+            <a href="https://db-ip.com" target="_blank" rel="noopener noreferrer" className="underline">
+              IP Geolocation by DB-IP
+            </a>
           </p>
         </>
       ) : null}

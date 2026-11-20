@@ -50,6 +50,6 @@ export const config = {
     "/",
     "/(uz|ru|en)/:path*",
     "/admin/:path*",
-    "/((?!api|og-image|_next|_vercel|.*\\..*).*)",
+    "/((?!api|og-image|_next|.*\\..*).*)",
   ],
 };
