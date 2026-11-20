@@ -15,7 +15,7 @@ import {
   LogOut,
   Bell,
 } from "lucide-react";
-import { supabase } from "@/lib/supabase";
+import { getSupabase } from "@/lib/supabase";
 
 const NAV_ITEMS = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard, exact: true },
@@ -47,7 +47,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
 
   useEffect(() => {
     setToday(formatUzDate(new Date()));
-    supabase.auth.getUser().then(({ data }) => setEmail(data.user?.email ?? ""));
+    getSupabase().auth.getUser().then(({ data }) => setEmail(data.user?.email ?? ""));
   }, []);
 
   useEffect(() => {
@@ -65,7 +65,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
   }
 
   async function handleLogout() {
-    await supabase.auth.signOut();
+    await getSupabase().auth.signOut();
     router.push("/admin/login");
   }
 

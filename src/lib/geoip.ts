@@ -1,5 +1,6 @@
 import "server-only";
 import { existsSync } from "node:fs";
+import path from "node:path";
 import maxmind, { type CityResponse, type Reader } from "maxmind";
 
 /**
@@ -17,18 +18,26 @@ import maxmind, { type CityResponse, type Reader } from "maxmind";
 export type Geo = { country: string | null; region: string | null; city: string | null };
 
 const EMPTY: Geo = { country: null, region: null, city: null };
-const DB_PATH = process.env.GEOIP_DB_PATH || "/app/geoip/dbip-city-lite.mmdb";
+const DB_PATH =
+  process.env.GEOIP_DB_PATH || path.join(process.cwd(), "geoip", "dbip-city-lite.mmdb");
 
 let readerPromise: Promise<Reader<CityResponse> | null> | null = null;
+let missingSince = 0;
+const RECHECK_MS = 10 * 60 * 1000;
 
 function getReader(): Promise<Reader<CityResponse> | null> {
-  if (!readerPromise) {
-    readerPromise = existsSync(DB_PATH)
-      ? maxmind.open<CityResponse>(DB_PATH).catch((err) => {
-          console.error("GeoIP bazasini ochib bo'lmadi:", err);
-          return null;
-        })
-      : Promise.resolve(null);
+  // Baza ilova ishga tushgandan keyin yuklansa ham (cron), 10 daqiqada topiladi.
+  if (readerPromise === null || (missingSince && Date.now() - missingSince > RECHECK_MS)) {
+    if (existsSync(DB_PATH)) {
+      missingSince = 0;
+      readerPromise = maxmind.open<CityResponse>(DB_PATH).catch((err) => {
+        console.error("GeoIP bazasini ochib bo'lmadi:", err);
+        return null;
+      });
+    } else {
+      missingSince = Date.now();
+      readerPromise = Promise.resolve(null);
+    }
   }
   return readerPromise;
 }

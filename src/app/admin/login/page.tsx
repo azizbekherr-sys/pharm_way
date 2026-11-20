@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { Mail, Lock, Eye, EyeOff, AlertCircle } from "lucide-react";
-import { supabase } from "@/lib/supabase";
+import { getSupabase } from "@/lib/supabase";
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -18,7 +18,7 @@ export default function AdminLoginPage() {
     setError("");
     setLoading(true);
 
-    const { error: signInError } = await supabase.auth.signInWithPassword({ email, password });
+    const { error: signInError } = await getSupabase().auth.signInWithPassword({ email, password });
 
     setLoading(false);
     if (signInError) {

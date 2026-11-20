@@ -1,4 +1,7 @@
-# Pharm Way — o'z serverga ko'chirish va deploy
+# Pharm Way — VPS'ga (Docker) ko'chirish va deploy
+
+> Hozirgi hosting — AHOST cPanel: [CPANEL.md](CPANEL.md). Bu qo'llanma
+> root huquqli VPS uchun (keyinchalik o'tilsa).
 
 Sayt Vercel'dan o'z serverga (masalan, AHOST VPS) ko'chiriladi. **Faqat hosting
 o'zgaradi**: ma'lumotlar bazasi, rasmlar va admin login Supabase'da qoladi — hech

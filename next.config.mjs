@@ -4,15 +4,29 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // O'z serverimizda (Docker) ishga tushirish uchun minimal mustaqil build.
+  // Minimal self-contained server build (cPanel Node.js App or Docker).
   output: "standalone",
   images: {
     remotePatterns: [{ protocol: "https", hostname: "**" }],
-    formats: ["image/avif", "image/webp"],
+    // WebP only: AVIF encoding is several times more CPU-heavy, which trips
+    // shared-hosting (CloudLinux) CPU limits.
+    formats: ["image/webp"],
     minimumCacheTTL: 60,
   },
   compress: true,
   poweredByHeader: false,
+  // Canonical host is www (src/lib/seo.ts). Done in the app so it works the
+  // same behind any web server (cPanel/Passenger, Caddy, ...).
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "pharmway\\.uz" }],
+        destination: "https://www.pharmway.uz/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

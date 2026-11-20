@@ -43,3 +43,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# cPanel package (scripts/build-cpanel.sh)
+/dist/

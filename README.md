@@ -31,5 +31,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy
 
-The site is self-hosted (Docker + Caddy) — no Vercel. See [DEPLOY.md](DEPLOY.md)
-for server setup, DNS, and automatic deploys from `main`.
+No Vercel. Data stays in Supabase; only the Next.js server is self-hosted.
+
+- **AHOST cPanel (current):** `bash scripts/build-cpanel.sh` builds
+  `dist/cpanel/pharmway-cpanel.zip` for cPanel "Setup Node.js App". Steps:
+  [CPANEL.md](CPANEL.md).
+- **VPS with Docker + Caddy:** [DEPLOY.md](DEPLOY.md).

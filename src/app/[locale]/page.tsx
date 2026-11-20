@@ -8,6 +8,11 @@ import Partners from "@/components/home/Partners";
 import CTA from "@/components/home/CTA";
 import { buildPageMetadata } from "@/lib/seo";
 
+// Partners come from Supabase at render time; refresh hourly so a build made
+// without database access (or stale data) heals itself. Admin edits also call
+// revalidatePath("/", "layout").
+export const revalidate = 3600;
+
 export async function generateMetadata({
   params,
 }: {
