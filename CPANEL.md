@@ -52,18 +52,24 @@ Supabase'da loyiha holati **Active** ekanini ham tekshiring. **Paused** bo'lsa,
 
 ### DNS
 
-AHOST mijoz panelida → **Domen boshqaruvi** → `pharmway.uz` → nameserverlar:
+`pharmway.uz` ning DNS'i hozir **Webspace**'da (`dns1–4.webspace.uz`), yozuvlar
+esa Vercel'ga qaragan (2026-11-20 holatiga). Eng oddiy yo'l — nameserverlarni
+o'zgartirmasdan, **Webspace DNS panelida** 2 ta yozuvni almashtirish:
 
-- `ns1.ahost.cloud` va `ns2.ahost.cloud` bo'lishi kerak.
-- Boshqacha bo'lsa (masalan, `ns1.vercel-dns.com`) — almashtiring. **Diqqat:**
-  agar domen pochtasi bo'lsa (Google, Yandex va h.k.), eski MX/TXT yozuvlarini
-  oldindan yozib oling va cPanel → **Zone Editor** da qayta yarating.
+1. cPanel → o'ng paneldagi **General Information → Shared IP Address** ni
+   ko'ring (odatda `167.235.222.200` — `de.ahost.cloud`).
+2. Webspace → `pharmway.uz` → DNS yozuvlari:
 
-cPanel → **Domains → Zone Editor** → `pharmway.uz` → **Manage**:
+   | Turi | Nomi | Eski (Vercel) — o'chiring | Yangi |
+   |---|---|---|---|
+   | A | `@` | `216.198.79.1` | `SHARED_IP` |
+   | CNAME → A | `www` | `…vercel-dns-017.com` | A `SHARED_IP` |
 
-- `pharmway.uz` va `www.pharmway.uz` server IP'siga qaragan bo'lishi kerak
-  (cPanel ularni avtomatik yaratadi).
-- Vercel'ning eski yozuvlari bo'lsa o'chiring: `A 76.76.21.21`, `CNAME cname.vercel-dns.com`.
+   **MX va TXT yozuvlariga tegmang** (pochta, Google tasdiqlash).
+
+Muqobil: nameserverlarni `ns1.ahost.cloud` / `ns2.ahost.cloud` ga o'zgartirish
+(domen ro'yxatdan o'tgan joyda). Bunda avval Webspace'dagi barcha MX/TXT
+yozuvlarini cPanel → **Zone Editor** ga ko'chiring.
 
 ## 3. Saytni yuklash
 
