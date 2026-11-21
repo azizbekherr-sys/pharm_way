@@ -57,10 +57,10 @@ export async function GET() {
 
   const body = `# Pharm Way Group — full content index
 
-> Regulatory services for importing and registering dietary supplements (BFQ / БАД), medicines and medical devices in Uzbekistan and Central Asia. Languages: Uzbek (/uz), Russian (/ru), English (/en).
+> Regulatory services for importing and registering dietary supplements (BFQ / БАД) and medicines in Uzbekistan and Central Asia. Languages: Uzbek (/uz), Russian (/ru), English (/en).
 
 ## Company
-Pharm Way Group supports manufacturers and distributors entering the Uzbekistan and Central Asian health-product market through registration, certification, import, customs and regulatory consulting.
+Pharm Way Group supports manufacturers and distributors entering the Uzbekistan and Central Asian health-product market through registration, import, customs and regulatory consulting.
 
 - Website: ${siteUrl}
 - Phone: ${siteConfig.phone}

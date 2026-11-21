@@ -34,7 +34,6 @@ export function contactFormLabels(t: SiteT): ContactFormLabels {
     choose: t("Tanlang"),
     services: [
       "BFQ registratsiyasi",
-      "Sertifikatlashtirish",
       "Import va logistika",
       "Bojxona rasmiylashtiruvi",
       "Regulatory Consulting",
@@ -66,7 +65,6 @@ export function partnerFormLabels(t: SiteT): PartnerFormLabels {
 /** Xizmat slug -> dizayndagi nom (o'zbekcha manba). */
 export const SERVICE_NAMES: Record<string, string> = {
   "bfq-registration": "BFQ registratsiyasi",
-  certification: "Sertifikatlashtirish",
   "import-logistics": "Import va logistika",
   customs: "Bojxona rasmiylashtiruvi",
   "regulatory-consulting": "Regulatory Consulting",

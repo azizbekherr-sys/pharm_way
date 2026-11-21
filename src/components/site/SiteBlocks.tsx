@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { supabasePublic } from "@/lib/supabase-public";
+import { supabasePublic, publicReadFailed } from "@/lib/supabase-public";
 import type { BlogPostData } from "@/types/blog";
 import type { SiteT } from "@/i18n/site-t";
 
@@ -65,11 +65,12 @@ type Partner = { id: string; name: string; country: string | null; logo_url: str
 
 /** Hamkorlar sahifasi: admin panelda qo'shilgan real hamkorlar logotiplari. */
 export async function PartnerLogos({ t }: { t: SiteT }) {
-  const { data } = await supabasePublic
+  const { data, error } = await supabasePublic
     .from("partners")
     .select("id, name, country, logo_url, website")
     .eq("active", true)
     .order("order", { ascending: true });
+  if (error) publicReadFailed(error, "partners");
   const partners = ((data ?? []) as Partner[]).filter((p) => p.logo_url && p.logo_url.trim());
   if (partners.length === 0) return null;
 

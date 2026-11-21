@@ -64,24 +64,6 @@ export default function ServicesView({ t, L, locale, slots = {} }: Props) {
                 <span>{"01"}</span>
               </div>
             </Link>
-            <Link className="card service-card" href={L("/services/certification")}>
-              <span className="arrow">
-                <svg className="icn" aria-hidden="true" focusable="false">
-                  <use href="#icon-arrow-up-right" />
-                </svg>
-              </span>
-              <div className="service-icon">
-                <svg className="icn" aria-hidden="true" focusable="false">
-                  <use href="#icon-diamond" />
-                </svg>
-              </div>
-              <h3>{t("Sertifikatlashtirish")}</h3>
-              <p className="text">{t("GMP, ISO va boshqa xalqaro sertifikatlarni olish.")}</p>
-              <div className="service-meta">
-                <span className="pill">{t("Batafsil")}</span>
-                <span>{"02"}</span>
-              </div>
-            </Link>
             <Link className="card service-card" href={L("/services/import-logistics")}>
               <span className="arrow">
                 <svg className="icn" aria-hidden="true" focusable="false">
@@ -97,7 +79,7 @@ export default function ServicesView({ t, L, locale, slots = {} }: Props) {
               <p className="text">{t("Xorijdan BFQ mahsulotlarini import qilish va yetkazib berish.")}</p>
               <div className="service-meta">
                 <span className="pill">{t("Batafsil")}</span>
-                <span>{"03"}</span>
+                <span>{"02"}</span>
               </div>
             </Link>
             <Link className="card service-card" href={L("/services/customs")}>
@@ -115,7 +97,7 @@ export default function ServicesView({ t, L, locale, slots = {} }: Props) {
               <p className="text">{t("BFQ yuklari uchun bojxona hujjatlarini rasmiylashtirish.")}</p>
               <div className="service-meta">
                 <span className="pill">{t("Batafsil")}</span>
-                <span>{"04"}</span>
+                <span>{"03"}</span>
               </div>
             </Link>
             <Link className="card service-card" href={L("/services/regulatory-consulting")}>
@@ -133,7 +115,7 @@ export default function ServicesView({ t, L, locale, slots = {} }: Props) {
               <p className="text">{t("BFQ sohasida regulatory masalalar bo‘yicha ekspert maslahat.")}</p>
               <div className="service-meta">
                 <span className="pill">{t("Batafsil")}</span>
-                <span>{"05"}</span>
+                <span>{"04"}</span>
               </div>
             </Link>
             <Link className="card service-card" href={L("/services/distributor-search")}>
@@ -151,7 +133,7 @@ export default function ServicesView({ t, L, locale, slots = {} }: Props) {
               <p className="text">{t("O‘zbekiston va Markaziy Osiyo bozorida ishonchli distribyutorlarni topish.")}</p>
               <div className="service-meta">
                 <span className="pill">{t("Batafsil")}</span>
-                <span>{"06"}</span>
+                <span>{"05"}</span>
               </div>
             </Link>
           </div>

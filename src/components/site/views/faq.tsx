@@ -83,7 +83,7 @@ export default function FaqView({ t, L, locale, slots = {} }: Props) {
                   </span>
                 </button>
                 <div className="faq-answer">
-                  <div>{t("Ha, importga mo‘ljallangan mahsulotlar uchun GMP sertifikati talab etiladi. Biz BFQ registratsiyasi va sertifikatlashtirish jarayonida barcha talablarga mos kelishingizga yordam beramiz.")}</div>
+                  <div>{t("Ha, importga mo‘ljallangan mahsulotlar uchun GMP sertifikati talab etiladi. Biz BFQ registratsiyasi jarayonida barcha talablarga mos kelishingizga yordam beramiz.")}</div>
                 </div>
               </div>
               <div className="faq-item faq-card" data-cat="registratsiya">

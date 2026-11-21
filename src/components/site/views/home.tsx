@@ -26,7 +26,7 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
             <div className="hero-content">
               <div className="hero-copy reveal">
                 <h1 data-split="" className="split-ready">{split(t("Mahsulotingizni O‘zbekiston bozoriga bitta mahalliy hamkor bilan olib kiring"))}</h1>
-                <p className="lead">{t("Pharm Way xorijiy ishlab chiqaruvchilarga mahsulot hujjatlarini tahlil qilish, registratsiya va sertifikatlashtirish, import jarayonlarini muvofiqlashtirish hamda mahalliy distribyutor topishda yordam beradi.")}</p>
+                <p className="lead">{t("Pharm Way xorijiy ishlab chiqaruvchilarga mahsulot hujjatlarini tahlil qilish, registratsiya va import jarayonlarini muvofiqlashtirish hamda mahalliy distribyutor topishda yordam beradi.")}</p>
                 <div className="btns">
                   <Link className="button" href={L("/contact#assessment-form")}>
                     <span>{t("Mahsulotni dastlabki baholashga yuborish")}</span>
@@ -55,12 +55,6 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
                   <use href="#icon-check" />
                 </svg>
                 <span>{t("Registratsiya")}</span>
-              </div>
-              <div className="strip-item">
-                <svg className="icn" aria-hidden="true">
-                  <use href="#icon-diamond" />
-                </svg>
-                <span>{t("Sertifikatlashtirish")}</span>
               </div>
               <div className="strip-item">
                 <svg className="icn" aria-hidden="true">
@@ -103,12 +97,6 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
                   <use href="#icon-check" />
                 </svg>
                 <span>{t("Registratsiya")}</span>
-              </div>
-              <div className="strip-item">
-                <svg className="icn" aria-hidden="true">
-                  <use href="#icon-diamond" />
-                </svg>
-                <span>{t("Sertifikatlashtirish")}</span>
               </div>
               <div className="strip-item">
                 <svg className="icn" aria-hidden="true">
@@ -160,11 +148,11 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
             <p className="lead">{t("Pharm Way xalqaro ishlab chiqaruvchilar, eksport kompaniyalari va yangi bozor izlayotgan brendlarga mahalliy regulatory va biznes jarayonlarini boshqarishda yordam beradi.")}</p>
           </div>
           <div className="head-rule line-in" aria-hidden="true" />
-          <div className="feature-grid reveal">
+          <div className="feature-grid feature-grid--3 reveal">
             <article className="card feature-card">
               <span className="index">{"01"}</span>
               <h3>{t("Oziq-ovqat va biologik faol qo‘shimchalar")}</h3>
-              <p className="text">{t("Mahsulot tasnifi, hujjatlar tahlili, registratsiya va sertifikatlashtirish jarayonlari.")}</p>
+              <p className="text">{t("Mahsulot tasnifi, hujjatlar tahlili va registratsiya jarayonlari.")}</p>
             </article>
             <article className="card feature-card">
               <span className="index">{"02"}</span>
@@ -175,11 +163,6 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
               <span className="index">{"03"}</span>
               <h3>{t("Farmatsevtika mahsulotlari")}</h3>
               <p className="text">{t("Mahsulot turi va mavjud hujjatlar bo‘yicha dastlabki imkoniyat baholashi.")}</p>
-            </article>
-            <article className="card feature-card">
-              <span className="index">{"04"}</span>
-              <h3>{t("Tibbiy buyumlar")}</h3>
-              <p className="text">{t("Mahsulot klassifikatsiyasi, hujjatlar holati va xizmat scope’ini dastlabki aniqlash.")}</p>
             </article>
           </div>
           <div className="btns">
@@ -235,7 +218,7 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
               <div className="eyebrow">{t("Pharm Way yechimi")}</div>
               <h2 data-split="" className="split-ready">{split(t("Bir nechta pudratchi o‘rniga bitta loyiha hamkori"))}</h2>
             </div>
-            <p className="lead">{t("Pharm Way registratsiya, sertifikatlashtirish, import, logistika va distribyutor qidirish bosqichlarini yagona market-entry loyihasi sifatida boshqaradi.")}</p>
+            <p className="lead">{t("Pharm Way registratsiya, import, logistika va distribyutor qidirish bosqichlarini yagona market-entry loyihasi sifatida boshqaradi.")}</p>
           </div>
           <div className="head-rule line-in" aria-hidden="true" />
           <div className="compare-grid reveal">
@@ -284,7 +267,7 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
                   <use href="#icon-check" />
                 </svg>
               </div>
-              <h3>{t("Registratsiya va sertifikatlashtirish")}</h3>
+              <h3>{t("Registratsiya")}</h3>
               <p className="text">{t("Mahsulot klassifikatsiyasi, hujjatlar tayyorlash, topshirish va ekspertiza jarayonlarini boshqarish.")}</p>
               <div className="service-meta">
                 <span className="pill">{t("Regulatory")}</span>
@@ -565,7 +548,7 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
                 </span>
               </button>
               <div className="faq-answer">
-                <div>{t("Asosiy xizmatlar biologik faol va oziq-ovqat qo‘shimchalari, kosmetik mahsulotlar, sertifikatlashtirish va regulatory consulting yo‘nalishlarini qamrab oladi. Boshqa mahsulot kategoriyalari bo‘yicha imkoniyat dastlabki tahlildan keyin aniqlanadi.")}</div>
+                <div>{t("Asosiy xizmatlar biologik faol va oziq-ovqat qo‘shimchalari, kosmetik mahsulotlar va regulatory consulting yo‘nalishlarini qamrab oladi. Boshqa mahsulot kategoriyalari bo‘yicha imkoniyat dastlabki tahlildan keyin aniqlanadi.")}</div>
               </div>
             </div>
             <div className="faq-item faq-card">
@@ -621,7 +604,7 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
                 </span>
               </button>
               <div className="faq-answer">
-                <div>{t("Hujjatlar, regulatory consulting, loyiha boshqaruvi va biznesni rivojlantirish ishlari Pharm Way tomonidan boshqariladi. Laboratoriya, ayrim sertifikatlashtirish, logistika va bojxona xizmatlari maxsus hamkorlar orqali bajarilishi mumkin.")}</div>
+                <div>{t("Hujjatlar, regulatory consulting, loyiha boshqaruvi va biznesni rivojlantirish ishlari Pharm Way tomonidan boshqariladi. Laboratoriya, logistika va bojxona xizmatlari maxsus hamkorlar orqali bajarilishi mumkin.")}</div>
               </div>
             </div>
           </div>
@@ -735,7 +718,7 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
       <section className="section soft">
         <div className="container">
           <div className="float-stage">
-            <div className="float-cards" aria-hidden="true">
+            <div className="float-cards float-cards--3" aria-hidden="true">
               <article className="float-card fc1">
                 <div className="icon">
                   <svg className="icn" focusable="false">
@@ -762,15 +745,6 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
                     <use href="#icon-plus" />
                   </svg>
                 </div>
-              </article>
-              <article className="float-card fc4">
-                <div className="icon">
-                  <svg className="icn" focusable="false">
-                    <use href="#icon-diamond" />
-                  </svg>
-                </div>
-                <b>{t("Tibbiy buyumlar")}</b>
-                <span>{t("Klass va ekspertiza talablari.")}</span>
               </article>
             </div>
             <div className="float-copy rise">
@@ -810,7 +784,7 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
                 <b>{"UZ"}</b>
                 <div>
                   <h3>{t("O‘zbekiston")}</h3>
-                  <p className="text">{t("Asosiy bozor: registratsiya, sertifikatlashtirish, import va distribyutor qidirish to‘liq qamrab olinadi.")}</p>
+                  <p className="text">{t("Asosiy bozor: registratsiya, import va distribyutor qidirish to‘liq qamrab olinadi.")}</p>
                 </div>
               </div>
               <div className="geo-item">

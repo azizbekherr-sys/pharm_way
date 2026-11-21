@@ -24,7 +24,6 @@ export const siteConfig = {
 
 export const services = [
   { slug: "bfq-registration", icon: "Leaf" },
-  { slug: "certification", icon: "Award" },
   { slug: "import-logistics", icon: "Truck" },
   { slug: "customs", icon: "FileText" },
   { slug: "regulatory-consulting", icon: "BarChart" },

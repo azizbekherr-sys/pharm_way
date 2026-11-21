@@ -122,9 +122,9 @@ export function buildPageMetadata({
 }
 
 const ORG_DESCRIPTION: Record<string, string> = {
-  uz: "O'zbekistonda biologik faol qo'shimchalar (BFQ), dori vositalari va tibbiy buyumlarni import qilish va ro'yxatdan o'tkazish bo'yicha regulatory xizmatlar.",
-  ru: "Регуляторные услуги по импорту и регистрации биологически активных добавок (БАД), лекарственных средств и медицинских изделий в Узбекистане.",
-  en: "Regulatory services for importing and registering dietary supplements (BFQ), medicines and medical devices in Uzbekistan.",
+  uz: "O'zbekistonda biologik faol qo'shimchalar (BFQ) va dori vositalarini import qilish va ro'yxatdan o'tkazish bo'yicha regulatory xizmatlar.",
+  ru: "Регуляторные услуги по импорту и регистрации биологически активных добавок (БАД) и лекарственных средств в Узбекистане.",
+  en: "Regulatory services for importing and registering dietary supplements (BFQ) and medicines in Uzbekistan.",
 };
 
 export function buildOrganizationJsonLd(locale: string) {
@@ -163,28 +163,22 @@ const KNOWS_ABOUT: Record<string, string[]> = {
   uz: [
     "Biologik faol qo'shimchalar (BFQ) registratsiyasi",
     "Dori vositalarini davlat ro'yxatidan o'tkazish",
-    "Tibbiy buyumlar registratsiyasi",
     "Farmatsevtik mahsulotlar importi",
     "Bojxona rasmiylashtiruvi",
-    "GMP sertifikatsiyasi",
     "O'zbekiston farmatsevtika bozori regulyatsiyasi",
   ],
   ru: [
     "Регистрация БАД в Узбекистане",
     "Государственная регистрация лекарственных средств",
-    "Регистрация медицинских изделий",
     "Импорт фармацевтической продукции",
     "Таможенное оформление",
-    "Сертификация GMP",
     "Фармацевтическое регулирование Узбекистана",
   ],
   en: [
     "Dietary supplement (BFQ) registration in Uzbekistan",
     "Medicine registration in Uzbekistan",
-    "Medical device registration",
     "Pharmaceutical import",
     "Customs clearance",
-    "GMP certification",
     "Uzbekistan pharmaceutical regulation",
   ],
 };
