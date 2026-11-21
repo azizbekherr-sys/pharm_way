@@ -10,7 +10,7 @@ import { buildPageMetadata } from "@/lib/seo";
 import { sectionBreadcrumb } from "@/lib/breadcrumb";
 import { getPublishedBlogPosts } from "@/lib/blog";
 
-export const revalidate = 60;
+export const revalidate = 300;
 
 export async function generateMetadata({
   params,

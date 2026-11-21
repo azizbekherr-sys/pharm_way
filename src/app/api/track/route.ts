@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { NextRequest, NextResponse, userAgent } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { clientIp, lookupGeo } from "@/lib/geoip";
+import { incrementBlogPostViews } from "@/lib/blog";
 
 export const dynamic = "force-dynamic";
 
@@ -85,7 +86,8 @@ export async function POST(req: NextRequest) {
     const sid = str(body?.sid, 64);
     const isEntry = body?.entry === true;
 
-    await supabaseAdmin.from("page_views").insert({
+    const referrer = isEntry ? referrerHost(str(body?.ref, 500), req.headers.get("host")) : null;
+    const views = supabaseAdmin.from("page_views").insert({
       path,
       page,
       page_type: type,
@@ -100,11 +102,34 @@ export async function POST(req: NextRequest) {
       device: deviceType,
       os: os.name ?? null,
       browser: browser.name ?? null,
-      referrer: isEntry ? referrerHost(str(body?.ref, 500), req.headers.get("host")) : null,
+      referrer,
       utm_source: isEntry ? str(body?.utm_source, 100) : null,
       utm_medium: isEntry ? str(body?.utm_medium, 100) : null,
       utm_campaign: isEntry ? str(body?.utm_campaign, 100) : null,
     });
+
+    // Blog maqolasi: umumiy hisoblagich (blog_posts.views) + blog_views jadvali.
+    // Avval bu sahifa render qilinganda qilinardi va maqolani har safar dinamik qilardi.
+    const slug = type === "blog_post" ? page.split("/")[2] : null;
+    const blog =
+      slug && /^[a-z0-9-]{1,200}$/.test(slug)
+        ? Promise.all([
+            incrementBlogPostViews(slug),
+            supabaseAdmin.from("blog_views").insert({
+              slug,
+              country: geo.country,
+              region: geo.region,
+              city: geo.city,
+              device: deviceType,
+              os: os.name ?? null,
+              browser: browser.name ?? null,
+              locale,
+              referrer,
+            }),
+          ])
+        : null;
+
+    await Promise.all([views, blog]);
   } catch {
     // Analitika ikkilamchi — xato foydalanuvchiga ta'sir qilmaydi.
   }

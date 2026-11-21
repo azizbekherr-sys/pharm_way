@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
+import { afterBlogChange } from "@/lib/indexnow";
 
 export async function GET(_: NextRequest, { params }: { params: { id: string } }) {
   if (!(await isAdminAuthenticated())) {
@@ -25,6 +26,7 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
     .select()
     .single();
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  await afterBlogChange(data);
   return NextResponse.json(data);
 }
 
@@ -33,7 +35,14 @@ export async function DELETE(_: NextRequest, { params }: { params: { id: string 
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  const { data: before } = await supabaseAdmin
+    .from("blog_posts")
+    .select("slug, published, content_ru, content_en")
+    .eq("id", params.id)
+    .maybeSingle();
   const { error } = await supabaseAdmin.from("blog_posts").delete().eq("id", params.id);
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  // O'chirilgan maqola manzilini ham yuboramiz — qidiruv tizimlari 404 ni tezroq ko'radi.
+  await afterBlogChange(before);
   return NextResponse.json({ success: true });
 }

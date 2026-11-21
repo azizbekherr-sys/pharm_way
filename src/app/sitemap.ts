@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { services } from "@/config/site";
-import { supabaseAdmin } from "@/lib/supabase-admin";
+import { supabasePublic } from "@/lib/supabase-public";
+import { availableLocales } from "@/lib/blog";
 import { siteUrl } from "@/lib/seo";
 
 // Stable "last significant revision" for static marketing pages. Using a fixed
@@ -20,13 +21,13 @@ const STATIC_PAGES: { path: string; changeFrequency: MetadataRoute.Sitemap[numbe
   { path: "/testimonials", changeFrequency: "monthly", priority: 0.6 },
 ];
 
-// Reciprocal hreflang alternates (uz/ru/en + x-default) for a given path.
-function alternatesFor(path: string) {
+// Reciprocal hreflang alternates (+ x-default) — only for locales the page really has.
+function alternatesFor(path: string, locales: readonly string[] = routing.locales) {
   const languages: Record<string, string> = {};
-  for (const locale of routing.locales) {
+  for (const locale of locales) {
     languages[locale] = `${siteUrl}/${locale}${path}`;
   }
-  languages["x-default"] = `${siteUrl}/${routing.defaultLocale}${path}`;
+  languages["x-default"] = `${siteUrl}/${locales.includes(routing.defaultLocale) ? routing.defaultLocale : locales[0]}${path}`;
   return { languages };
 }
 
@@ -54,22 +55,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
-  // Published blog posts use their real modification/publication dates.
-  const { data: posts } = await supabaseAdmin
+  // Published blog posts use their real modification/publication dates. A post is
+  // listed only in the languages it is actually translated into (untranslated
+  // ru/en URLs redirect to /uz and must not be submitted as separate pages).
+  const { data: posts } = await supabasePublic
     .from("blog_posts")
-    .select("slug, updated_at, published_at, created_at")
+    .select("slug, updated_at, published_at, created_at, content_ru, content_en")
     .eq("published", true);
 
   for (const post of posts ?? []) {
     const path = `/blog/${post.slug}`;
     const lastModified = new Date(post.updated_at ?? post.published_at ?? post.created_at);
-    for (const locale of routing.locales) {
+    const locales = availableLocales(post);
+    for (const locale of locales) {
       entries.push({
         url: `${siteUrl}/${locale}${path}`,
         lastModified,
         changeFrequency: "monthly",
         priority: 0.6,
-        alternates: alternatesFor(path),
+        alternates: alternatesFor(path, locales),
       });
     }
   }

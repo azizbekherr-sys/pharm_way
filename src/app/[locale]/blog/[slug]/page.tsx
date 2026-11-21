@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { getBlogPostBySlug, getPublishedBlogPosts, incrementBlogPostViews } from "@/lib/blog";
-import { recordBlogView } from "@/lib/analytics";
+import { getBlogPostBySlug, getPublishedBlogPosts } from "@/lib/blog";
 import BlogDetailHeader from "@/components/blog-detail/BlogDetailHeader";
 import BlogDetailContent from "@/components/blog-detail/BlogDetailContent";
 import BlogDetailSidebar from "@/components/blog-detail/BlogDetailSidebar";
@@ -11,7 +10,14 @@ import CTA from "@/components/home/CTA";
 import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata, buildBlogPostingJsonLd, buildBreadcrumbJsonLd } from "@/lib/seo";
 
-export const dynamic = "force-dynamic";
+// ISR: maqola statik HTML sifatida keshlanadi (avval har so'rovda ~4 s render bo'lardi).
+// Admin maqolani saqlasa /api/blog darhol revalidate qiladi. Ko'rishlar soni
+// /api/track orqali (PageTracker) hisoblanadi.
+export const revalidate = 300;
+
+function wordCount(html: string): number {
+  return html.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
+}
 
 export async function generateMetadata({
   params,
@@ -20,13 +26,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   const post = await getBlogPostBySlug(locale, slug);
-  if (!post) return {};
+  if (!post || !post.locales.includes(locale)) return {};
 
   const metadata = buildPageMetadata({
     locale,
     path: `/blog/${slug}`,
     title: `${post.title} | Pharm Way Group`,
     description: post.excerpt || post.title,
+    locales: post.locales,
+    article: { publishedTime: post.publishedAt, modifiedTime: post.updatedAt, section: post.category, tags: post.tags },
   });
 
   if (post.image) {
@@ -47,9 +55,8 @@ export default async function BlogDetailPage({
 
   const post = await getBlogPostBySlug(locale, slug);
   if (!post) notFound();
-  await incrementBlogPostViews(slug);
-  await recordBlogView(slug, locale);
-  post.views += 1;
+  // Bu tilga tarjima qilinmagan maqola — aralash tilli takror sahifa o'rniga asl (uz) versiyaga.
+  if (!post.locales.includes(locale)) permanentRedirect(`/uz/blog/${slug}`);
   const allPosts = await getPublishedBlogPosts(locale);
   const relatedPosts = allPosts
     .filter((p) => p.slug !== post.slug && p.category === post.category)
@@ -67,6 +74,10 @@ export default async function BlogDetailPage({
       description: post.excerpt || post.title,
       image: post.image,
       datePublished: post.publishedAt,
+      dateModified: post.updatedAt,
+      section: post.category,
+      tags: post.tags,
+      wordCount: wordCount(post.content),
     }),
     buildBreadcrumbJsonLd(locale, [
       { name: tNav("home"), path: "" },

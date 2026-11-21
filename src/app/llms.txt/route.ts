@@ -40,7 +40,8 @@ ${services
 ## Contact
 - Phone: ${siteConfig.phone}
 - Email: ${siteConfig.email}
-- Location: Tashkent, Uzbekistan
+- Address: ${siteConfig.address.en}
+- Map: ${siteConfig.maps.yandex}
 - Telegram: ${siteConfig.telegram}
 
 ## Notes

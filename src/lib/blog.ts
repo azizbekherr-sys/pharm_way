@@ -1,5 +1,6 @@
 import "server-only";
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { supabasePublic } from "@/lib/supabase-public";
 import type { BlogPostData } from "@/types/blog";
 
 type BlogPostRow = {
@@ -21,6 +22,7 @@ type BlogPostRow = {
   featured: boolean;
   published_at: string | null;
   created_at: string;
+  updated_at?: string | null;
   views: number | null;
 };
 
@@ -46,26 +48,39 @@ function mapRow(row: BlogPostRow, locale: string): BlogPostData {
       year: "numeric",
     }),
     publishedAt: new Date(row.published_at ?? row.created_at).toISOString(),
+    updatedAt: new Date(row.updated_at ?? row.published_at ?? row.created_at).toISOString(),
     readTime: `${row.read_time ?? 5} ${READ_TIME_UNIT[locale] ?? READ_TIME_UNIT.uz}`,
     tags: row.tags ?? [],
     image: row.cover_image,
     views: row.views ?? 0,
+    locales: availableLocales(row),
   };
 }
 
+/** Maqola qaysi tillarda to'liq mavjud: uz har doim, ru/en — matni tarjima qilingan bo'lsa. */
+export function availableLocales(row: { content_ru?: string | null; content_en?: string | null }): string[] {
+  const out = ["uz"];
+  if (row.content_ru && row.content_ru.trim()) out.push("ru");
+  if (row.content_en && row.content_en.trim()) out.push("en");
+  return out;
+}
+
+/** Shu tilda to'liq matni bor e'lon qilingan maqolalar (tarjimasizlar ru/en ro'yxatida ko'rinmaydi). */
 export async function getPublishedBlogPosts(locale: string): Promise<BlogPostData[]> {
-  const { data, error } = await supabaseAdmin
+  const { data, error } = await supabasePublic
     .from("blog_posts")
     .select("*")
     .eq("published", true)
     .order("featured", { ascending: false })
     .order("published_at", { ascending: false });
   if (error || !data) return [];
-  return data.map((row) => mapRow(row as BlogPostRow, locale));
+  return data
+    .map((row) => mapRow(row as BlogPostRow, locale))
+    .filter((post) => post.locales.includes(locale));
 }
 
 export async function getBlogPostBySlug(locale: string, slug: string): Promise<BlogPostData | null> {
-  const { data, error } = await supabaseAdmin
+  const { data, error } = await supabasePublic
     .from("blog_posts")
     .select("*")
     .eq("slug", slug)

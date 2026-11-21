@@ -2,6 +2,16 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
+// Duplicate (thin, untranslated) blog post slug -> original full article slug.
+const DUPLICATE_POSTS = {
+  "bojxona-rasmiylashtiruvi-xatolar": "customs-mistakes",
+  "markaziy-osiyo-farmatsevtika-bozori-2025": "central-asia-pharma-2025",
+  "gmp-sertifikati-nima-uchun-muhim": "gmp-certificate-guide",
+  "ozbekistonda-dori-vositalarini-royxatdan-otkazish-2024": "ozbekistonda-dori-vositalarini-royxatdan-otkazish",
+  "farmatsevtik-mahsulotlarni-import-qilish-hujjatlar": "import-documents",
+  "bfq-registratsiyasi-qancha-vaqt-oladi": "bfq-registration-guide",
+};
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Minimal self-contained server build (cPanel Node.js App or Docker).
@@ -29,6 +39,13 @@ const nextConfig = {
         destination: "https://www.pharmway.uz/:path*",
         permanent: true,
       },
+      // Short Uzbek-slug copies of existing articles (unpublished 2026-11-21) —
+      // their URLs pass ranking signals to the full, translated originals.
+      ...Object.entries(DUPLICATE_POSTS).map(([from, to]) => ({
+        source: `/:locale(uz|ru|en)/blog/${from}`,
+        destination: `/:locale/blog/${to}`,
+        permanent: true,
+      })),
     ];
   },
   async headers() {
