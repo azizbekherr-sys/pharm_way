@@ -33,12 +33,16 @@ export const SAME_AS = [
 ];
 
 /**
- * Search-engine ownership verification, driven entirely by env vars.
- * Returns `undefined` (no tags rendered) unless a real value is present.
+ * Qidiruv tizimlari egalik tasdig'i (meta teglar). Qiymatlar ochiq (har sahifada
+ * ko'rinadi), shuning uchun Yandex kodi standart sifatida shu yerda: Yandex
+ * Webmaster saytni shu meta teg orqali tasdiqlagan va uni davriy tekshiradi —
+ * teg yo'qolsa egalik huquqi bekor bo'ladi. Google "Domain" resursi DNS TXT orqali.
  */
+const YANDEX_VERIFICATION = "6c69a1ec724c88c7";
+
 export function buildVerification(): Metadata["verification"] | undefined {
   const google = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
-  const yandex = process.env.NEXT_PUBLIC_YANDEX_VERIFICATION?.trim();
+  const yandex = process.env.NEXT_PUBLIC_YANDEX_VERIFICATION?.trim() || YANDEX_VERIFICATION;
   const bing = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION?.trim();
 
   const verification: NonNullable<Metadata["verification"]> = {};
@@ -47,6 +51,22 @@ export function buildVerification(): Metadata["verification"] | undefined {
   if (bing) verification.other = { "msvalidate.01": bing };
 
   return Object.keys(verification).length > 0 ? verification : undefined;
+}
+
+/** Qidiruv natijasida kesilmasligi uchun tavsifni ~160 belgigacha so'z chegarasida qisqartiradi. */
+export function clipDescription(text: string, max = 160): string {
+  const t = text.replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max - 1);
+  const space = cut.lastIndexOf(" ");
+  return `${(space > max * 0.6 ? cut.slice(0, space) : cut).replace(/[\s,.;:–—-]+$/, "")}…`;
+}
+
+const BRAND_SUFFIX = /\s[|—–-]\s*Pharm Way Group$/;
+
+/** Uzun sarlavhada brend qo'shimchasini olib tashlaydi (Google ~60 belgidan keyin kesadi). */
+function documentTitle(title: string, max = 65): string {
+  return title.length > max && BRAND_SUFFIX.test(title) ? title.replace(BRAND_SUFFIX, "") : title;
 }
 
 export function buildPageMetadata({
@@ -67,6 +87,7 @@ export function buildPageMetadata({
   article?: { publishedTime: string; modifiedTime?: string; section?: string; tags?: string[] };
 }): Metadata {
   const available = locales ?? ALL_LOCALES;
+  description = clipDescription(description);
   const og: NonNullable<Metadata["openGraph"]> = {
     locale: ogLocale[locale] ?? "uz_UZ",
     alternateLocale: available.filter((l) => l !== locale).map((l) => ogLocale[l]),
@@ -77,7 +98,7 @@ export function buildPageMetadata({
     images: [{ url: "/og-image", width: 1200, height: 630, alt: siteConfig.name }],
   };
   return {
-    title: { absolute: title },
+    title: { absolute: documentTitle(title) },
     description,
     alternates: buildAlternates(locale, path, available),
     openGraph: article
