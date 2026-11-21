@@ -8,7 +8,8 @@ import { formUi, partnerFormLabels, siteContext } from "@/components/site/page-h
 import { buildPageMetadata } from "@/lib/seo";
 import { sectionBreadcrumb } from "@/lib/breadcrumb";
 
-export const revalidate = 3600;
+// Hamkorlar bazadan: build vaqtida (kalitsiz) bo'sh chiqadi, shuning uchun tez yangilansin.
+export const revalidate = 300;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;

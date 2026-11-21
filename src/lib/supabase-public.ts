@@ -18,6 +18,8 @@ export const supabasePublic = createClient(supabaseUrl, supabaseServiceKey, {
   auth: { persistSession: false, autoRefreshToken: false },
   global: {
     fetch: (url, options) =>
-      fetch(url, { ...options, cache: "force-cache", next: { revalidate: 300, tags: [PUBLIC_DATA_TAG] } }),
+      // Faqat `next.revalidate` (cache: "force-cache" bilan birga yozilsa Next.js
+      // revalidate'ni e'tiborsiz qoldirib, ma'lumotni abadiy keshlaydi).
+      fetch(url, { ...options, next: { revalidate: 300, tags: [PUBLIC_DATA_TAG] } }),
   },
 });
