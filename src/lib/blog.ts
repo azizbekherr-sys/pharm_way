@@ -1,6 +1,6 @@
 import "server-only";
 import { supabaseAdmin } from "@/lib/supabase-admin";
-import { supabasePublic } from "@/lib/supabase-public";
+import { supabasePublic, publicReadFailed } from "@/lib/supabase-public";
 import type { BlogPostData } from "@/types/blog";
 
 type BlogPostRow = {
@@ -73,7 +73,8 @@ export async function getPublishedBlogPosts(locale: string): Promise<BlogPostDat
     .eq("published", true)
     .order("featured", { ascending: false })
     .order("published_at", { ascending: false });
-  if (error || !data) return [];
+  if (error) publicReadFailed(error, "blog_posts list");
+  if (!data) return [];
   return data
     .map((row) => mapRow(row as BlogPostRow, locale))
     .filter((post) => post.locales.includes(locale));
@@ -85,8 +86,10 @@ export async function getBlogPostBySlug(locale: string, slug: string): Promise<B
     .select("*")
     .eq("slug", slug)
     .eq("published", true)
-    .single();
-  if (error || !data) return null;
+    .maybeSingle();
+  // maybeSingle: topilmasa — error emas, data=null (404); xato — haqiqiy nosozlik.
+  if (error) publicReadFailed(error, `blog_posts/${slug}`);
+  if (!data) return null;
   return mapRow(data as BlogPostRow, locale);
 }
 
