@@ -1,44 +1,27 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Hero from "@/components/home/Hero";
-import ServicesOverview from "@/components/home/ServicesOverview";
-import WhyUs from "@/components/home/WhyUs";
-import Stats from "@/components/home/Stats";
-import Partners from "@/components/home/Partners";
-import CTA from "@/components/home/CTA";
+import HomeView from "@/components/site/views/home";
+import JsonLd from "@/components/seo/JsonLd";
+import { siteContext, siteFaqJsonLd } from "@/components/site/page-helpers";
 import { buildPageMetadata } from "@/lib/seo";
 
-// Partners come from Supabase at render time; refresh hourly so a build made
-// without database access (or stale data) heals itself. Admin edits also call
-// revalidatePath("/", "layout").
 export const revalidate = 3600;
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta.pages.home" });
   return buildPageMetadata({ locale, path: "", title: t("title"), description: t("description") });
 }
 
-export default async function HomePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-
+  const ctx = siteContext(locale);
+  const faq = siteFaqJsonLd("home", ctx.t);
   return (
     <>
-      <Hero />
-      <ServicesOverview />
-      <WhyUs />
-      <Stats />
-      <Partners />
-      <CTA />
+      {faq && <JsonLd data={faq} />}
+      <HomeView {...ctx} />
     </>
   );
 }

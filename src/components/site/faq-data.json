@@ -1,0 +1,240 @@
+{
+ "home": [
+  {
+   "q": "Pharm Way qaysi mahsulotlar bilan ishlaydi?",
+   "a": "Asosiy xizmatlar biologik faol va oziq-ovqat qo‘shimchalari, kosmetik mahsulotlar, sertifikatlashtirish va regulatory consulting yo‘nalishlarini qamrab oladi. Boshqa mahsulot kategoriyalari bo‘yicha imkoniyat dastlabki tahlildan keyin aniqlanadi."
+  },
+  {
+   "q": "Jarayon qanday boshlanadi?",
+   "a": "Mahsulot haqida qisqacha ma’lumot va mavjud hujjatlar yuboriladi. Shundan keyin mahsulot kategoriyasi, hujjatlar holati va kerakli xizmatlar dastlabki tahlil qilinadi."
+  },
+  {
+   "q": "Registratsiya qancha vaqt oladi?",
+   "a": "Mahsulot turiga qarab jarayon o‘rtacha ikki–to‘rt oy davom etishi mumkin. Aniqroq muddat hujjatlar tekshirilgandan keyin belgilanadi."
+  },
+  {
+   "q": "Xizmat narxi qancha?",
+   "a": "Narx mahsulot kategoriyasi, hujjatlar holati, laboratoriya talablari va tanlangan xizmatlar scope’iga qarab individual hisoblanadi."
+  },
+  {
+   "q": "Pharm Way barcha xizmatlarni o‘zi bajaradimi?",
+   "a": "Hujjatlar, regulatory consulting, loyiha boshqaruvi va biznesni rivojlantirish ishlari Pharm Way tomonidan boshqariladi. Laboratoriya, ayrim sertifikatlashtirish, logistika va bojxona xizmatlari maxsus hamkorlar orqali bajarilishi mumkin."
+  }
+ ],
+ "service-bfq-registration": [
+  {
+   "q": "BFQ va dori farqi nima?",
+   "a": "BFQ davolash uchun emas, balki ovqatlanishni to‘ldirish uchun ishlatiladi va ro‘yxatdan o‘tkazish talablari soddaroq."
+  },
+  {
+   "q": "Qanday BFQ’lar taqiqlangan?",
+   "a": "Tarkibida ruxsat etilmagan moddalar yoki dozalar mavjud mahsulotlar ro‘yxatdan o‘tkazilmaydi."
+  },
+  {
+   "q": "Import uchun qo‘shimcha ruxsat kerakmi?",
+   "a": "Ro‘yxatdan o‘tgandan so‘ng qo‘shimcha import sertifikati talab qilinishi mumkin, buni alohida ko‘rib chiqamiz."
+  },
+  {
+   "q": "Konsultatsiya pullikmi?",
+   "a": "Yo‘q, dastlabki konsultatsiya mutlaqo bepul."
+  }
+ ],
+ "service-certification": [
+  {
+   "q": "Qaysi sertifikatlar mavjud?",
+   "a": "GMP, ISO 9001 va boshqa xalqaro tan olingan sifat standartlari bo‘yicha sertifikatlashni amalga oshiramiz."
+  },
+  {
+   "q": "Sertifikat necha yil amal qiladi?",
+   "a": "Odatda sertifikat 3 yil muddatga beriladi, so‘ngra qayta audit talab qilinadi."
+  },
+  {
+   "q": "Audit qanday o‘tkaziladi?",
+   "a": "Auditorlar ishlab chiqarish joyiga tashrif buyuradi yoki hujjatlar asosida masofadan baholaydi."
+  },
+  {
+   "q": "Konsultatsiya pullikmi?",
+   "a": "Yo‘q, dastlabki konsultatsiya mutlaqo bepul."
+  }
+ ],
+ "service-import-logistics": [
+  {
+   "q": "Sovuq zanjir mahsulotlari tashiladimi?",
+   "a": "Ha, harorat nazorati talab qiluvchi mahsulotlar uchun maxsus transport ta’minlanadi."
+  },
+  {
+   "q": "Yetkazib berish muddati qanday belgilanadi?",
+   "a": "Mamlakat, mahsulot hajmi va transport turiga qarab 2 dan 6 haftagacha o‘zgaradi."
+  },
+  {
+   "q": "Yuk sug‘urtalanadimi?",
+   "a": "Ha, barcha yuklar tashish davomida sug‘urta bilan qoplanadi."
+  },
+  {
+   "q": "Konsultatsiya pullikmi?",
+   "a": "Yo‘q, dastlabki konsultatsiya mutlaqo bepul."
+  }
+ ],
+ "service-customs": [
+  {
+   "q": "Bojxonada qancha vaqt sarflanadi?",
+   "a": "Hujjatlar to‘liq bo‘lsa, odatda 3 dan 10 ish kunigacha vaqt talab qilinadi."
+  },
+  {
+   "q": "Qanday hujjatlar talab qilinadi?",
+   "a": "Deklaratsiya, invoice, yukxat va mahsulotga tegishli ruxsatnomalar talab qilinadi."
+  },
+  {
+   "q": "Yuk tekshiruvdan o‘tmasa nima bo‘ladi?",
+   "a": "Tekshiruv natijasida aniqlangan kamchiliklar bo‘yicha darhol tuzatish chora-tadbirlarini ko‘ramiz."
+  },
+  {
+   "q": "Konsultatsiya pullikmi?",
+   "a": "Yo‘q, dastlabki konsultatsiya mutlaqo bepul."
+  }
+ ],
+ "service-regulatory-consulting": [
+  {
+   "q": "Consulting xizmati qanday boshlanadi?",
+   "a": "Birinchi bosqichda kompaniyangiz ehtiyojlarini aniqlash uchun bepul konsultatsiya o‘tkazamiz."
+  },
+  {
+   "q": "Bir martalik maslahat olish mumkinmi?",
+   "a": "Ha, alohida masala bo‘yicha bir martalik konsultatsiya xizmati ham mavjud."
+  },
+  {
+   "q": "Qaysi sohalar qamrab olinadi?",
+   "a": "Registratsiya, sertifikatlashtirish, import va boshqa barcha regulatory yo‘nalishlar bo‘yicha maslahat beramiz."
+  },
+  {
+   "q": "Konsultatsiya pullikmi?",
+   "a": "Yo‘q, dastlabki konsultatsiya mutlaqo bepul."
+  }
+ ],
+ "service-distributor-search": [
+  {
+   "q": "Distributor qanday tanlanadi?",
+   "a": "Bozor ulushi, obro‘-e’tibor va mahsulot mosligi asosida eng mos nomzodlar tanlanadi."
+  },
+  {
+   "q": "Bir nechta distributor bilan ishlash mumkinmi?",
+   "a": "Ha, mahsulot turiga qarab bir nechta hududiy distributor bilan hamkorlik tashkil etish mumkin."
+  },
+  {
+   "q": "Shartnoma shartlarini kim belgilaydi?",
+   "a": "Shartnoma shartlari ikki tomon manfaatlarini hisobga olib birgalikda kelishiladi."
+  },
+  {
+   "q": "Konsultatsiya pullikmi?",
+   "a": "Yo‘q, dastlabki konsultatsiya mutlaqo bepul."
+  }
+ ],
+ "faq": [
+  {
+   "q": "BFQ registratsiyasi qancha vaqt oladi?",
+   "a": "BFQ (biologik faol qo‘shimchalar) registratsiyasi odatda 3-6 oy vaqt oladi. Jarayon davomida biz barcha bosqichlarni nazorat qilib boramiz."
+  },
+  {
+   "q": "Registratsiya guvohnomasi necha yilga beriladi?",
+   "a": "O‘zbekistonda BFQ registratsiya guvohnomasi odatda 5 yilga beriladi. Muddati tugashidan 6 oy oldin qayta registratsiya jarayonini boshlash tavsiya etiladi."
+  },
+  {
+   "q": "GMP sertifikati majburiymi?",
+   "a": "Ha, importga mo‘ljallangan mahsulotlar uchun GMP sertifikati talab etiladi. Biz BFQ registratsiyasi va sertifikatlashtirish jarayonida barcha talablarga mos kelishingizga yordam beramiz."
+  },
+  {
+   "q": "Qayta registratsiya qanday amalga oshiriladi?",
+   "a": "Qayta registratsiya dastlabki registratsiyaga o‘xshash jarayon bo‘lib, ammo ko‘pincha tezroq kechadi. Hujjatlar to‘plami yangilanadi va ekspertizadan o‘tkaziladi."
+  },
+  {
+   "q": "Bir vaqtda bir nechta mahsulotni ro‘yxatdan o‘tkazish mumkinmi?",
+   "a": "Ha, bir vaqtda bir nechta mahsulot bo‘yicha ariza berilishi mumkin. Bu ko‘pincha vaqt va xarajatlarni tejash imkonini beradi."
+  },
+  {
+   "q": "Xorijiy kompaniya o‘zi registratsiya qila oladimi?",
+   "a": "O‘zbekistonda farmatsevtik mahsulotlarni ro‘yxatdan o‘tkazish uchun mahalliy vakillik yoki hamkor kompaniya orqali ariza berish talab etiladi. Pharm Way Group aynan shu vazifani bajaradi."
+  },
+  {
+   "q": "Registratsiya uchun qanday asosiy hujjatlar kerak?",
+   "a": "Asosiy hujjatlar: ishlab chiqaruvchi litsenziyasi, GMP sertifikati, mahsulot spesifikatsiyasi, klinik tadqiqot ma’lumotlari (agar talab qilinsa), qadoqlash va yorliq namunalari, kelib chiqish sertifikati."
+  },
+  {
+   "q": "Hujjatlar qaysi tilda taqdim etilishi kerak?",
+   "a": "Hujjatlar o‘zbek yoki rus tilida taqdim etilishi kerak. Xorijiy tillardagi hujjatlar notarial tasdiqlangan tarjimasi bilan birga topshiriladi."
+  },
+  {
+   "q": "Hujjatlarni notarial tasdiqlash kerakmi?",
+   "a": "Ha, ko‘pchilik hujjatlar notarial tasdiqlangan tarjimasi bilan birga taqdim etilishi talab qilinadi. Biz bu jarayonni ham to‘liq amalga oshirishda yordam beramiz."
+  },
+  {
+   "q": "Hujjatlar amal qilish muddati bormi?",
+   "a": "Ha, ko‘pchilik sertifikatlar va hujjatlarning amal qilish muddati bor. Masalan, GMP sertifikati odatda 3 yilga beriladi. Hujjatlaringiz yangiligini tekshirib chiqamiz."
+  },
+  {
+   "q": "Elektron hujjatlar qabul qilinadimi?",
+   "a": "Dastlabki bosqichda elektron nusxalar ko‘rib chiqilishi mumkin, ammo rasmiy jarayon uchun asl nusxa yoki notarial tasdiqlangan nusxalar talab etiladi."
+  },
+  {
+   "q": "Xizmatlar narxi qanday?",
+   "a": "Narxlar loyiha murakkabligi, mahsulot turi va xizmat hajmiga qarab individual belgilanadi. Bepul konsultatsiyada aniq narxni bilib olishingiz mumkin."
+  },
+  {
+   "q": "To‘lov qanday amalga oshiriladi?",
+   "a": "To‘lov shartnoma asosida bosqichma-bosqich amalga oshiriladi. Odatda dastlabki to‘lov va jarayon yakunida qolgan summa to‘lanadi."
+  },
+  {
+   "q": "Konsultatsiya pullikmi?",
+   "a": "Yo‘q, dastlabki konsultatsiya mutlaqo bepul. Biz sizning mahsulotingiz va ehtiyojlaringizni tushunib, keyin xizmat taklifini taqdim etamiz."
+  },
+  {
+   "q": "Muddatdan oldin tugatish mumkinmi?",
+   "a": "Biz har doim belgilangan muddatdan oldin ishni yakunlashga harakat qilamiz. Davlat organlarining ish tezligi ham muhim rol o‘ynaydi."
+  },
+  {
+   "q": "Import uchun qanday ruxsatnomalar kerak?",
+   "a": "Farmatsevtik mahsulotlarni import qilish uchun registratsiya guvohnomasi, import litsenziyasi va bojxona hujjatlari talab etiladi. Biz barcha ruxsatnomalarni olishda yordam beramiz."
+  },
+  {
+   "q": "Mahsulotlar qaysi mamlakatlardan import qilinishi mumkin?",
+   "a": "O‘zbekiston farmatsevtik mahsulotlarni dunyoning har qanday mamlakatidan import qilish imkoniyatiga ega. Asosiy shart — mahsulot kelib chiqqan mamlakatda ruxsat etilgan va tegishli sertifikatlarga ega bo‘lishi."
+  },
+  {
+   "q": "Sovuq zanjir (cold chain) mahsulotlar uchun alohida talablar bormi?",
+   "a": "Ha, biologik preparatlar va ba’zi dori vositalari uchun sovuq zanjir talablari mavjud. Biz ixtisoslashgan logistika hamkorlarimiz orqali bu talablarni to‘liq bajaramiz."
+  },
+  {
+   "q": "Bojxonada muammo chiqsa nima qilish kerak?",
+   "a": "Bizning tajribali mutaxassislarimiz bojxona jarayonlarini boshidan oxirigacha nazorat qiladi. Har qanday muammo yuzaga kelsa, darhol hal etamiz."
+  },
+  {
+   "q": "Pharm Way Group qaysi davlatlar bilan ishlaydi?",
+   "a": "Biz asosan O‘zbekiston bozori uchun xizmat ko‘rsatamiz, shuningdek Qozog‘iston, Qirg‘iziston, Tojikiston, Turkmaniston va Ozarbayjon bozorlarida ham ishlaymiz."
+  },
+  {
+   "q": "Hamkor bo‘lish uchun nima qilish kerak?",
+   "a": "Biz bilan bog‘laning — telefon, email yoki Telegram orqali. Bepul konsultatsiyada hamkorlik imkoniyatlarini muhokama qilamiz."
+  },
+  {
+   "q": "Sizning kompaniyangizning tajribasi qancha?",
+   "a": "Pharm Way Group 2019 yildan beri faoliyat yuritib kelmoqda. 5+ yillik tajribamiz davomida 50+ mahsulotni muvaffaqiyatli ro‘yxatdan o‘tkazdik va 20+ xalqaro hamkor bilan ishlaymiz."
+  }
+ ],
+ "contact": [
+  {
+   "q": "Konsultatsiya pullikmi?",
+   "a": "Yo‘q, dastlabki konsultatsiya mutlaqo bepul."
+  },
+  {
+   "q": "Registratsiya qancha vaqt oladi?",
+   "a": "Mahsulot turiga qarab 3 oydan 12 oygacha."
+  },
+  {
+   "q": "Qanday hujjatlar kerak?",
+   "a": "Ishlab chiqaruvchi sertifikatlari, mahsulot spesifikatsiyasi va boshqa hujjatlar. Batafsil konsultatsiyada aniqlaymiz."
+  },
+  {
+   "q": "Xizmat narxi qanday hisoblanadi?",
+   "a": "Har bir loyiha individual baholanadi. Bepul konsultatsiyada narxni aniqlaymiz."
+  }
+ ]
+}

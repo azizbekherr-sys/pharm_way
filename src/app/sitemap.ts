@@ -1,13 +1,17 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { services } from "@/config/site";
-import { supabasePublic } from "@/lib/supabase-public";
+import { supabaseAdmin } from "@/lib/supabase-admin";
 import { availableLocales } from "@/lib/blog";
 import { siteUrl } from "@/lib/seo";
 
 // Stable "last significant revision" for static marketing pages. Using a fixed
 // constant (not request time) keeps <lastmod> honest across crawls — bump this
 // when the static pages' content is meaningfully updated.
+// Har so'rovda bazadan o'qiladi: build vaqtida Supabase kaliti yo'q, statik sitemap
+// maqolasiz keshlanib qolardi.
+export const dynamic = "force-dynamic";
+
 const STATIC_LAST_MODIFIED = new Date("2026-08-01T00:00:00Z");
 
 const STATIC_PAGES: { path: string; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; priority: number }[] = [
@@ -18,7 +22,6 @@ const STATIC_PAGES: { path: string; changeFrequency: MetadataRoute.Sitemap[numbe
   { path: "/partners", changeFrequency: "monthly", priority: 0.7 },
   { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
   { path: "/faq", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/testimonials", changeFrequency: "monthly", priority: 0.6 },
 ];
 
 // Reciprocal hreflang alternates (+ x-default) — only for locales the page really has.
@@ -58,7 +61,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Published blog posts use their real modification/publication dates. A post is
   // listed only in the languages it is actually translated into (untranslated
   // ru/en URLs redirect to /uz and must not be submitted as separate pages).
-  const { data: posts } = await supabasePublic
+  const { data: posts } = await supabaseAdmin
     .from("blog_posts")
     .select("slug, updated_at, published_at, created_at, content_ru, content_en")
     .eq("published", true);

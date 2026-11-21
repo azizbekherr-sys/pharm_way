@@ -1,47 +1,37 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import BlogHero from "@/components/blog-page/BlogHero";
-import FeaturedPost from "@/components/blog-page/FeaturedPost";
-import BlogExplorer from "@/components/blog-page/BlogExplorer";
-import Newsletter from "@/components/blog-page/Newsletter";
-import CTA from "@/components/home/CTA";
+import BlogView from "@/components/site/views/blog";
 import JsonLd from "@/components/seo/JsonLd";
+import { BlogChips, BlogGrid } from "@/components/site/SiteBlocks";
+import { siteContext } from "@/components/site/page-helpers";
 import { buildPageMetadata } from "@/lib/seo";
 import { sectionBreadcrumb } from "@/lib/breadcrumb";
 import { getPublishedBlogPosts } from "@/lib/blog";
 
 export const revalidate = 300;
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta.pages.blog" });
   return buildPageMetadata({ locale, path: "/blog", title: t("title"), description: t("description") });
 }
 
-export default async function BlogPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "blog.cta" });
+  const ctx = siteContext(locale);
   const posts = await getPublishedBlogPosts(locale);
-  const [featured, ...rest] = posts;
   const breadcrumb = await sectionBreadcrumb(locale, "blog", "/blog");
-
   return (
     <>
       <JsonLd data={breadcrumb} />
-      <BlogHero />
-      {featured && <FeaturedPost post={featured} />}
-      <BlogExplorer posts={rest} />
-      <Newsletter />
-      <CTA title={t("title")} buttonLabel={t("button")} />
+      <BlogView
+        {...ctx}
+        slots={{
+          chips: <BlogChips posts={posts} t={ctx.t} />,
+          posts: <BlogGrid posts={posts} t={ctx.t} L={ctx.L} />,
+        }}
+      />
     </>
   );
 }
