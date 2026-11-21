@@ -186,49 +186,6 @@ export default function AboutView({ t, L, locale, slots = {} }: Props) {
           </div>
         </div>
       </section>
-      <section className="section soft">
-        <div className="container">
-          <div className="section-head rise">
-            <div>
-              <div className="eyebrow">{t("Bizning jamoamiz")}</div>
-              <h2 data-split="" className="split-ready">{split(t("Tajribali mutaxassislar jamoasi"))}</h2>
-            </div>
-          </div>
-          <div className="head-rule line-in" aria-hidden="true" />
-          <div className="team-grid reveal">
-            <article className="team-card">
-              <div className="team-photo media-block short">
-                <span className="team-initials" aria-hidden="true">{"FK"}</span>
-              </div>
-              <div className="team-info">
-                <h3>{t("F. Karimov")}</h3>
-                <p className="text team-role">{t("CEO / Bosh direktor")}</p>
-                <p className="text">{t("Kompaniya strategiyasi va umumiy boshqaruvni amalga oshiradi.")}</p>
-              </div>
-            </article>
-            <article className="team-card">
-              <div className="team-photo media-block short">
-                <span className="team-initials" aria-hidden="true">{"DY"}</span>
-              </div>
-              <div className="team-info">
-                <h3>{t("D. Yusupova")}</h3>
-                <p className="text team-role">{t("Regulatory Affairs Director")}</p>
-                <p className="text">{t("Ro‘yxatdan o‘tkazish va normativ-huquqiy jarayonlarni boshqaradi.")}</p>
-              </div>
-            </article>
-            <article className="team-card">
-              <div className="team-photo media-block short">
-                <span className="team-initials" aria-hidden="true">{"AT"}</span>
-              </div>
-              <div className="team-info">
-                <h3>{t("A. Tashkentov")}</h3>
-                <p className="text team-role">{t("Import & Logistics Manager")}</p>
-                <p className="text">{t("Import, logistika va bojxona jarayonlarini nazorat qiladi.")}</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
       <section className="section">
         <div className="container">
           <div className="cta-panel reveal">

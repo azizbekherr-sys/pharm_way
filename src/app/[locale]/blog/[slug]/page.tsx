@@ -132,11 +132,11 @@ export default async function BlogDetailPage({
               <div className="card">
                 <h3>{t("Boshqa maqolalar")}</h3>
                 {related.map((p) => (
-                  <Link key={p.slug} href={L(`/blog/${p.slug}`)}>
+                  <Link key={p.slug} href={L(`/blog/${p.slug}`)} className="related-link">
                     {p.title}
                   </Link>
                 ))}
-                <Link href={L("/blog")} className="text-link u-mt-12">
+                <Link href={L("/blog")} className="text-link">
                   {t("Barcha maqolalar")}
                 </Link>
               </div>
@@ -144,7 +144,7 @@ export default async function BlogDetailPage({
             <div className="card">
               <h3>{t("Bepul konsultatsiya")}</h3>
               <p className="text small">{t("Mutaxassislarimiz bilan bepul konsultatsiya olish uchun bog‘laning.")}</p>
-              <Link className="button u-mt-12" href={L("/contact#assessment-form")}>
+              <Link className="button" href={L("/contact#assessment-form")}>
                 <span>{t("Bog‘lanish")}</span>
                 <span className="round">
                   <svg className="icn" aria-hidden="true" focusable="false">

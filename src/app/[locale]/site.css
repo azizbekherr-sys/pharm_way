@@ -742,9 +742,12 @@ a.blog-card{color:inherit;text-decoration:none}
 .article-aside{position:sticky;top:110px;display:grid;gap:16px}
 .article-aside .card{padding:24px}
 .article-aside h3{font-size:16px;margin-bottom:12px}
-.article-aside a{display:block;font-size:14px;font-weight:600;line-height:1.4;padding:9px 0;border-top:1px solid var(--line)}
-.article-aside a:first-of-type{border-top:0}
-.article-aside a:hover{color:var(--blue)}
+/* Faqat "Boshqa maqolalar" ro'yxatidagi havolalar — tugma (.button) va .text-link ga tegmaydi */
+.article-aside .related-link{display:block;font-size:14px;font-weight:600;line-height:1.4;padding:9px 0;border-top:1px solid var(--line)}
+.article-aside .related-link:first-of-type{border-top:0}
+.article-aside .related-link:hover{color:var(--blue)}
+.article-aside .text-link{margin-top:12px;color:var(--blue)}
+.article-aside .button{margin-top:16px}
 .article-meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;color:rgba(255,255,255,.82);font-size:14px;font-weight:600}
 .article-meta .dot{width:4px;height:4px;border-radius:50%;background:currentColor;opacity:.7}
 .not-found{min-height:56vh;display:grid;place-items:center;text-align:center;padding:160px 20px 80px}
