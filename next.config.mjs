@@ -37,14 +37,14 @@ const nextConfig = {
         source: "/:path*",
         has: [{ type: "host", value: "pharmway\\.uz" }],
         destination: "https://www.pharmway.uz/:path*",
-        permanent: true,
+        statusCode: 301,
       },
       // Short Uzbek-slug copies of existing articles (unpublished 2026-11-21) —
       // their URLs pass ranking signals to the full, translated originals.
       ...Object.entries(DUPLICATE_POSTS).map(([from, to]) => ({
         source: `/:locale(uz|ru|en)/blog/${from}`,
         destination: `/:locale/blog/${to}`,
-        permanent: true,
+        statusCode: 301,
       })),
     ];
   },

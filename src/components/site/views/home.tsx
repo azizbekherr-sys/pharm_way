@@ -531,7 +531,7 @@ export default function HomeView({ t, L, locale, slots = {} }: Props) {
               <div className="dash-row">
                 <div className="dash-top">
                   <span>{t("Registratsiya jarayoni")}</span>
-                  <strong>{t("2–4 oy")}</strong>
+                  <strong>{t("3–6 oy")}</strong>
                 </div>
                 <div className="track">
                   <div className="fill" style={{ width: "48%" } as React.CSSProperties} />

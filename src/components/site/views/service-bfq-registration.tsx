@@ -115,7 +115,7 @@ export default function ServiceBfqRegistrationView({ t, L, locale, slots = {} }:
             </article>
             <article className="card content-card">
               <h3>{t("Muddat")}</h3>
-              <p className="fact">{"3–6 oy"}</p>
+              <p className="fact">{t("3–6 oy")}</p>
             </article>
             <article className="card content-card">
               <h3>{t("Narx")}</h3>
