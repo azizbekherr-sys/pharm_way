@@ -1,21 +1,27 @@
 import type { Metadata } from "next";
+import type { ComponentType } from "react";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { services } from "@/config/site";
-import ServiceDetailHero from "@/components/service-detail/ServiceDetailHero";
-import ServiceOverview from "@/components/service-detail/ServiceOverview";
-import ServiceProcessSteps from "@/components/service-detail/ServiceProcessSteps";
-import ServiceDocuments from "@/components/service-detail/ServiceDocuments";
-import ServiceTimelinePricing from "@/components/service-detail/ServiceTimelinePricing";
-import ServiceFAQAccordion from "@/components/service-detail/ServiceFAQAccordion";
-import CTA from "@/components/home/CTA";
+import BfqRegistration from "@/components/site/views/service-bfq-registration";
+import Certification from "@/components/site/views/service-certification";
+import ImportLogistics from "@/components/site/views/service-import-logistics";
+import Customs from "@/components/site/views/service-customs";
+import RegulatoryConsulting from "@/components/site/views/service-regulatory-consulting";
+import DistributorSearch from "@/components/site/views/service-distributor-search";
 import JsonLd from "@/components/seo/JsonLd";
-import {
-  buildPageMetadata,
-  buildServiceJsonLd,
-  buildBreadcrumbJsonLd,
-  buildFaqJsonLd,
-} from "@/lib/seo";
+import { SERVICE_NAMES, siteContext, siteFaqJsonLd } from "@/components/site/page-helpers";
+import { buildPageMetadata, buildServiceJsonLd, buildBreadcrumbJsonLd } from "@/lib/seo";
+
+type ViewProps = ReturnType<typeof siteContext>;
+const VIEWS: Record<string, ComponentType<ViewProps>> = {
+  "bfq-registration": BfqRegistration,
+  certification: Certification,
+  "import-logistics": ImportLogistics,
+  customs: Customs,
+  "regulatory-consulting": RegulatoryConsulting,
+  "distributor-search": DistributorSearch,
+};
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -27,14 +33,9 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  if (!services.some((s) => s.slug === slug)) return {};
+  if (!VIEWS[slug]) return {};
   const t = await getTranslations({ locale, namespace: `meta.services.${slug}` });
-  return buildPageMetadata({
-    locale,
-    path: `/services/${slug}`,
-    title: t("title"),
-    description: t("description"),
-  });
+  return buildPageMetadata({ locale, path: `/services/${slug}`, title: t("title"), description: t("description") });
 }
 
 export default async function ServiceDetailPage({
@@ -44,39 +45,27 @@ export default async function ServiceDetailPage({
 }) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
+  const View = VIEWS[slug];
+  if (!View) notFound();
 
-  const index = services.findIndex((s) => s.slug === slug);
-  if (index === -1) notFound();
-
-  const tServices = await getTranslations({ locale, namespace: "home.services" });
-  const items = tServices.raw("items") as { title: string }[];
-  const title = items[index]?.title ?? "";
-
-  const tDetail = await getTranslations({ locale, namespace: "serviceDetail" });
+  const ctx = siteContext(locale);
+  const name = ctx.t(SERVICE_NAMES[slug]);
   const tMeta = await getTranslations({ locale, namespace: `meta.services.${slug}` });
-  const tNav = await getTranslations({ locale, namespace: "nav" });
-  const faqItems = (tDetail.raw(`items.${slug}.faq`) as { q: string; a: string }[]) ?? [];
-
+  const faq = siteFaqJsonLd(`service-${slug}`, ctx.t);
   const jsonLd = [
-    buildServiceJsonLd({ locale, slug, name: title, description: tMeta("description") }),
+    buildServiceJsonLd({ locale, slug, name, description: tMeta("description") }),
     buildBreadcrumbJsonLd(locale, [
-      { name: tNav("home"), path: "" },
-      { name: tNav("services"), path: "/services" },
-      { name: title, path: `/services/${slug}` },
+      { name: ctx.t("Bosh sahifa"), path: "" },
+      { name: ctx.t("Xizmatlar"), path: "/services" },
+      { name, path: `/services/${slug}` },
     ]),
-    ...(faqItems.length > 0 ? [buildFaqJsonLd(faqItems)] : []),
+    ...(faq ? [faq] : []),
   ];
 
   return (
     <>
       <JsonLd data={jsonLd} />
-      <ServiceDetailHero title={title} />
-      <ServiceOverview slug={slug} />
-      <ServiceProcessSteps slug={slug} />
-      <ServiceDocuments slug={slug} />
-      <ServiceTimelinePricing slug={slug} />
-      <ServiceFAQAccordion slug={slug} />
-      <CTA title={tDetail("ctaTitle")} buttonLabel={tDetail("ctaButton")} href="/contact" />
+      <View {...ctx} />
     </>
   );
 }

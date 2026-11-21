@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
+import { afterBlogChange } from "@/lib/indexnow";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
@@ -28,5 +29,6 @@ export async function POST(req: NextRequest) {
   const body = await req.json();
   const { data, error } = await supabaseAdmin.from("blog_posts").insert([body]).select().single();
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  await afterBlogChange(data);
   return NextResponse.json(data);
 }

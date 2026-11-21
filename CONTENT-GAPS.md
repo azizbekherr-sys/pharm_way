@@ -15,9 +15,9 @@ Avoid absolute claims ("leading company", "guaranteed registration"). None are
 currently present — keep it that way.
 
 ## 2. LocalBusiness details (`src/lib/seo.ts` → `buildLocalBusinessJsonLd`)
-- **Geo coordinates** `41.2995, 69.2836` look like a generic Tashkent-center point (also in `[locale]/layout.tsx` `geo.position`). Provide the **real office coordinates** or remove the `geo` block.
+- ✅ **Geo coordinates / address** — resolved 2026-11-21: real office point from the owner's Yandex Maps pin (Jangoh dahasi 10, 1-kirish, Shayxontohur, 100128; `41.327467, 69.251887`) in `src/config/site.ts`, used by JSON-LD, `geo.position` and the contact map.
 - **`priceRange: "$$"`** is a placeholder — provide a real value or remove the field.
-- **Address** is district-level only (`Yunusobod tumani`). A full **street address** (`streetAddress`, `postalCode`) strengthens the LocalBusiness entity and Google Business alignment.
+- **Google Business Profile / Yandex Business** — create or claim a listing at the same address so map results match the site.
 
 ## 3. E-E-A-T / YMYL — authorship (Phase 6)
 - Blog posts currently attribute `author` to the Organization. To add real **`Person`** authors + reviewers (recommended for a pharma/regulatory site), provide for each author: full name, role/title, short bio, and (optionally) LinkedIn/photo. Then we add author/reviewer fields to the blog model + `Person` schema.
@@ -61,7 +61,7 @@ are not used for rendering (real blog lives in Supabase). Recommend deleting the
 array (keep only what `BlogSlug` type genuinely needs) to avoid confusion.
 
 ## 11. Verification & analytics IDs (owner action)
-Add the optional env vars from `.env.example` in Vercel when ready (see
+Add the optional env vars from `.env.example` to the server `.env` when ready (see
 `SEO-SETUP.md`). Until then, no verification/analytics tags render — by design.
 
 ## 12. Sitemap static `lastModified`

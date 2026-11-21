@@ -18,7 +18,7 @@
       },
       "contact": {
         "title": "Aloqa — Bepul Konsultatsiya | Pharm Way Group",
-        "description": "Pharm Way Group bilan bog'laning. Tel: +998 93 062 41 49. Toshkent, Yunusobod tumani. Bepul konsultatsiya."
+        "description": "Pharm Way Group bilan bog'laning. Tel: +998 93 062 41 49. Toshkent, Shayxontohur tumani, Jangoh dahasi. Bepul konsultatsiya."
       },
       "partners": {
         "title": "Hamkorlarimiz — Xalqaro BFQ Kompaniyalari | Pharm Way Group",
@@ -316,27 +316,6 @@
         "Turkmaniston",
         "Ozarbayjon"
       ]
-    },
-    "team": {
-      "title": "Bizning jamoamiz",
-      "subtitle": "Tajribali mutaxassislar jamoasi",
-      "members": [
-        {
-          "name": "F. Karimov",
-          "role": "CEO / Bosh direktor",
-          "desc": "Kompaniya strategiyasi va umumiy boshqaruvni amalga oshiradi."
-        },
-        {
-          "name": "D. Yusupova",
-          "role": "Regulatory Affairs Director",
-          "desc": "Ro'yxatdan o'tkazish va normativ-huquqiy jarayonlarni boshqaradi."
-        },
-        {
-          "name": "A. Tashkentov",
-          "role": "Import & Logistics Manager",
-          "desc": "Import, logistika va bojxona jarayonlarini nazorat qiladi."
-        }
-      ]
     }
   },
   "contact": {
@@ -348,7 +327,7 @@
     "info": {
       "heading": "Bog'lanish ma'lumotlari",
       "address": "Manzil",
-      "addressValue": "Toshkent sh., Yunusobod tumani, Amir Temur ko'chasi 1-uy",
+      "addressValue": "Toshkent sh., Shayxontohur tumani, Jangoh dahasi, 10-uy, 1-kirish",
       "phone": "Telefon",
       "email": "Email",
       "hours": "Ish vaqti",
@@ -374,7 +353,9 @@
       "successMessage": "Tez orada siz bilan bog'lanamiz."
     },
     "map": {
-      "heading": "Bizning joylashuvimiz"
+      "heading": "Bizning joylashuvimiz",
+      "openIn": "Xaritada ochish",
+      "route": "Yo'nalish olish uchun o'zingizga qulay xaritani tanlang"
     },
     "faq": {
       "title": "Tez-tez so'raladigan savollar",

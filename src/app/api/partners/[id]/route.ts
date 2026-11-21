@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
+import { PUBLIC_DATA_TAG } from "@/lib/supabase-public";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
 
@@ -26,6 +27,7 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
     .select()
     .single();
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  revalidateTag(PUBLIC_DATA_TAG);
   revalidatePath("/", "layout");
   return NextResponse.json(data);
 }
@@ -37,6 +39,7 @@ export async function DELETE(_: NextRequest, { params }: { params: { id: string 
 
   const { error } = await supabaseAdmin.from("partners").delete().eq("id", params.id);
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  revalidateTag(PUBLIC_DATA_TAG);
   revalidatePath("/", "layout");
   return NextResponse.json({ success: true });
 }

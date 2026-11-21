@@ -1,0 +1,53 @@
+# main'ga har push'da serverga SSH orqali kirib ./deploy/deploy.sh ni ishga tushiradi.
+#
+# Kerakli GitHub sozlamalari (Settings → Secrets and variables → Actions):
+#   Secrets:  SSH_HOST, SSH_USER, SSH_PRIVATE_KEY, SSH_KNOWN_HOSTS, (ixtiyoriy) SSH_PORT
+#   Variable: APP_DIR (ixtiyoriy, standart: /opt/pharmway)
+# SSH_HOST qo'shilmaguncha workflow hech narsa qilmaydi (xato ham bermaydi).
+# Batafsil: DEPLOY.md
+
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SSH_HOST: ${{ secrets.SSH_HOST }}
+    steps:
+      - name: Server sozlanmagan — o'tkazib yuborish
+        if: env.SSH_HOST == ''
+        run: echo "::notice::SSH_HOST secret yo'q — deploy o'tkazib yuborildi (DEPLOY.md ga qarang)."
+
+      - name: Serverga deploy
+        if: env.SSH_HOST != ''
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PORT: ${{ secrets.SSH_PORT || '22' }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+          APP_DIR: ${{ vars.APP_DIR || '/opt/pharmway' }}
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          if [ -z "$SSH_KNOWN_HOSTS" ]; then
+            echo "::error::SSH_KNOWN_HOSTS secret yo'q. Serverda: ssh-keyscan -p <port> <host> natijasini qo'shing."
+            exit 1
+          fi
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes \
+            "$SSH_USER@$SSH_HOST" "cd '$APP_DIR' && ./deploy/deploy.sh"

@@ -1,13 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope } from "next/font/google";
+import { Inter, Inter_Tight } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import SiteHeader from "@/components/site/SiteHeader";
+import SiteFooter from "@/components/site/SiteFooter";
+import SiteSprite from "@/components/site/SiteSprite";
+import SiteEffects from "@/components/site/SiteEffects";
+import RouteKey from "@/components/site/RouteKey";
+import { getSiteT } from "@/i18n/site-t";
 import Analytics from "@/components/analytics/Analytics";
 import WebVitals from "@/components/analytics/WebVitals";
+import PageTracker from "@/components/analytics/PageTracker";
+import { siteConfig } from "@/config/site";
 import {
   siteUrl,
   ogLocale,
@@ -16,17 +22,26 @@ import {
   buildLocalBusinessJsonLd,
   buildWebSiteJsonLd,
 } from "@/lib/seo";
-import "../globals.css";
+import "./site.css";
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#1B3A6B",
+  themeColor: "#00143f",
 };
 
-const manrope = Manrope({
-  variable: "--font-sans",
+// Dizayn shriftlari (Inter + Inter Tight) — next/font orqali o'z serverimizdan beriladi.
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin", "cyrillic"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
+  subsets: ["latin", "cyrillic"],
+  weight: ["600", "700"],
+  display: "swap",
 });
 
 export function generateStaticParams() {
@@ -99,20 +114,23 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
-  const messages = await getMessages();
   const organizationJsonLd = buildOrganizationJsonLd(locale);
   const localBusinessJsonLd = buildLocalBusinessJsonLd(locale);
   const webSiteJsonLd = buildWebSiteJsonLd(locale);
+  const t = getSiteT(locale);
 
   return (
-    <html lang={locale} className={`${manrope.variable} h-full antialiased`}>
+    <html lang={locale} className={`${inter.variable} ${interTight.variable}`}>
       <head>
-        {/* Manrope is self-hosted by next/font — no Google Fonts preconnect needed. */}
         <link rel="dns-prefetch" href="https://akqjbbrclrlblrpxlutc.supabase.co" />
+        {/* JS o'chiq bo'lsa ham kontent ko'rinsin (dizayn animatsiyalari JS bilan yoqiladi). */}
+        <noscript>
+          <style>{`.reveal,.rise,.line-in,.stagger>*{opacity:1!important;transform:none!important;filter:none!important}.split-word{transform:none!important}`}</style>
+        </noscript>
         <meta name="geo.region" content="UZ-TK" />
         <meta name="geo.placename" content="Toshkent" />
-        <meta name="geo.position" content="41.2995;69.2836" />
-        <meta name="ICBM" content="41.2995, 69.2836" />
+        <meta name="geo.position" content={`${siteConfig.geo.lat};${siteConfig.geo.lng}`} />
+        <meta name="ICBM" content={`${siteConfig.geo.lat}, ${siteConfig.geo.lng}`} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
@@ -126,25 +144,36 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJsonLd) }}
         />
       </head>
-      <body className="flex min-h-full flex-col font-sans">
-        <NextIntlClientProvider messages={messages}>
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-primary-600 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
-          >
-            {locale === "ru"
-              ? "Перейти к содержимому"
-              : locale === "en"
-                ? "Skip to content"
-                : "Asosiy qismga o'tish"}
+      <body>
+        {/* Sayt matnlari serverda tarjima qilinadi (site-dict) — next-intl xabarlarini
+            brauzerga yuborish shart emas (har sahifa ~50 KB yengil). */}
+        <NextIntlClientProvider locale={locale} messages={{}}>
+          <a className="skip-link" href="#app">
+            {t("Asosiy kontentga o‘tish")}
           </a>
-          <Navbar />
-          <main id="main-content" className="flex-1">
-            {children}
+          <SiteSprite />
+          <SiteHeader
+            locale={locale as "uz" | "ru" | "en"}
+            labels={{
+              home: t("Bosh sahifa"),
+              services: t("Xizmatlar"),
+              about: t("Biz haqimizda"),
+              blog: t("Blog"),
+              faq: t("Savol-javob"),
+              contact: t("Aloqa"),
+              cta: t("Bepul konsultatsiya"),
+              menu: t("Menyuni ochish"),
+              mainMenu: t("Asosiy menyu"),
+            }}
+          />
+          <main id="app">
+            <RouteKey>{children}</RouteKey>
           </main>
-          <Footer />
+          <SiteFooter locale={locale} />
+          <SiteEffects />
           <Analytics />
           <WebVitals />
+          <PageTracker locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>

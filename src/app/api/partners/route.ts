@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
+import { PUBLIC_DATA_TAG } from "@/lib/supabase-public";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
 
@@ -25,6 +26,7 @@ export async function POST(req: NextRequest) {
   const body = await req.json();
   const { data, error } = await supabaseAdmin.from("partners").insert([body]).select().single();
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  revalidateTag(PUBLIC_DATA_TAG);
   revalidatePath("/", "layout");
   return NextResponse.json(data);
 }

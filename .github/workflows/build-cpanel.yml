@@ -1,0 +1,38 @@
+# cPanel (AHOST) uchun tayyor ZIP'ni Linux x64 da yig'adi va artifact sifatida saqlaydi.
+# Mac'da build qilinsa sharp macOS binarlari bilan serverda rasmlar buziladi —
+# shuning uchun paket shu yerda yig'iladi. Natija: Actions → run → Artifacts →
+# "pharmway-cpanel" (ichida pharmway-cpanel.zip). Batafsil: CPANEL.md
+
+name: Build cPanel package
+
+on:
+  push:
+    branches: [claude/busy-fermat-dom2fk]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build pharmway-cpanel.zip
+        run: bash scripts/build-cpanel.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pharmway-cpanel
+          path: dist/cpanel/pharmway-cpanel.zip
+          compression-level: 0
+          retention-days: 14

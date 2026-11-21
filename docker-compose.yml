@@ -1,0 +1,57 @@
+# Pharm Way — o'z serverda ishga tushirish.
+#   web   — Next.js ilova (faqat ichki tarmoqda, 3000-port)
+#   caddy — 80/443 portlar, Let's Encrypt HTTPS avtomatik, pharmway.uz -> www
+#
+# Ishga tushirish:  ./deploy/deploy.sh
+# (to'g'ridan-to'g'ri `docker compose build` .env o'zgarishini sezmasligi mumkin —
+#  deploy.sh ENV_HASH ni hisoblab beradi).
+
+services:
+  web:
+    build:
+      context: .
+      secrets:
+        - app_env
+      args:
+        ENV_HASH: ${ENV_HASH:-}
+    image: pharmway-web:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      GEOIP_DB_PATH: /app/geoip/dbip-city-lite.mmdb
+    volumes:
+      - ./geoip:/app/geoip:ro
+    expose:
+      - "3000"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  caddy:
+    image: caddy:2.10-alpine
+    restart: unless-stopped
+    depends_on:
+      - web
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+secrets:
+  app_env:
+    file: .env
+
+volumes:
+  caddy_data:
+  caddy_config:

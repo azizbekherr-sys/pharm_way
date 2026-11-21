@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { supabaseAdmin } from "@/lib/supabase-admin";
+import { supabasePublic } from "@/lib/supabase-public";
 
 type Partner = {
   id: string;
@@ -14,7 +14,7 @@ type Partner = {
 const MARQUEE_THRESHOLD = 6;
 
 async function getPartners(): Promise<Partner[]> {
-  const { data, error } = await supabaseAdmin
+  const { data, error } = await supabasePublic
     .from("partners")
     .select("id, name, country, country_flag, logo_url, website")
     .eq("active", true)
