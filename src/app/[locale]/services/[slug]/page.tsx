@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { services } from "@/config/site";
 import BfqRegistration from "@/components/site/views/service-bfq-registration";
-import Certification from "@/components/site/views/service-certification";
 import ImportLogistics from "@/components/site/views/service-import-logistics";
 import Customs from "@/components/site/views/service-customs";
 import RegulatoryConsulting from "@/components/site/views/service-regulatory-consulting";
@@ -16,7 +15,6 @@ import { buildPageMetadata, buildServiceJsonLd, buildBreadcrumbJsonLd } from "@/
 type ViewProps = ReturnType<typeof siteContext>;
 const VIEWS: Record<string, ComponentType<ViewProps>> = {
   "bfq-registration": BfqRegistration,
-  certification: Certification,
   "import-logistics": ImportLogistics,
   customs: Customs,
   "regulatory-consulting": RegulatoryConsulting,

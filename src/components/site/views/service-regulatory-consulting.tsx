@@ -167,7 +167,7 @@ export default function ServiceRegulatoryConsultingView({ t, L, locale, slots = 
                 </span>
               </button>
               <div className="faq-answer">
-                <div>{t("Registratsiya, sertifikatlashtirish, import va boshqa barcha regulatory yo‘nalishlar bo‘yicha maslahat beramiz.")}</div>
+                <div>{t("Registratsiya, import va boshqa barcha regulatory yo‘nalishlar bo‘yicha maslahat beramiz.")}</div>
               </div>
             </div>
             <div className="faq-item faq-card">

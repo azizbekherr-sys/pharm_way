@@ -2,7 +2,7 @@
  "home": [
   {
    "q": "Pharm Way qaysi mahsulotlar bilan ishlaydi?",
-   "a": "Asosiy xizmatlar biologik faol va oziq-ovqat qo‘shimchalari, kosmetik mahsulotlar, sertifikatlashtirish va regulatory consulting yo‘nalishlarini qamrab oladi. Boshqa mahsulot kategoriyalari bo‘yicha imkoniyat dastlabki tahlildan keyin aniqlanadi."
+   "a": "Asosiy xizmatlar biologik faol va oziq-ovqat qo‘shimchalari, kosmetik mahsulotlar va regulatory consulting yo‘nalishlarini qamrab oladi. Boshqa mahsulot kategoriyalari bo‘yicha imkoniyat dastlabki tahlildan keyin aniqlanadi."
   },
   {
    "q": "Jarayon qanday boshlanadi?",
@@ -18,7 +18,7 @@
   },
   {
    "q": "Pharm Way barcha xizmatlarni o‘zi bajaradimi?",
-   "a": "Hujjatlar, regulatory consulting, loyiha boshqaruvi va biznesni rivojlantirish ishlari Pharm Way tomonidan boshqariladi. Laboratoriya, ayrim sertifikatlashtirish, logistika va bojxona xizmatlari maxsus hamkorlar orqali bajarilishi mumkin."
+   "a": "Hujjatlar, regulatory consulting, loyiha boshqaruvi va biznesni rivojlantirish ishlari Pharm Way tomonidan boshqariladi. Laboratoriya, logistika va bojxona xizmatlari maxsus hamkorlar orqali bajarilishi mumkin."
   }
  ],
  "service-bfq-registration": [
@@ -33,24 +33,6 @@
   {
    "q": "Import uchun qo‘shimcha ruxsat kerakmi?",
    "a": "Ro‘yxatdan o‘tgandan so‘ng qo‘shimcha import sertifikati talab qilinishi mumkin, buni alohida ko‘rib chiqamiz."
-  },
-  {
-   "q": "Konsultatsiya pullikmi?",
-   "a": "Yo‘q, dastlabki konsultatsiya mutlaqo bepul."
-  }
- ],
- "service-certification": [
-  {
-   "q": "Qaysi sertifikatlar mavjud?",
-   "a": "GMP, ISO 9001 va boshqa xalqaro tan olingan sifat standartlari bo‘yicha sertifikatlashni amalga oshiramiz."
-  },
-  {
-   "q": "Sertifikat necha yil amal qiladi?",
-   "a": "Odatda sertifikat 3 yil muddatga beriladi, so‘ngra qayta audit talab qilinadi."
-  },
-  {
-   "q": "Audit qanday o‘tkaziladi?",
-   "a": "Auditorlar ishlab chiqarish joyiga tashrif buyuradi yoki hujjatlar asosida masofadan baholaydi."
   },
   {
    "q": "Konsultatsiya pullikmi?",
@@ -104,7 +86,7 @@
   },
   {
    "q": "Qaysi sohalar qamrab olinadi?",
-   "a": "Registratsiya, sertifikatlashtirish, import va boshqa barcha regulatory yo‘nalishlar bo‘yicha maslahat beramiz."
+   "a": "Registratsiya, import va boshqa barcha regulatory yo‘nalishlar bo‘yicha maslahat beramiz."
   },
   {
    "q": "Konsultatsiya pullikmi?",
@@ -140,7 +122,7 @@
   },
   {
    "q": "GMP sertifikati majburiymi?",
-   "a": "Ha, importga mo‘ljallangan mahsulotlar uchun GMP sertifikati talab etiladi. Biz BFQ registratsiyasi va sertifikatlashtirish jarayonida barcha talablarga mos kelishingizga yordam beramiz."
+   "a": "Ha, importga mo‘ljallangan mahsulotlar uchun GMP sertifikati talab etiladi. Biz BFQ registratsiyasi jarayonida barcha talablarga mos kelishingizga yordam beramiz."
   },
   {
    "q": "Qayta registratsiya qanday amalga oshiriladi?",

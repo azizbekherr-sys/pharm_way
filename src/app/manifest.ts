@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Pharm Way Group — BFQ va dori vositalari registratsiyasi",
     short_name: "Pharm Way",
     description:
-      "O'zbekistonda BFQ, dori vositalari va tibbiy buyumlarni import qilish va ro'yxatdan o'tkazish bo'yicha regulatory xizmatlar.",
+      "O'zbekistonda BFQ va dori vositalarini import qilish va ro'yxatdan o'tkazish bo'yicha regulatory xizmatlar.",
     start_url: "/uz",
     scope: "/",
     display: "standalone",

@@ -48,6 +48,12 @@ const nextConfig = {
         destination: "/:locale/about",
         statusCode: 301,
       },
+      // Certification is not a Pharm Way service (removed 2026-11-21).
+      {
+        source: "/:locale(uz|ru|en)/services/certification",
+        destination: "/:locale/services",
+        statusCode: 301,
+      },
       // Short Uzbek-slug copies of existing articles (unpublished 2026-11-21) —
       // their URLs pass ranking signals to the full, translated originals.
       ...Object.entries(DUPLICATE_POSTS).map(([from, to]) => ({

@@ -29,7 +29,6 @@ export default function SiteFooter({ locale }: { locale: string }) {
           <div className="footer-col">
             <strong>{t("Xizmatlarimiz")}</strong>
             <Link href={L("/services/bfq-registration")}>{t("BFQ registratsiyasi")}</Link>
-            <Link href={L("/services/certification")}>{t("Sertifikatlashtirish")}</Link>
             <Link href={L("/services/import-logistics")}>{t("Import va logistika")}</Link>
             <Link href={L("/services/customs")}>{t("Bojxona rasmiylashtiruvi")}</Link>
             <Link href={L("/services/regulatory-consulting")}>{t("Regulatory Consulting")}</Link>

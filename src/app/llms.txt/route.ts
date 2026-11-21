@@ -7,7 +7,6 @@ export const dynamic = "force-static";
 // not marketing claims). Keep in sync with src/config/site.ts `services`.
 const SERVICE_LABELS: Record<string, string> = {
   "bfq-registration": "Dietary supplement (BFQ) registration",
-  certification: "Certification",
   "import-logistics": "Import & logistics",
   customs: "Customs clearance",
   "regulatory-consulting": "Regulatory consulting",
@@ -19,7 +18,7 @@ export async function GET() {
 
   const body = `# Pharm Way Group
 
-> Regulatory services for importing and registering dietary supplements (BFQ / БАД), medicines and medical devices in Uzbekistan and Central Asia.
+> Regulatory services for importing and registering dietary supplements (BFQ / БАД) and medicines in Uzbekistan and Central Asia.
 
 Pharm Way Group helps manufacturers and distributors bring health products to the Uzbekistan market. The website is available in Uzbek (/uz), Russian (/ru) and English (/en).
 
