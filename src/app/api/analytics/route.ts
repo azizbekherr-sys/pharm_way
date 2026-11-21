@@ -124,6 +124,12 @@ export async function GET(req: NextRequest) {
 
   const today = (raw.today ?? {}) as { views?: number; visitors?: number };
 
+  // Konversiya uchun faqat kuzatuv boshlangandan keyingi murojaatlar (aks holda >100% chiqadi).
+  const trackedFrom = Math.max(since.getTime(), firstAt ? Date.parse(firstAt) : now.getTime());
+  const contactsSinceTracking = (contactsNow.data ?? []).filter(
+    (c) => Date.parse(c.created_at as string) >= trackedFrom,
+  ).length;
+
   return NextResponse.json({
     range,
     since: since.toISOString(),
@@ -137,6 +143,7 @@ export async function GET(req: NextRequest) {
     contacts: {
       total: contactsNow.data?.length ?? 0,
       prevTotal: prevSince ? contactsPrev.count ?? 0 : null,
+      sinceTracking: contactsSinceTracking,
     },
     daily,
     hourly,

@@ -57,7 +57,7 @@ type Stats = {
   firstAt: string | null;
   today: { views: number; visitors: number };
   newVisitors: number;
-  contacts: { total: number; prevTotal: number | null };
+  contacts: { total: number; prevTotal: number | null; sinceTracking: number };
   daily: DayPoint[];
   hourly: number[];
   weekday: number[];
@@ -775,7 +775,8 @@ export default function AdminAnalyticsPage() {
   const p = stats?.prev;
   const bounceRate = t ? pct(t.bounces, t.sessions) : 0;
   const prevBounce = p ? pct(p.bounces, p.sessions) : null;
-  const conversion = t && stats ? pct(stats.contacts.total, t.visitors) : 0;
+  // Konversiya: kuzatuv boshlangandan keyingi murojaatlar / tashrifchilar (100% dan oshmaydi).
+  const conversion = t && stats ? Math.min(100, pct(stats.contacts.sinceTracking ?? 0, t.visitors)) : 0;
   const deviceTotal = useMemo(() => (stats ? stats.byDevice.reduce((s, d) => s + d.count, 0) : 0), [stats]);
 
   return (
@@ -1172,7 +1173,7 @@ export default function AdminAnalyticsPage() {
                     <p className="text-xs text-slate-500">Tashrifchi</p>
                   </div>
                   <div className="rounded-xl bg-slate-50 p-4">
-                    <p className="text-xl font-bold text-slate-900">{fmt(stats.contacts.total)}</p>
+                    <p className="text-xl font-bold text-slate-900">{fmt(stats.contacts.sinceTracking ?? 0)}</p>
                     <p className="text-xs text-slate-500">Murojaat</p>
                   </div>
                   <div className="rounded-xl bg-amber-50 p-4">
