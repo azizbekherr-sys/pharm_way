@@ -316,27 +316,6 @@
         "Turkmenistan",
         "Azerbaijan"
       ]
-    },
-    "team": {
-      "title": "Our Team",
-      "subtitle": "A team of experienced specialists",
-      "members": [
-        {
-          "name": "F. Karimov",
-          "role": "CEO",
-          "desc": "Leads company strategy and overall management."
-        },
-        {
-          "name": "D. Yusupova",
-          "role": "Regulatory Affairs Director",
-          "desc": "Oversees registration and regulatory processes."
-        },
-        {
-          "name": "A. Tashkentov",
-          "role": "Import & Logistics Manager",
-          "desc": "Manages import, logistics, and customs processes."
-        }
-      ]
     }
   },
   "contact": {

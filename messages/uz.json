@@ -316,27 +316,6 @@
         "Turkmaniston",
         "Ozarbayjon"
       ]
-    },
-    "team": {
-      "title": "Bizning jamoamiz",
-      "subtitle": "Tajribali mutaxassislar jamoasi",
-      "members": [
-        {
-          "name": "F. Karimov",
-          "role": "CEO / Bosh direktor",
-          "desc": "Kompaniya strategiyasi va umumiy boshqaruvni amalga oshiradi."
-        },
-        {
-          "name": "D. Yusupova",
-          "role": "Regulatory Affairs Director",
-          "desc": "Ro'yxatdan o'tkazish va normativ-huquqiy jarayonlarni boshqaradi."
-        },
-        {
-          "name": "A. Tashkentov",
-          "role": "Import & Logistics Manager",
-          "desc": "Import, logistika va bojxona jarayonlarini nazorat qiladi."
-        }
-      ]
     }
   },
   "contact": {

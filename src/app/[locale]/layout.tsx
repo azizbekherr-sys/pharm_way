@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Inter_Tight } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import SiteHeader from "@/components/site/SiteHeader";
@@ -114,7 +114,6 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
-  const messages = await getMessages();
   const organizationJsonLd = buildOrganizationJsonLd(locale);
   const localBusinessJsonLd = buildLocalBusinessJsonLd(locale);
   const webSiteJsonLd = buildWebSiteJsonLd(locale);
@@ -146,7 +145,9 @@ export default async function LocaleLayout({
         />
       </head>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        {/* Sayt matnlari serverda tarjima qilinadi (site-dict) — next-intl xabarlarini
+            brauzerga yuborish shart emas (har sahifa ~50 KB yengil). */}
+        <NextIntlClientProvider locale={locale} messages={{}}>
           <a className="skip-link" href="#app">
             {t("Asosiy kontentga o‘tish")}
           </a>
