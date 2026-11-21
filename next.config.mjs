@@ -6,6 +6,10 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig = {
   // Minimal self-contained server build (cPanel Node.js App or Docker).
   output: "standalone",
+  // IMAP/pochta kutubxonalari webpack bilan to'planmasdan node_modules'dan yuklansin.
+  experimental: {
+    serverComponentsExternalPackages: ["imapflow", "mailparser", "nodemailer"],
+  },
   images: {
     remotePatterns: [{ protocol: "https", hostname: "**" }],
     // WebP only: AVIF encoding is several times more CPU-heavy, which trips

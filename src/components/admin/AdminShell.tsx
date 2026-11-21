@@ -14,12 +14,14 @@ import {
   TrendingUp,
   LogOut,
   Bell,
+  Mail,
 } from "lucide-react";
 import { getSupabase } from "@/lib/supabase";
 
 const NAV_ITEMS = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { href: "/admin/contacts", label: "Murojaatlar", icon: MessageSquare, badge: "newContacts" as const },
+  { href: "/admin/mail", label: "Pochta", icon: Mail, badge: "unreadMail" as const },
   { href: "/admin/blog", label: "Blog", icon: FileText },
   { href: "/admin/partners", label: "Hamkorlar", icon: Handshake },
   { href: "/admin/services", label: "Xizmatlar", icon: Settings },
@@ -42,6 +44,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
   const pathname = usePathname();
   const router = useRouter();
   const [newContacts, setNewContacts] = useState(0);
+  const [unreadMail, setUnreadMail] = useState(0);
   const [email, setEmail] = useState("");
   const [today, setToday] = useState("");
 
@@ -59,6 +62,28 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
       })
       .catch(() => {});
   }, [pathname]);
+
+  // info@pharmway.uz dagi o'qilmagan xatlar soni (har 2 daqiqada yangilanadi).
+  useEffect(() => {
+    if (pathname === "/admin/login") return;
+    let cancelled = false;
+    const load = () =>
+      fetch("/api/mail?unread=1")
+        .then((res) => res.json())
+        .then((data) => {
+          if (!cancelled && typeof data?.unread === "number") setUnreadMail(data.unread);
+        })
+        .catch(() => {});
+    void load();
+    const timer = window.setInterval(load, 120_000);
+    const onChange = () => void load();
+    window.addEventListener("pw-mail-changed", onChange);
+    return () => {
+      cancelled = true;
+      window.clearInterval(timer);
+      window.removeEventListener("pw-mail-changed", onChange);
+    };
+  }, [pathname === "/admin/login"]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (pathname === "/admin/login") {
     return <>{children}</>;
@@ -96,7 +121,8 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
           {NAV_ITEMS.map((item) => {
             const Icon = item.icon;
             const isActive = item.exact ? pathname === item.href : pathname.startsWith(item.href);
-            const badgeCount = item.badge === "newContacts" ? newContacts : 0;
+            const badgeCount =
+              item.badge === "newContacts" ? newContacts : item.badge === "unreadMail" ? unreadMail : 0;
             return (
               <Link
                 key={item.href}

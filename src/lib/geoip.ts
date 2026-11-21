@@ -50,10 +50,14 @@ function safeDecode(value: string): string {
   }
 }
 
-/** Reverse proxy (Caddy/nginx) qo'ygan sarlavhalardan mijoz IP manzilini oladi. */
-function clientIp(h: Headers): string | null {
+/**
+ * Reverse proxy (Caddy/nginx) qo'ygan sarlavhalardan mijoz IP manzilini oladi.
+ * AHOST'da nginx `X-Real-IP` ni o'zi qo'yadi (mijoz soxtalashtira olmaydi),
+ * shuning uchun u `X-Forwarded-For` dan oldin tekshiriladi.
+ */
+export function clientIp(h: Headers): string | null {
   const forwarded = h.get("x-forwarded-for")?.split(",")[0]?.trim();
-  const ip = h.get("cf-connecting-ip") || forwarded || h.get("x-real-ip");
+  const ip = h.get("cf-connecting-ip") || h.get("x-real-ip") || forwarded;
   return ip || null;
 }
 

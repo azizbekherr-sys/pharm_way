@@ -90,6 +90,7 @@ export function buildOrganizationJsonLd(locale: string) {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address[locale as "uz" | "ru" | "en"] ?? siteConfig.address.uz,
       addressLocality: "Toshkent",
+      postalCode: siteConfig.postalCode,
       addressCountry: "UZ",
     },
     contactPoint: {
@@ -117,13 +118,15 @@ export function buildLocalBusinessJsonLd(locale: string) {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address[locale as "uz" | "ru" | "en"] ?? siteConfig.address.uz,
       addressLocality: "Toshkent",
+      postalCode: siteConfig.postalCode,
       addressCountry: "UZ",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 41.2995,
-      longitude: 69.2836,
+      latitude: siteConfig.geo.lat,
+      longitude: siteConfig.geo.lng,
     },
+    hasMap: siteConfig.maps.yandex,
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

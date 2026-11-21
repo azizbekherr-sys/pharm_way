@@ -18,7 +18,7 @@
       },
       "contact": {
         "title": "Contact — Free Consultation | Pharm Way Group",
-        "description": "Get in touch with Pharm Way Group. Tel: +998 93 062 41 49. Tashkent, Yunusabad district. Free consultation."
+        "description": "Get in touch with Pharm Way Group. Tel: +998 93 062 41 49. Jangoh block, Shaykhontohur district, Tashkent. Free consultation."
       },
       "partners": {
         "title": "Our Partners — International Supplement Companies | Pharm Way Group",
@@ -348,7 +348,7 @@
     "info": {
       "heading": "Contact information",
       "address": "Address",
-      "addressValue": "1 Amir Temur St, Yunusabad district, Tashkent",
+      "addressValue": "10 Jangoh (C-15) Block, Entrance 1, Shaykhontohur District, Tashkent",
       "phone": "Phone",
       "email": "Email",
       "hours": "Working hours",
@@ -374,7 +374,9 @@
       "successMessage": "We'll get back to you shortly."
     },
     "map": {
-      "heading": "Our location"
+      "heading": "Our location",
+      "openIn": "Open in maps",
+      "route": "Pick the map app you prefer to get directions"
     },
     "faq": {
       "title": "Frequently asked questions",

@@ -8,6 +8,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Analytics from "@/components/analytics/Analytics";
 import WebVitals from "@/components/analytics/WebVitals";
+import PageTracker from "@/components/analytics/PageTracker";
+import { siteConfig } from "@/config/site";
 import {
   siteUrl,
   ogLocale,
@@ -111,8 +113,8 @@ export default async function LocaleLayout({
         <link rel="dns-prefetch" href="https://akqjbbrclrlblrpxlutc.supabase.co" />
         <meta name="geo.region" content="UZ-TK" />
         <meta name="geo.placename" content="Toshkent" />
-        <meta name="geo.position" content="41.2995;69.2836" />
-        <meta name="ICBM" content="41.2995, 69.2836" />
+        <meta name="geo.position" content={`${siteConfig.geo.lat};${siteConfig.geo.lng}`} />
+        <meta name="ICBM" content={`${siteConfig.geo.lat}, ${siteConfig.geo.lng}`} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
@@ -145,6 +147,7 @@ export default async function LocaleLayout({
           <Footer />
           <Analytics />
           <WebVitals />
+          <PageTracker locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>

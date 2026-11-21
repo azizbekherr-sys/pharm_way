@@ -9,7 +9,7 @@ export default function ContactInfo() {
   const t = useTranslations("contact.info");
 
   const cards = [
-    { icon: MapPin, title: t("address"), value: t("addressValue") },
+    { icon: MapPin, title: t("address"), value: t("addressValue"), href: siteConfig.maps.yandex, external: true },
     { icon: Phone, title: t("phone"), value: siteConfig.phone, href: siteConfig.phoneHref },
     { icon: Mail, title: t("email"), value: siteConfig.email, href: `mailto:${siteConfig.email}` },
     { icon: Clock, title: t("hours"), value: t("hoursValue") },
@@ -35,7 +35,11 @@ export default function ContactInfo() {
             <div>
               <div className="text-sm font-medium text-slate-500">{card.title}</div>
               {card.href ? (
-                <a href={card.href} className="mt-0.5 block text-base font-semibold text-gray-900 transition-colors hover:text-primary-700">
+                <a
+                  href={card.href}
+                  {...("external" in card && card.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="mt-0.5 block text-base font-semibold text-gray-900 transition-colors hover:text-primary-700"
+                >
                   {card.value}
                 </a>
               ) : (

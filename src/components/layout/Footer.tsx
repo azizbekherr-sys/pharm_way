@@ -77,7 +77,14 @@ export default function Footer() {
           <ul className="space-y-3 text-base text-white/65">
             <li className="flex items-start gap-2.5">
               <MapPin size={16} className="mt-0.5 shrink-0 text-secondary-400" />
-              <span>{siteConfig.address[locale]}</span>
+              <a
+                href={siteConfig.maps.yandex}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-secondary-300"
+              >
+                {siteConfig.address[locale]}
+              </a>
             </li>
             <li className="flex items-center gap-2.5">
               <Phone size={16} className="shrink-0 text-secondary-400" />

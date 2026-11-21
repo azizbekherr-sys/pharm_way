@@ -6,12 +6,20 @@ export const siteConfig = {
   whatsapp: "https://wa.me/998930624149",
   email: "info@pharmway.uz",
   address: {
-    uz: "Toshkent shahri, Yunusobod tumani, O'zbekiston",
-    ru: "г. Ташкент, Юнусабадский район, Узбекистан",
-    en: "Tashkent, Yunusabad district, Uzbekistan",
+    uz: "Toshkent sh., Shayxontohur tumani, Jangoh dahasi, 10-uy, 1-kirish",
+    ru: "г. Ташкент, Шайхантахурский район, массив Джангох, дом 10, подъезд 1",
+    en: "10 Jangoh (C-15) Block, Entrance 1, Shaykhontohur District, Tashkent",
+  },
+  postalCode: "100128",
+  // Ofis joylashuvi (Yandex xaritadagi nuqta: Jangoh dahasi, 10, 1-kirish).
+  geo: { lat: 41.327467, lng: 69.251887 },
+  maps: {
+    yandex: "https://yandex.uz/maps/-/CXW1Q2NL",
+    google: "https://www.google.com/maps/search/?api=1&query=41.327467%2C69.251887",
+    twoGis: "https://2gis.uz/tashkent/geo/69.251887%2C41.327467",
   },
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5!2d69.2836!3d41.2995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE3JzU4LjIiTiA2OcKwMTcnMDEuMCJF!5e0!3m2!1suz!2suz!4v1234567890",
+    "https://yandex.uz/map-widget/v1/?ll=69.251887%2C41.327467&z=17&pt=69.251887%2C41.327467%2Cpm2rdm",
 };
 
 export const services = [
