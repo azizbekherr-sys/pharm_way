@@ -39,6 +39,15 @@ const nextConfig = {
         destination: "https://www.pharmway.uz/:path*",
         statusCode: 301,
       },
+      // Old "Fikrlar" page (no testimonials in the new design) -> About.
+      // In next.config (not permanentRedirect() in the page): a statically
+      // prerendered page redirect is served as 308 without a Location header.
+      { source: "/testimonials", destination: "/uz/about", statusCode: 301 },
+      {
+        source: "/:locale(uz|ru|en)/testimonials",
+        destination: "/:locale/about",
+        statusCode: 301,
+      },
       // Short Uzbek-slug copies of existing articles (unpublished 2026-11-21) —
       // their URLs pass ranking signals to the full, translated originals.
       ...Object.entries(DUPLICATE_POSTS).map(([from, to]) => ({
