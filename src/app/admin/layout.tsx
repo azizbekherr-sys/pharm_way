@@ -11,9 +11,6 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] }
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  // Saytning manifest.webmanifest havolasi admin sahifalariga kerak emas:
-  // brauzer uni har bir bo'limga o'tishda qayta so'rab, serverni band qilardi.
-  manifest: null,
   robots: { index: false, follow: false },
 };
 

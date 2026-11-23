@@ -68,6 +68,10 @@ export async function generateMetadata({
     authors: [{ name: "Pharm Way Group" }],
     creator: "Pharm Way Group",
     metadataBase: new URL(siteUrl),
+    // public/manifest.webmanifest — faqat sayt sahifalarida. app/manifest.ts
+    // fayli havolani admin panelga ham qo'shardi va brauzer uni har bir
+    // bo'limga o'tishda qayta so'rardi.
+    manifest: "/manifest.webmanifest",
     // Canonical + hreflang are set per-page via buildPageMetadata so that
     // not-found routes never inherit a self-referencing canonical.
     openGraph: {
