@@ -6,11 +6,35 @@ import { routing } from "./i18n/routing";
 
 const intlMiddleware = createMiddleware(routing);
 
+/**
+ * AHOST'dagi nginx (Engintron) so'rovida nomi "NO_CACHE" bo'lgan cookie bo'lsa,
+ * keshni umuman chetlab o'tadi. Admin brauzeriga shu cookie qo'yiladi: admin
+ * hech qachon keshdagi eski javobni olmaydi va eski yozuvlarni (deploy'dan
+ * oldin keshga tushib qolgan API javoblarini) o'z so'rovlari bilan tirik
+ * ushlab turmaydi — ular nginx'da 12 soatdan keyin o'chadi.
+ */
+function bypassProxyCache(request: NextRequest, response: NextResponse) {
+  if (request.cookies.get("NO_CACHE")?.value !== "1") {
+    response.cookies.set("NO_CACHE", "1", {
+      path: "/",
+      httpOnly: true,
+      secure: true,
+      sameSite: "lax",
+      maxAge: 60 * 60 * 24 * 365,
+    });
+  }
+  return response;
+}
+
 export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (pathname.startsWith("/admin") && pathname !== "/admin/login") {
-    const response = NextResponse.next();
+  if (pathname === "/admin/login") {
+    return bypassProxyCache(request, NextResponse.next());
+  }
+
+  if (pathname.startsWith("/admin")) {
+    const response = bypassProxyCache(request, NextResponse.next());
 
     const supabase = createServerClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
