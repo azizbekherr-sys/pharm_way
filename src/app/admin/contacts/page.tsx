@@ -87,6 +87,8 @@ export default function AdminContactsPage() {
     });
     await load();
     setSelected((prev) => (prev && prev.id === contact.id ? { ...prev, status } : prev));
+    // Menyudagi "yangi murojaatlar" sonini yangilash (AdminShell).
+    window.dispatchEvent(new Event("pw-contacts-changed"));
   }
 
   const filtered = useMemo(() => {

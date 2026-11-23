@@ -85,7 +85,11 @@ export default function AdminPartnersPage() {
                 </td>
                 <td className="px-6 text-slate-600">{p.order}</td>
                 <td className="px-6">
-                  <Link href={`/admin/partners/${p.id}/edit`} className="text-slate-400 hover:text-primary-600">
+                  <Link
+                    href={`/admin/partners/${p.id}/edit`}
+                    prefetch={false}
+                    className="text-slate-400 hover:text-primary-600"
+                  >
                     <Pencil size={16} />
                   </Link>
                 </td>

@@ -60,9 +60,22 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export async function GET() {
+/**
+ * GET /api/contact            — barcha murojaatlar
+ * GET /api/contact?count=new  — faqat yangi murojaatlar soni (menyu nishoni uchun)
+ */
+export async function GET(req: NextRequest) {
   if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  if (req.nextUrl.searchParams.get("count") === "new") {
+    const { count, error } = await supabaseAdmin
+      .from("contacts")
+      .select("id", { count: "exact", head: true })
+      .eq("status", "new");
+    if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    return NextResponse.json({ count: count ?? 0 });
   }
 
   const { data, error } = await supabaseAdmin

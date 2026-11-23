@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import AdminShell from "@/components/admin/AdminShell";
@@ -8,6 +9,13 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] }
 // Rendered per request so the Supabase public config below comes from the
 // server's runtime env (hosting panel), not from build time.
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  // Saytning manifest.webmanifest havolasi admin sahifalariga kerak emas:
+  // brauzer uni har bir bo'limga o'tishda qayta so'rab, serverni band qilardi.
+  manifest: null,
+  robots: { index: false, follow: false },
+};
 
 function publicEnvJson(): string {
   return JSON.stringify({

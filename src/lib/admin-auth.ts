@@ -16,6 +16,7 @@ export async function isAdminAuthenticated() {
     }
   );
 
-  const { data } = await supabase.auth.getUser();
-  return !!data.user;
+  // Token imzosi mahalliy tekshiriladi (middleware.ts dagi izohga qarang).
+  const { data } = await supabase.auth.getClaims();
+  return !!data?.claims;
 }

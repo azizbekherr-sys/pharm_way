@@ -53,15 +53,29 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     getSupabase().auth.getUser().then(({ data }) => setEmail(data.user?.email ?? ""));
   }, []);
 
+  // Yangi murojaatlar soni: faqat son so'raladi (butun ro'yxat emas) — ochilganda,
+  // har 2 daqiqada va murojaat holati o'zgarganda. Avval har bir sahifaga
+  // o'tishda barcha murojaatlar qayta yuklanardi.
   useEffect(() => {
     if (pathname === "/admin/login") return;
-    fetch("/api/contact")
-      .then((res) => res.json())
-      .then((data) => {
-        if (Array.isArray(data)) setNewContacts(data.filter((c) => c.status === "new").length);
-      })
-      .catch(() => {});
-  }, [pathname]);
+    let cancelled = false;
+    const load = () =>
+      fetch("/api/contact?count=new")
+        .then((res) => res.json())
+        .then((data) => {
+          if (!cancelled && typeof data?.count === "number") setNewContacts(data.count);
+        })
+        .catch(() => {});
+    void load();
+    const timer = window.setInterval(load, 120_000);
+    const onChange = () => void load();
+    window.addEventListener("pw-contacts-changed", onChange);
+    return () => {
+      cancelled = true;
+      window.clearInterval(timer);
+      window.removeEventListener("pw-contacts-changed", onChange);
+    };
+  }, [pathname === "/admin/login"]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // info@pharmway.uz dagi o'qilmagan xatlar soni (har 2 daqiqada yangilanadi).
   useEffect(() => {
@@ -127,6 +141,11 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
               <Link
                 key={item.href}
                 href={item.href}
+                // Bo'limlar sahifasi oldindan to'liq yuklanib, 5 daqiqa brauzerda
+                // saqlanadi — bosilganda serverni kutmasdan darhol ochiladi
+                // (ma'lumotni sahifaning o'zi ochilganda yuklaydi). Dashboard
+                // serverda ma'lumot bilan chiziladi, u har safar yangidan olinadi.
+                prefetch={item.exact ? undefined : true}
                 className={`group mx-1 flex items-center gap-2.5 rounded-lg px-4 py-2.5 text-[13px] font-medium transition-colors duration-150 ${
                   isActive
                     ? "border-l-[3px] border-cyan-500 bg-white/[0.12] text-white"

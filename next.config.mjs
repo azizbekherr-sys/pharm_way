@@ -77,6 +77,14 @@ const nextConfig = {
         source: "/:path*.(jpg|jpeg|png|svg|ico|webp|avif)",
         headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],
       },
+      // API javoblari (murojaatlar, pochta, statistika) hech qayerda keshlanmasin.
+      // Cache-Control bo'lmasa, AHOST'dagi nginx (Engintron) javobni bir necha
+      // soniya saqlab, login qilmagan so'rovlarga ham berib yuborardi
+      // (2026-11-23 da /api/contact bilan tekshirib topilgan).
+      {
+        source: "/api/:path*",
+        headers: [{ key: "Cache-Control", value: "private, no-store, max-age=0" }],
+      },
     ];
   },
 };

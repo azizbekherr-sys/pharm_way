@@ -162,7 +162,13 @@ export default function AdminBlogPage() {
                 <td className="px-6 text-slate-500">{new Date(p.created_at).toLocaleDateString("uz-UZ")}</td>
                 <td className="px-6">
                   <div className="flex items-center gap-3">
-                    <Link href={`/admin/blog/${p.id}/edit`} className="text-slate-400 hover:text-slate-700">
+                    <Link
+                      href={`/admin/blog/${p.id}/edit`}
+                      // Har bir qator uchun oldindan yuklash serverga bir vaqtda
+                      // o'nlab so'rov yuborib, panelni sekinlashtirardi.
+                      prefetch={false}
+                      className="text-slate-400 hover:text-slate-700"
+                    >
                       <Pencil size={16} />
                     </Link>
                     <button onClick={() => remove(p.id)} className="text-slate-400 hover:text-red-600">

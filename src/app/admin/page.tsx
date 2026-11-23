@@ -27,31 +27,29 @@ const STATUS_LABELS: Record<string, string> = {
 };
 
 export default async function AdminDashboard() {
-  const counts = await Promise.all(
-    STAT_CARDS.map((c) => supabaseAdmin.from(c.key).select("*", { count: "exact", head: true }))
-  );
-
   const todayStart = new Date();
   todayStart.setHours(0, 0, 0, 0);
-  const { count: newToday } = await supabaseAdmin
-    .from("contacts")
-    .select("*", { count: "exact", head: true })
-    .gte("created_at", todayStart.toISOString());
 
-  const { data: recentContacts } = await supabaseAdmin
-    .from("contacts")
-    .select("*")
-    .order("created_at", { ascending: false })
-    .limit(5);
-
-  const { data: blogViewsRows } = await supabaseAdmin.from("blog_posts").select("views");
+  // Barcha so'rovlar bir vaqtda yuboriladi (avval ketma-ket edi — har biri
+  // Supabase'gacha borib kelish vaqtini qo'shardi).
+  const [counts, { count: newToday }, { data: recentContacts }, { data: blogViewsRows }, { data: topPosts }] =
+    await Promise.all([
+      Promise.all(
+        STAT_CARDS.map((c) => supabaseAdmin.from(c.key).select("*", { count: "exact", head: true }))
+      ),
+      supabaseAdmin
+        .from("contacts")
+        .select("*", { count: "exact", head: true })
+        .gte("created_at", todayStart.toISOString()),
+      supabaseAdmin.from("contacts").select("*").order("created_at", { ascending: false }).limit(5),
+      supabaseAdmin.from("blog_posts").select("views"),
+      supabaseAdmin
+        .from("blog_posts")
+        .select("id, title, category, views, published")
+        .order("views", { ascending: false })
+        .limit(5),
+    ]);
   const totalViews = (blogViewsRows ?? []).reduce((sum, r) => sum + (r.views ?? 0), 0);
-
-  const { data: topPosts } = await supabaseAdmin
-    .from("blog_posts")
-    .select("id, title, category, views, published")
-    .order("views", { ascending: false })
-    .limit(5);
 
   return (
     <div className="space-y-8">

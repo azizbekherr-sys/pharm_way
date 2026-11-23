@@ -29,9 +29,12 @@ export default async function middleware(request: NextRequest) {
       }
     );
 
-    const { data: { user } } = await supabase.auth.getUser();
+    // getClaims() sessiya tokenining imzosini shu yerning o'zida (Supabase'ning
+    // ochiq ES256 kaliti bilan) tekshiradi. getUser() esa har so'rovda Supabase
+    // serveriga borib kelardi va admin paneldagi har bir o'tishga ~0,3 s qo'shardi.
+    const { data } = await supabase.auth.getClaims();
 
-    if (!user) {
+    if (!data?.claims) {
       return NextResponse.redirect(new URL("/admin/login", request.url));
     }
 
